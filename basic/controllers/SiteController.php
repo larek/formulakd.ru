@@ -8,6 +8,9 @@ use yii\web\Controller;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
+use app\models\Pages;
+
+use harrytang\fineuploader\FineuploaderHandler;
 
 class SiteController extends Controller
 {
@@ -49,11 +52,22 @@ class SiteController extends Controller
 
     public function actionIndex()
     {
-        return $this->render('index');
+        $guid = Yii::$app->request->get('guid');
+        $model_child = Pages::find()->where(['parent_id' => 1])->all();
+        
+        return $this->render('index',[
+            'model_child' => $model_child,
+            'guid' => $guid,
+        ]);
+    }
+    
+    public function actionSimplePage(){
+        return $this->render('simple-page');
     }
 
     public function actionLogin()
     {
+        $this->layout = 'login';
         if (!\Yii::$app->user->isGuest) {
             return $this->goHome();
         }
@@ -89,6 +103,61 @@ class SiteController extends Controller
 
     public function actionAbout()
     {
+        $uploader = new FineuploaderHandler();
+        $uploader->allowedExtensions = ['jpeg', 'jpg', 'png', 'bmp', 'gif']; // all files types allowed by default
+        $uploader->sizeLimit = YOUR_PHP_MaxFileSizeLimit;
+        $uploader->inputName = "qqfile"; // matches Fine Uploader's default inputName value by default
+        //$uploader->chunksFolder = "chunks";
+        if (Yii::$app->request->isPost) {
+            // upload file
+            $result = $uploader->handleUpload("/upload");
+            if (isset($result['success']) && $result['success'] == true) {
+                // do something more
+            }
+            echo json_encode($result);            
+        }
         return $this->render('about');
+    }
+    
+    public function actionView(){
+        $guid = Yii::$app->request->get('guid');
+        $model = Pages::find()->andWhere(['guid' => $guid])->one();
+        
+        if($model->seo_title==""){ $title = $model->title;}else{$title = $model->seo_title;}
+        
+        $page = Pages::find()->where(['guid' => $guid])->one();
+        if($page->parent_id == 0){
+            $model_child = Pages::find()->where(['parent_id' => $page->id])->all();
+        }
+        else{
+            $model_child = Pages::find()->where(['parent_id' => $page->parent_id])->all();
+        }
+        
+        if(count($model_child)>0){$divTemplate="col-xs-9";}else{$divTemplate="col-xs-12";}
+        
+        if($model->type==""){
+            $viewTemplate = "view";
+        }else{
+            $viewTemplate = $model->type;
+        }
+        
+        return $this->render($viewTemplate, [
+            'model' => $model,
+            'title' => $title,
+            'model_child' => $model_child,
+            'divTemplate' => $divTemplate,
+            'guid' => $guid,
+            ]);
+    }
+    
+    public function actionCallback(){
+        
+            echo Yii::$app->mail->compose('layouts/callback',['name' => $_GET['name'], 'phone' => $_GET['phone']])
+            ->setFrom(['saitom@yandex.ru' => 'formulakd.ru'])
+            ->setTo(['t9101029991@gmail.com'])
+            ->setSubject('Обратный звонок с сайта')
+            //->setHtmlBody('Заказ - <a href="http://'.$_SERVER['SERVER_NAME'].$url.'">Ссылка на заказ</a>')
+            ->send();
+            
     }
 }

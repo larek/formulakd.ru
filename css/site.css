@@ -3,11 +3,17 @@ body {
     height: 100%;
 }
 
-.wrap {
+/*.wrap {
     min-height: 100%;
     height: auto;
     margin: 0 auto -60px;
     padding: 0 0 60px;
+}*/
+.page_header h1{
+    margin-left:13px;
+}
+.sidebar ul.menu li.active {
+    background: #00598D!important;
 }
 
 .wrap > .container {

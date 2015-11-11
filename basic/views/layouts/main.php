@@ -8,6 +8,7 @@ use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
+use app\models\Pages;
 
 AppAsset::register($this);
 ?>
@@ -16,10 +17,11 @@ AppAsset::register($this);
 <html lang="<?= Yii::$app->language ?>">
 <head>
     <meta charset="<?= Yii::$app->charset ?>">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, width=1024">
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
+    
 </head>
 <body>
 <?php $this->beginBody() ?>
@@ -80,7 +82,7 @@ AppAsset::register($this);
                                                                         <span class="icon-bar">
                                                                         </span>
                                                                 </button>
-                                                                <a id="logoen" class="navbar-brand" href="#">Формула КД</a>
+                                                                <a id="logoen" class="navbar-brand" href="/">Формула КД</a>
                                                                 <div class="flash">
                                                                         <h1>
                                                                                 Разработка конструкторской документации<br>
@@ -98,6 +100,7 @@ AppAsset::register($this);
                                                                 <a href="#" role="button" class="btn-contact mobile-contact show-mobile colorboxiframe cboxElement"><div class="bg"></div></a>
                                                         </div>
                                                 </div>
+                                                <noindex>
                                                 <div class="col-sm-6 col-md-6 col-lg-4 hide-mobile">
                                                         <div class="row top-margin">
                                                                 <div class="col-sm-6 col-md-6 col-lg-6">
@@ -105,217 +108,46 @@ AppAsset::register($this);
                                                                 </div>
                                                                 
                                                                 <div class="col-sm-6 col-md-6 col-lg-6">
-                                                                        <a href="#" role="button" class="btn btn-roder btn-lg btn-block btn-contact encontact">
-                                                                        <div class="bg"></div>Заказать звонок        </a>
+                                                                        <a href="#callback" role="button" class="btn btn-roder btn-lg btn-block btn-contact encontact fancybox">
+                                                                        <div class="bg"></div>Заказать звонок</a>
+                                                                        
+                                                                        
+                                                                        <div id='callback' style="display:none">
+                                                                                <h1>Обратный звонок</h1>
+                                                                                  <div class="form-group">
+                                                                                    <label for="inputEmail3" class="col-sm-4 control-label">Ваше имя</label>
+                                                                                    <div class="col-sm-6">
+                                                                                      <input type="email" class="form-control userName require">
+                                                                                    </div>
+                                                                                  </div>
+                                                                                  <div class="form-group">
+                                                                                    <label for="inputPassword3" class="col-sm-4 control-label">Ваш номер телефона</label>
+                                                                                    <div class="col-sm-6">
+                                                                                      <input type="password" class="form-control userPhone require">
+                                                                                    </div>
+                                                                                  </div>
+                                                                                 
+                                                                                  <div class="form-group">
+                                                                                    <div class="col-sm-offset-4 col-sm-10">
+                                                                                      <button  class="btn btn-default btn-callback">Отправить</button>
+                                                                                    </div>
+                                                                                  </div>
+                                                                                  
+                                                                                  <div class="col-md-12" style='margin-top:15px;'>
+                                                                                  <div class='alert alert-info alert-callback' style='display:none;'>Сообщение отправлено</div>
+                                                                                  </div>
+                        
+                                                                        </div>
                                                                 </div>
                                                         </div>
                                                         <div class="row top-margin">
                                                                 <div class="col-sm-6 col-md-6 col-lg-6" style="display: none;">
                                                                         <a href="#" role="button" class="btn btn-roder btn-lg btn-block btn-request"><div class="bg"></div>Request a Brochure</a>
                                                                 </div>
-                                                                <div class="col-sm-6 col-md-6 col-lg-6" style="display: none;">
-                                                                        <div class="btn btn-roder btn-lg btn-block btn-language" id="dropdownMenu1">
-                                                                                <div class="bg">
-                                                                                </div>
-                                                                                Select your language
-                                                                                <div class="Flags_list_con">
-                                                                                        <div class="Padd">
-                                                                                                <span class="please-select">
-                                                                                                        Select your country
-                                                                                                        <br>
-                                                                                                        <span class="small_caps">
-                                                                                                                click flag to select
-                                                                                                        </span>
-                                                                                                </span>
-                                                                                                <div class="Big_flag_con">
-                                                                                                        <div class="flag_box">
-                                                                                                                <a href="http://www.roeder-hts.de/"><span class="Flag DE"></span>
-                                                                                                                <span class="small_caps">DE</span><span class="flag_name"><span class="flag_name_inner">Deutschland</span></span></a>
-                                                                                                        </div>
-                                                                                                        <div class="flag_box">
-                                                                                                                <a href="http://www.roderhts.com/"><span class="Flag GB"></span>
-                                                                                                                <span class="small_caps">GB</span><span class="flag_name"><span class="flag_name_inner">Great Britain</span></span></a>
-                                                                                                        </div>
-                                                                                                        <div class="flag_box">
-                                                                                                                <a href="http://www.roderhts.fr/"><span class="Flag FR"></span>
-                                                                                                                <span class="small_caps">FR</span><span class="flag_name"><span class="flag_name_inner">Francais</span></span></a>
-                                                                                                        </div>
-                                                                                                        <div class="flag_box">
-                                                                                                                <a href="http://www.roderhts.es/"><span class="Flag ES"></span>
-                                                                                                                <span class="small_caps">ES</span><span class="flag_name"><span class="flag_name_inner">Espana</span></span></a>
-                                                                                                        </div>
-                                                                                                        <div class="flag_box">
-                                                                                                                <a href="http://www.hts-australia.com.au/"><span class="Flag AU"></span>
-                                                                                                                <span class="small_caps">AU</span><span class="flag_name"><span class="flag_name_inner">Australia</span></span></a>
-                                                                                                        </div>
-                                                                                                        <div class="Divline">
-                                                                                                        </div>
-                                                                                                </div>
-                                                                                                <div class="flag_con">
-                                                                                                        <div class="flag_box">
-                                                                                                                <a href="http://roderhts.ee/"><span class="Flag EE"></span>
-                                                                                                                <span class="small_caps">EE</span><span class="flag_name"><span class="flag_name_inner">Estonia</span></span></a>
-                                                                                                        </div>
-                                                                                                        <div class="flag_box">
-                                                                                                                <a href="http://roderhts.co.id/"><span class="Flag ID"></span>
-                                                                                                                <span class="small_caps">ID</span><span class="flag_name"><span class="flag_name_inner">Indonesia</span></span></a>
-                                                                                                        </div>
-                                                                                                        <div class="flag_box">
-                                                                                                                <a href="http://roderhts.dk/"><span class="Flag DK"></span>
-                                                                                                                <span class="small_caps">DK</span><span class="flag_name"><span class="flag_name_inner">Denmark</span></span></a>
-                                                                                                        </div>
-                                                                                                        <div class="flag_box">
-                                                                                                                <a href="http://roderhts.se/"><span class="Flag SE"></span>
-                                                                                                                <span class="small_caps">SE</span><span class="flag_name"><span class="flag_name_inner">Sweden</span></span></a>
-                                                                                                        </div>
-                                                                                                        <div class="flag_box">
-                                                                                                                <a href="http://no.roderhts.com/"><span class="Flag NO"></span>
-                                                                                                                <span class="small_caps">NO</span><span class="flag_name"><span class="flag_name_inner">Norway</span></span></a>
-                                                                                                        </div>
-                                                                                                        <div class="flag_box">
-                                                                                                                <a href="http://roderhts.jp/"><span class="Flag JP"></span>
-                                                                                                                <span class="small_caps">JP</span><span class="flag_name"><span class="flag_name_inner">Japan</span></span></a>
-                                                                                                        </div>
-                                                                                                        <div class="Divline">
-                                                                                                        </div>
-                                                                                                </div>
-                                                                                                <div class="flag_con">
-                                                                                                        <div class="flag_box">
-                                                                                                                <a href="http://roderhts.my/"><span class="Flag MY"></span>
-                                                                                                                <span class="small_caps">MY</span><span class="flag_name"><span class="flag_name_inner">Malaysia</span></span></a>
-                                                                                                        </div>
-                                                                                                        <div class="flag_box">
-                                                                                                                <a href="http://roderhts.com.vn/"><span class="Flag VN"></span>
-                                                                                                                <span class="small_caps">VN</span><span class="flag_name"><span class="flag_name_inner">Vietnam</span></span></a>
-                                                                                                        </div>
-                                                                                                        <div class="flag_box">
-                                                                                                                <a href="http://roderhts.co.kr/"><span class="Flag KR"></span>
-                                                                                                                <span class="small_caps">KR</span><span class="flag_name"><span class="flag_name_inner">South Korea</span></span></a>
-                                                                                                        </div>
-                                                                                                        <div class="flag_box">
-                                                                                                                <a href="http://roderhts.co.rs/"><span class="Flag RS"></span>
-                                                                                                                <span class="small_caps">RS</span><span class="flag_name"><span class="flag_name_inner">Serbia</span></span></a>
-                                                                                                        </div>
-                                                                                                        <div class="flag_box">
-                                                                                                                <a href="http://th.roderhts.com/"><span class="Flag TH"></span>
-                                                                                                                <span class="small_caps">TH</span><span class="flag_name"><span class="flag_name_inner">Thailand</span></span></a>
-                                                                                                        </div>
-                                                                                                        <div class="flag_box">
-                                                                                                                <a href="http://roederhts.ro/"><span class="Flag RO"></span>
-                                                                                                                <span class="small_caps">RO</span><span class="flag_name"><span class="flag_name_inner">Romania</span></span></a>
-                                                                                                        </div>
-                                                                                                        <div class="Divline">
-                                                                                                        </div>
-                                                                                                </div>
-                                                                                                <div class="flag_con">
-                                                                                                        <div class="flag_box">
-                                                                                                                <a href="http://roderhts.it/"><span class="Flag IT"></span>
-                                                                                                                <span class="small_caps">IT</span><span class="flag_name"><span class="flag_name_inner">Italy</span></span></a>
-                                                                                                        </div>
-                                                                                                        <div class="flag_box">
-                                                                                                                <a href="http://roderhts.com.br/"><span class="Flag BR"></span>
-                                                                                                                <span class="small_caps">BR</span><span class="flag_name"><span class="flag_name_inner">Brazil</span></span></a>
-                                                                                                        </div>
-                                                                                                        <div class="flag_box">
-                                                                                                                <a href="http://roderhts.al/"><span class="Flag AL"></span>
-                                                                                                                <span class="small_caps">AL</span><span class="flag_name"><span class="flag_name_inner">Albania</span></span></a>
-                                                                                                        </div>
-                                                                                                        <div class="flag_box">
-                                                                                                                <a href="http://roderhts.si/"><span class="Flag SI"></span>
-                                                                                                                <span class="small_caps">SI</span><span class="flag_name"><span class="flag_name_inner">Slovenia</span></span></a>
-                                                                                                        </div>
-                                                                                                        <div class="flag_box">
-                                                                                                                <a href="http://roderhts.mk/"><span class="Flag MK"></span>
-                                                                                                                <span class="small_caps">MK</span><span class="flag_name"><span class="flag_name_inner">Macedonia</span></span></a>
-                                                                                                        </div>
-                                                                                                        <div class="flag_box">
-                                                                                                                <a href="http://roderhts.com.br/"><span class="Flag PT"></span>
-                                                                                                                <span class="small_caps">PT</span><span class="flag_name"><span class="flag_name_inner">Portugal</span></span></a>
-                                                                                                        </div>
-                                                                                                        <div class="Divline">
-                                                                                                        </div>
-                                                                                                </div>
-                                                                                                <div class="flag_con">
-                                                                                                        <div class="flag_box">
-                                                                                                                <a href="http://roderhts.com.hr/"><span class="Flag HR"></span>
-                                                                                                                <span class="small_caps">HR</span><span class="flag_name"><span class="flag_name_inner">Croatia</span></span></a>
-                                                                                                        </div>
-                                                                                                        <div class="flag_box">
-                                                                                                                <a href="http://roderhts.com.tr/"><span class="Flag TR"></span>
-                                                                                                                <span class="small_caps">TR</span><span class="flag_name"><span class="flag_name_inner">Turkey</span></span></a>
-                                                                                                        </div>
-                                                                                                        <div class="flag_box">
-                                                                                                                <a href="http://fi.roderhts.com/"><span class="Flag FI"></span>
-                                                                                                                <span class="small_caps">FI</span><span class="flag_name"><span class="flag_name_inner">Finland</span></span></a>
-                                                                                                        </div>
-                                                                                                        <div class="flag_box">
-                                                                                                                <a href="http://www.roderhts.com/"><span class="Flag SG"></span>
-                                                                                                                <span class="small_caps">SG</span><span class="flag_name"><span class="flag_name_inner">Singapore</span></span></a>
-                                                                                                        </div>
-                                                                                                        <div class="flag_box">
-                                                                                                                <a href="http://www.roderhts.com/"><span class="Flag PH"></span>
-                                                                                                                <span class="small_caps">PH</span><span class="flag_name"><span class="flag_name_inner">Philippines</span></span></a>
-                                                                                                        </div>
-                                                                                                        <div class="flag_box">
-                                                                                                                <a href="http://roderhts.bg/"><span class="Flag BG"></span>
-                                                                                                                <span class="small_caps">BG</span><span class="flag_name"><span class="flag_name_inner">Bulgaria</span></span></a>
-                                                                                                        </div>
-                                                                                                        <div class="flag_box hide_box">
-                                                                                                                <a href="#"><span class="Flag NZ"></span>
-                                                                                                                <span class="small_caps">NZ</span><span class="flag_name"><span class="flag_name_inner">New Zealand</span></span></a>
-                                                                                                        </div>
-                                                                                                        <div class="flag_box hide_box">
-                                                                                                                <a href="#"><span class="Flag US"></span>
-                                                                                                                <span class="small_caps">US</span><span class="flag_name"><span class="flag_name_inner">United States</span></span></a>
-                                                                                                        </div>
-                                                                                                        <div class="Divline">
-                                                                                                        </div>
-                                                                                                </div>
-                                                                                                <div class="flag_con">
-                                                                                                        <div class="flag_box">
-                                                                                                                <a href="http://roderhts.cn/"><span class="Flag CN"></span>
-                                                                                                                <span class="small_caps">CN</span><span class="flag_name"><span class="flag_name_inner">China</span></span></a>
-                                                                                                        </div>
-                                                                                                        <div class="flag_box">
-                                                                                                                <a href="http://roderhts.cn/"><span class="Flag HK"></span>
-                                                                                                                <span class="small_caps">HK</span><span class="flag_name"><span class="flag_name_inner">Hong Kong</span></span></a>
-                                                                                                        </div>
-                                                                                                        <div class="flag_box">
-                                                                                                                <a href="http://roderhts.cn/"><span class="Flag TW"></span>
-                                                                                                                <span class="small_caps">TW</span><span class="flag_name"><span class="flag_name_inner">Taiwan</span></span></a>
-                                                                                                        </div>
-                                                                                                        <div class="flag_box hide_box">
-                                                                                                                <a href="#"><span class="Flag BA"></span>
-                                                                                                                <span class="small_caps">BA</span><span class="flag_name"><span class="flag_name_inner">Bosnian</span></span></a>
-                                                                                                        </div>
-                                                                                                        <div class="flag_box hide_box">
-                                                                                                                <a href="#"><span class="Flag BG"></span>
-                                                                                                                <span class="small_caps">BG</span><span class="flag_name"><span class="flag_name_inner">Bulgaria</span></span></a>
-                                                                                                        </div>
-                                                                                                        <div class="flag_box hide_box">
-                                                                                                                <a href="#"><span class="Flag ME"></span>
-                                                                                                                <span class="small_caps">ME</span><span class="flag_name"><span class="flag_name_inner">Montenegro</span></span></a>
-                                                                                                        </div>
-                                                                                                        <div class="flag_box">
-                                                                                                                <a href="http://roederhts.pl/"><span class="Flag PL"></span>
-                                                                                                                <span class="small_caps">PL</span><span class="flag_name"><span class="flag_name_inner">Poland</span></span></a>
-                                                                                                        </div>
-                                                                                                        <div class="flag_box">
-                                                                                                                <a href="http://roderhts.cz/"><span class="Flag CZ"></span>
-                                                                                                                <span class="small_caps">CZ</span><span class="flag_name"><span class="flag_name_inner">Czech Republic</span></span></a>
-                                                                                                        </div>
-                                                                                                        <div class="flag_box">
-                                                                                                                <a href="http://roeder-hts.ru/"><span class="Flag RU"></span>
-                                                                                                                <span class="small_caps">RU</span><span class="flag_name"><span class="flag_name_inner">Russia</span></span></a>
-                                                                                                        </div>
-                                                                                                </div>
-                                                                                        </div>
-                                                                                        <br class="clear">
-                                                                                </div>
-                                                                        </div>
-                                                                </div>
+                                                                
                                                         </div>
                                                 </div>
+                                                </noindex>
                                         </div>
                                         <div class="row">
                                                 <div class="col-sm-3">
@@ -324,29 +156,12 @@ AppAsset::register($this);
                                                 <div class="col-sm-9">
                                                         <nav class="mainnav collapse navbar-collapse" role="navigation">
                                                                 <ul id="menu-primary-navigation" class="nav navbar-nav">
-                                                                        <li class="active menu-home">
-                                                                                <a href="#">Главая</a>
-                                                                        </li>
-                                                                        <li class="active menu-home">
-                                                                                <a href="#">О компании</a>
-                                                                        </li>
-                                                                        <li class="dropdown menu-company">
-                                                                                <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="#">Услуги <b class="caret"></b></a>
-                                                                                <ul class="dropdown-menu">
-                                                                                        <li class="menu-about-roeder-hts-hoecker-gmbh">
-                                                                                                <a href="#">РАЗРАБОТКА <br>ТЕХНИЧЕСКОГО ЗАДАНИЯ</a>
-                                                                                        </li>
-                                                                                        <li class="menu-why-use-roeder-hts-hoecker">
-                                                                                                <a href="#">Проектирование изделия</a>
-                                                                                        </li>
-                                                                                        <li class="menu-roeder-family-history">
-                                                                                                <a href="#">Разработка КД</a>
-                                                                                        </li>
-                                                                                </ul>
-                                                                        </li>
-                                                                        <li class="active menu-home">
-                                                                                <a href="#">Контакты</a>
-                                                                        </li>
+                                                                        <?
+                                                                        foreach(Pages::find()->andWhere(['parent_id' => 0])->all() as $item){
+                                                                                echo "<li class='menu-home'>".Html::a($item->title,['site/view','guid' => $item->guid])."</li>";
+                                                                        }
+                                                                        ?>
+
                                                                 </ul>
                                                         </nav>
                                                 </div>
@@ -355,7 +170,8 @@ AppAsset::register($this);
                         </header>
                         <div class="wrap container" role="document">
                                 <div class="content row">
-                                        <aside class="sidebar col-sm-3" role="complementary">
+                                        <?= $content?>
+                                        <aside class="sidebar col-sm-3" role="complementary"  style='display:none;'>
                                                 <div class="sidebarabs">
                                                         <section class="widget-1 widget-first widget-last widget-odd widget nav_menu-3 widget_nav_menu">
                                                                 
@@ -364,21 +180,27 @@ AppAsset::register($this);
                                                                                 <a href="#">Dummy Home</a>
                                                                         <div class="coloured"></div><div class="coloured"></div></li>
                                                                         <li class="menu-pagoda-marquees">
-                                                                                <a href="#">РАЗРАБОТКА <br>ТЕХНИЧЕСКОГО ЗАДАНИЯ</a>
+                                                                                <a href="#">Общая информация</a>
                                                                         <div class="coloured"></div><div class="coloured"></div></li>
-                                                                        <li class="menu-roeder-hts-pz-small-marquees">
-                                                                                <a href="#">Проектирование изделия</a>
+                                                                        <li class="menu-pagoda-marquees">
+                                                                                <a href="#">О компании</a>
                                                                         <div class="coloured"></div><div class="coloured"></div></li>
-                                                                        <li class="menu-roeder-hts-gz-large-marquees">
-                                                                                <a href="#">Разработка КД</a>
+                                                                        <li class="menu-pagoda-marquees">
+                                                                                <a href="#">Преимущества КД</a>
                                                                         <div class="coloured"></div><div class="coloured"></div></li>
+                                                                         <li class="menu-pagoda-marquees">
+                                                                                <a href="#">Преимущества ТД</a>
+                                                                        <div class="coloured"></div><div class="coloured"></div></li>
+                                                                        
+                                                                        
                                                                 </ul>
                                                         </section>
                                                 </div>
                                         </aside>
                                         <!-- /.sidebar -->
-                                        <main class="main col-sm-9" role="main">
-                                                <div class="row">
+                                        <main class="main col-sm-9" role="main" style='display:none;'>
+                                                
+                                                <div class="row" style='display:none;'>
                                                         <div class="col-sm-12 pullitleft">
                                                                 <div class="cycle-slideshow bigone" data-cycle-fx="fade" data-cycle-slides="> div" data-cycle-timeout="0" data-cycle-pager="#menu-side-menu" data-cycle-pager-event="mouseover" data-cycle-pager-template="" data-cycle-prev="#prev" data-cycle-next="#next" style="position: relative;"><div class="slidehome cycle-slide cycle-sentinel" data-cycle-slug="menu--home" data-cycle-title="" data-cycle-linkurl="" style="top: 0px; left: 0px; opacity: 1; z-index: 100; position: static; visibility: hidden; display: block;">
                                                                                 <div class="text" style="visibility: hidden;">
@@ -485,7 +307,7 @@ AppAsset::register($this);
                                                                 </div>
                                                         </div>
                                                 </div>
-                                                <div class="show-mobile sidebar">
+                                                <div class="show-mobile sidebar" style='display:none;'>
                                                         <section class="widget-2 widget-even widget nav_menu-3 widget_nav_menu">
                                                                 <h3>
                                                                         Select a Structure
@@ -542,17 +364,17 @@ AppAsset::register($this);
                                                 <div class="col-sm-3">
                                                         <div class="latestnews">
                                                                 <h2>
-                                                                        Заголовок
+                                                                        Проекты
                                                                 </h2>
                                                                 <div class="content">
                                                                         <div class="row">
                                                                                 <div class="col-sm-12">
-                                                                                        <a href="#" target="_blank" class="htsgroup"><strong><img src="https://placeholdit.imgix.net/~text?txtsize=10&amp;txt=%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80&amp;w=90&amp;h=44" alt="HOCKER HTS">Ссылка на раздел <em>описание раздела</em></strong></a>
+                                                                                        <a href="/simple-page"  class="htsgroup"><strong>Start-Up</strong></a>
                                                                                 </div>
                                                                         </div>
-                                                                                                                                                <div class="row">
-                                                                        <div class="col-sm-12">
-                                                                                        <a href="#" target="_blank" class="htsgroup"><strong><img src="https://placeholdit.imgix.net/~text?txtsize=10&amp;txt=%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80&amp;w=90&amp;h=44" alt="HOCKER HTS">Ссылка на раздел <em>описание раздела</em></strong></a>
+                                                                        <div class="row">
+                                                                                <div class="col-sm-12">
+                                                                                        <a href="/simple-page"  class="htsgroup"><strong>Готовые проекты</strong></a>
                                                                                 </div>
                                                                         </div>
 
@@ -560,31 +382,24 @@ AppAsset::register($this);
                                                         </div>
                                                 </div>
                                                 <div class="col-sm-6">
-                                                        <div class="cycle-slideshow" data-cycle-fx="scrollHorz" data-cycle-reverse="true" data-cycle-pause-on-hover="true" data-cycle-speed="300" data-cycle-slides="a" style="position: relative; overflow: hidden;"><a href="#" style="width: 100%; top: 0px; left: 0px; opacity: 1; z-index: 100; position: static; visibility: hidden; display: block;" class="cycle-slide cycle-sentinel"><img src="https://placeholdit.imgix.net/~text?txtsize=49&amp;txt=%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80&amp;w=555&amp;h=195" alt="Business and Industrial Buildings" class="img-responsive" style="visibility: hidden;"></a>
+                                                        <div class="cycle-slideshow" data-cycle-fx="scrollHorz" data-cycle-reverse="true" data-cycle-pause-on-hover="true" data-cycle-speed="300" data-cycle-slides="a" style="position: relative; overflow: hidden;">
+                                                                <a href="#" style="width: 100%; top: 0px; left: 0px; opacity: 1; z-index: 100; position: static; visibility: hidden; display: block;" class="cycle-slide cycle-sentinel"><img src="https://placeholdit.imgix.net/~text?txtsize=49&amp;txt=%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80&amp;w=555&amp;h=195"  class="img-responsive" style="visibility: ;"></a>
+                                                                <a href="#" style="width: 100%; position: absolute; top: 0px; opacity: 1; display: block; left: 0px; z-index: 96; visibility: ;" class="cycle-slide"><img src="https://placeholdit.imgix.net/~text?txtsize=49&amp;txt=%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80&amp;w=555&amp;h=195"  class="img-responsive"></a>
+                                                                <a href="#" style="width: 100%; position: absolute; top: 0px; opacity: 1; display: block; left: 0px; z-index: 97; visibility: ;" class="cycle-slide"><img src="https://placeholdit.imgix.net/~text?txtsize=49&amp;txt=%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80&amp;w=555&amp;h=195"  class="img-responsive"></a>
+                                                                <a href="#" style="width: 100%; position: absolute; z-index: 99; top: 0px; opacity: 1; visibility: visible; display: block; left: 0px;" class="cycle-slide cycle-slide-active"><img src="https://placeholdit.imgix.net/~text?txtsize=49&amp;txt=%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80&amp;w=555&amp;h=195"  class="img-responsive"></a>
+                                                                <a href="#" style="width: 100%; position: absolute; top: 0px; opacity: 1; display: block; z-index: 96; left: 0px; visibility: hidden;" class="cycle-slide"><img src="https://placeholdit.imgix.net/~text?txtsize=49&amp;txt=%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80&amp;w=555&amp;h=195"  class="img-responsive"></a>
+                                                                <a href="#" style="width: 100%; position: absolute; top: 0px; opacity: 1; display: block; left: 0px; z-index: 94; visibility: hidden;" class="cycle-slide"><img src="https://placeholdit.imgix.net/~text?txtsize=49&amp;txt=%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80&amp;w=555&amp;h=195"  class="img-responsive"></a>
+                                                                <a href="#" style="width: 100%; position: absolute; top: 0px; opacity: 1; display: block; left: 0px; z-index: 95; visibility: hidden;" class="cycle-slide"><img src="https://placeholdit.imgix.net/~text?txtsize=49&amp;txt=%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80&amp;w=555&amp;h=195" class="img-responsive"></a>
                                                                 
-                                                                
-                                                                
-                                                                
-                                                                
-                                                                
-                                                        <a href="#" style="width: 100%; position: absolute; top: 0px; opacity: 1; display: block; left: 0px; z-index: 96; visibility: hidden;" class="cycle-slide"><img src="https://placeholdit.imgix.net/~text?txtsize=49&amp;txt=%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80&amp;w=555&amp;h=195" alt="Business and Industrial Buildings" class="img-responsive"></a><a href="#" style="width: 100%; position: absolute; top: 0px; opacity: 1; display: block; left: 0px; z-index: 97; visibility: hidden;" class="cycle-slide"><img src="https://placeholdit.imgix.net/~text?txtsize=49&amp;txt=%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80&amp;w=555&amp;h=195" alt="Custom Structures" class="img-responsive"></a><a href="#" style="width: 100%; position: absolute; z-index: 99; top: 0px; opacity: 1; visibility: visible; display: block; left: 0px;" class="cycle-slide cycle-slide-active"><img src="https://placeholdit.imgix.net/~text?txtsize=49&amp;txt=%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80&amp;w=555&amp;h=195" alt="Event Marquees" class="img-responsive"></a><a href="#" style="width: 100%; position: absolute; top: 0px; opacity: 1; display: block; z-index: 96; left: 0px; visibility: hidden;" class="cycle-slide"><img src="https://placeholdit.imgix.net/~text?txtsize=49&amp;txt=%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80&amp;w=555&amp;h=195" alt="" class="img-responsive"></a><a href="#" style="width: 100%; position: absolute; top: 0px; opacity: 1; display: block; left: 0px; z-index: 94; visibility: hidden;" class="cycle-slide"><img src="https://placeholdit.imgix.net/~text?txtsize=49&amp;txt=%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80&amp;w=555&amp;h=195" alt="marquee manufacturer" class="img-responsive"></a><a href="#" style="width: 100%; position: absolute; top: 0px; opacity: 1; display: block; left: 0px; z-index: 95; visibility: hidden;" class="cycle-slide"><img src="https://placeholdit.imgix.net/~text?txtsize=49&amp;txt=%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80&amp;w=555&amp;h=195" alt="Sports Structures" class="img-responsive"></a></div>
+                                                        </div>
                                                 </div>
                                                 <div class="col-sm-3">
                                                         <div class="latestnews">
                                                                 <div class="content padmeup">
                                                                         <p style="text-align: center;">
-                                                                                <strong>
-                                                                                        <a href="#">Заголовок блока</a>
-                                                                                </strong>
+                                                                                <img src='https://placeholdit.imgix.net/~text?txtsize=23&txt=%D0%BC%D0%B5%D1%81%D1%82%D0%BE%20%D0%BF%D0%BE%D0%B4%20%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D1%83&w=240&h=172'>
                                                                         </p>
-                                                                        <p>
-                                                                                <img class="aligncenter wp-image-78522" src="https://placeholdit.imgix.net/~text?txtsize=30&amp;txt=%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80&amp;w=300&amp;h=107" alt="IFAI – 2013 Winner of Outstanding Achievement Award" width="140" height="50">
-                                                                        </p>
-                                                                        <p style="text-align: center;">
-                                                                                <strong>
-                                                                                        текст текст текст текст текст текст текст текст текст
-                                                                                </strong>
-                                                                        </p>
+                                                                       
                                                                 </div>
                                                         </div>
                                                 </div>
@@ -606,10 +421,10 @@ AppAsset::register($this);
                                                                                 <section class="widget-1 widget-first widget-last widget-odd pull-right widget nav_menu-2 widget_nav_menu">
                                                                                         <ul id="menu-footer" class="menu">
                                                                                                 <li class="menu-legal">
-                                                                                                        <a href="#">Контакты</a>
+                                                                                                        <?= Html::a("Контакты",['site/view','guid'=>'contacts'])?>
                                                                                                 </li>
                                                                                                 <li class="menu-privacy">
-                                                                                                        <a href="#">О компании</a>
+                                                                                                        <?= Html::a("О компании",['site/view','guid'=>'about'])?>
                                                                                                 </li>
                                                                                                 <li class="menu-site-map">
                                                                                                         <a href="#">Карта сайта</a>
@@ -713,6 +528,11 @@ var icl_vars = {"current_language":"en","icl_home":"http:\/\/www.roderhts.com\/"
                                                                         <script type="text/javascript" src="http://www.roderhts.com/wp-content/plugins/gravity-forms-placeholder-support-add-on/gfplaceholderaddon.js?ver=1.0">
                                                                         </script>
                                                                         </div>
+<!-- BEGIN JIVOSITE CODE {literal} -->
+<script type='text/javascript'>
+(function(){ var widget_id = 'rAeO77zsbv';
+var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);})();</script>
+<!-- {/literal} END JIVOSITE CODE -->
 
 <?php $this->endBody() ?>
 </body>

@@ -27,6 +27,7 @@ class AppAsset extends AssetBundle
         'css/main.min.css',
         'css/page-list.css',
         'css/video-js.css',
+        'fancybox/source/jquery.fancybox.css'
     ];
     public $js = [
         'js/gfplaceholderaddon.js',
@@ -35,6 +36,7 @@ class AppAsset extends AssetBundle
         'js/jquery.cycle2.min.js',
         'js/jquery.flexslider-min.js',
         //'js/jquery.min.js',
+        'fancybox/source/jquery.fancybox.js',
         'js/jquery.placeholder-1.0.1.js',
         'js/jwplayer.js',
         'js/modernizr-2.7.0.min.js',
@@ -44,6 +46,8 @@ class AppAsset extends AssetBundle
         'js/scripts.min.js',
         'js/sitepress.js',
         'js/video.js',
+        'js/site.js',
+        
     ];
     public $depends = [
         'yii\web\YiiAsset',
