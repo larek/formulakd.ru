@@ -11,7 +11,7 @@ $config = [
         'admin' => [
             'class' => 'app\modules\admin\Module',
             'layout' => 'main',
-        ],    
+        ],
     ],
     'components' => [
         'request' => [
@@ -42,7 +42,7 @@ $config = [
              'class' => 'Swift_SmtpTransport',
              'host' => 'smtp.yandex.ru',  // e.g. smtp.mandrillapp.com or smtp.gmail.com
              'username' => 'saitom@yandex.ru',
-             'password' => 'unicode910',
+             'password' => 'avatarka9101029991',
              'port' => '587', // Port 25 is a very common port too
              'encryption' => 'tls', // It is often used, check your provider or mail server specs
          ],
@@ -53,9 +53,9 @@ $config = [
             'rules' => [
                 'admin' => 'admin/default',
                 '/simple-page' => 'site/simple-page',
-                '/<guid>' => 'site/view', 
+                '/<guid>' => 'site/view',
                 '/' => 'site/index',
-            ], 
+            ],
         ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,

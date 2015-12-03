@@ -6,14 +6,13 @@ use yii\helpers\Html;
 $this->title = $title;
 
 ?>
-<?= SideMenu::widget(['model' => $model_child,'guid' => $guid]); ?>
+<?//= SideMenu::widget(['model' => $model_child,'guid' => $guid]); ?>
+<div class='container'>
+<main class=" <?= $divTemplate?>" >
 
-<main class="main <?= $divTemplate?>" role="main">                                       
-<div class='page_header'>
 <h1><?= $model->title;?></h1>
-</div>
 
-    <div class='col-md-12'>
-        <?= $model->content?>
-    </div>
+<?= $model->content?>
+
 </main>
+</div>

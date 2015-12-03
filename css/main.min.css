@@ -736,7 +736,7 @@ width:970px
 
 @media (min-width:1200px) {
 .container {
-width:1170px
+width:1000px
 }
 }
 
@@ -7030,7 +7030,7 @@ display:none
 }
 
 .fullWrapAround {
-background-image:url(http://www.roderhts.com/wp-content/themes/roots/assets/img/the-circus.png);
+/*background-image:url(http://www.roderhts.com/wp-content/themes/roots/assets/img/the-circus.png);*/
 background-position:center top;
 background-repeat:no-repeat;
 padding:0
@@ -7148,7 +7148,7 @@ text-indent:16px
 margin-top:0
 }
 
-#menu-primary-navigation {
+/*#menu-primary-navigation {
 background:#103b65;
 background:url(data:image/svg+xml;
 base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzEwM2I2NSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjMlIiBzdG9wLWNvbG9yPSIjMGIzZTY5IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNiUiIHN0b3AtY29sb3I9IiMwZTNlNmMiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI4JSIgc3RvcC1jb2xvcj0iIzBkM2Y3MiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjExJSIgc3RvcC1jb2xvcj0iIzBiNDQ2ZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjE0JSIgc3RvcC1jb2xvcj0iIzBiNDU3NSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjI1JSIgc3RvcC1jb2xvcj0iIzA5NGE4MCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjI4JSIgc3RvcC1jb2xvcj0iIzA3NGQ4MCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUzJSIgc3RvcC1jb2xvcj0iIzA0NWE5MyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjU2JSIgc3RvcC1jb2xvcj0iIzA1NTk5NSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjYxJSIgc3RvcC1jb2xvcj0iIzAzNWU5NyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjY3JSIgc3RvcC1jb2xvcj0iIzAyNWY5YyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjgxJSIgc3RvcC1jb2xvcj0iIzAwNjRhMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMTY1YTMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -7159,7 +7159,7 @@ background:-o-linear-gradient(top,#103b65 0,#0b3e69 3%,#0e3e6c 6%,#0d3f72 8%,#0b
 background:-ms-linear-gradient(top,#103b65 0,#0b3e69 3%,#0e3e6c 6%,#0d3f72 8%,#0b446f 11%,#0b4575 14%,#094a80 25%,#074d80 28%,#045a93 53%,#055995 56%,#035e97 61%,#025f9c 67%,#0064a0 81%,#0165a3 100%);
 background:linear-gradient(to bottom,#103b65 0,#0b3e69 3%,#0e3e6c 6%,#0d3f72 8%,#0b446f 11%,#0b4575 14%,#094a80 25%,#074d80 28%,#045a93 53%,#055995 56%,#035e97 61%,#025f9c 67%,#0064a0 81%,#0165a3 100%);
 filter:progid:DXImageTransform.Microsoft.gradient(startColorstr= '#103b65 ',endColorstr= '#0165a3 ',GradientType=0)
-}
+}*/
 
 .case-study {
 font-size:14px
@@ -7375,7 +7375,7 @@ width:907px
 }
 
 .navbar-brand {
-margin-left:90px!important
+margin-left:10px!important
 }
 
 .page-header h1 {
@@ -8674,7 +8674,7 @@ background-image:url(http://www.roderhts.com/wp-content/themes/roots/assets/img/
 }
 
 .redborder {
-border-top:10px solid #D72C1B;
+border-top:10px solid #18A3DC;
 margin-top:1px;
 background-color:#F9F9F9
 }

@@ -95,3 +95,119 @@ a.desc:after {
     padding: 10px 20px;
     margin: 0 0 15px 0;
 }
+
+.nav_wrap {
+    background: #1F7493;
+}
+
+.btn-feedback {
+    display: inline-block;
+    border: 2px solid #CF2F31;
+    padding: 10px 10px;
+    border-radius: 5px;
+    width: 191px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #CF2F31;
+    font-weight: bold;
+    margin: 15px 0px 0px 0px;
+}
+
+.btn-feedback:hover{
+  text-decoration: none;
+  color: #CF2F31;
+  background: #FBFBFB;
+}
+
+.btn-white {
+  display: inline-block;
+  border: 2px solid #fff;
+  padding: 10px 10px;
+  border-radius: 5px;
+  width: 191px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-white:hover{
+  text-decoration: none;
+  color: #fff;
+
+}
+
+.slider_back{
+  left: 0px !important;
+  top: 0px !important;
+  padding: 0px 26px !important;
+  width: 100% !important;
+  height: 100% !important;
+  background-image: none;
+  background-color: rgba(0,0,0,0.5);
+  position:absolute;
+}
+
+.slider_text{
+  color: #fff;
+}
+
+.slider_text p {
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 700;
+    display: block;
+}
+.slider_text h2 {
+    font-size: 36px!important;
+    color: #fff!important;
+}
+
+span.header_title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1D7292;
+}
+
+.header_title_wrap{
+    display: inline-block;
+    padding: 10px 0px 0px 28px;
+}
+
+.header_phone{
+  text-align: center;
+width: 189px;
+float: right;
+color: #1D7292;
+margin-top: 3px;
+font-weight: bold;
+font-size: 15px;
+}
+
+.btn-frontPage {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 55px;
+}
+
+.frontPageDiv{
+  background: url(/images/logo_gray_lr_half.png) no-repeat;
+  height: 145px;
+  background-size: 70px
+}
+
+.frontPageDivWrap{
+  width: 100%;
+    height: 165px;
+    background: #1CA1DC;
+    padding: 10px 0px;
+}
+.frontPageTitle h2{
+  color: #1F7493;
+  font-size: 40px;
+  padding-top: 0px;
+  margin-top: 0px;
+}
