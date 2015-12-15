@@ -180,7 +180,10 @@ AppAsset::register($this);
                                                                   foreach(Pages::find()->andWhere(['parent_id' => 0])->all() as $item){
                                                                           echo "<li class='menu-home'>".Html::a($item->title,['site/view','guid' => $item->guid])."</li>";
                                                                   }
+
+                                                                  echo "<li class='menu-home'>".Html::a('Новости',['site/news'])."</li>";
                                                                   ?>
+
 
                                                           </ul>
                                                   </nav>
@@ -274,97 +277,8 @@ AppAsset::register($this);
                                                                         </div>
                                                                         </div>
                                                                         </footer>
-                                                                        <script>
-                                                                                var jquery_placeholder_url = 'http://www.roderhts.com/wp-content/plugins/gravity-forms-placeholder-support-add-on/jquery.placeholder-1.0.1.js';
-                                                                        </script>
-                                                                        <div id="wpcp-error-message" class="msgmsg-box-wpcp warning-wpcp hideme"><span>Alert: </span>Content is protected !!</div>
-                                                                        <script>
 
-	var timeout_result;
-	function show_wpcp_message(smessage)
-	{
-		if (smessage !== "")
-			{
-			var smessage_text = '<span>Alert: </span>'+smessage;
-			document.getElementById("wpcp-error-message").innerHTML = smessage_text;
-			document.getElementById("wpcp-error-message").className = "msgmsg-box-wpcp warning-wpcp showme";
-			clearTimeout(timeout_result);
-			timeout_result = setTimeout(hide_message, 3000);
-			}
-	}
-	function hide_message()
-	{
-		document.getElementById("wpcp-error-message").className = "msgmsg-box-wpcp warning-wpcp hideme";
-	}
 
-                                                                        </script>
-                                                                        <style type="text/css">
-
-	#wpcp-error-message {
-	    direction: ltr;
-	    text-align: center;
-	    transition: opacity 900ms ease 0s;
-	    z-index: 99999999;
-	}
-	.hideme {
-    	opacity:0;
-    	visibility: hidden;
-	}
-	.showme {
-    	opacity:1;
-    	visibility: visible;
-	}
-	.msgmsg-box-wpcp {
-		border-radius: 10px;
-		color: #555;
-		font-family: Tahoma;
-		font-size: 11px;
-		margin: 10px;
-		padding: 10px 36px;
-		position: fixed;
-		width: 255px;
-		top: 50%;
-  		left: 50%;
-  		margin-top: -10px;
-  		margin-left: -130px;
-  		-webkit-box-shadow: 0px 0px 34px 2px rgba(242,191,191,1);
-		-moz-box-shadow: 0px 0px 34px 2px rgba(242,191,191,1);
-		box-shadow: 0px 0px 34px 2px rgba(242,191,191,1);
-	}
-	.msgmsg-box-wpcp span {
-		font-weight:bold;
-		text-transform:uppercase;
-	}
-	.error-wpcp {		background:#ffecec url('http://www.roderhts.com/wp-content/plugins/wp-content-copy-protector/images/error.png') no-repeat 10px 50%;
-		border:1px solid #f5aca6;
-	}
-	.success {
-		background:#e9ffd9 url('http://www.roderhts.com/wp-content/plugins/wp-content-copy-protector/images/success.png') no-repeat 10px 50%;
-		border:1px solid #a6ca8a;
-	}
-	.warning-wpcp {
-		background:#ffecec url('http://www.roderhts.com/wp-content/plugins/wp-content-copy-protector/images/warning.png') no-repeat 10px 50%;
-		border:1px solid #f5aca6;
-	}
-	.notice {
-		background:#e3f7fc url('http://www.roderhts.com/wp-content/plugins/wp-content-copy-protector/images/notice.png') no-repeat 10px 50%;
-		border:1px solid #8ed9f6;
-	}
-
-                                                                        </style>
-                                                                        <script type="text/javascript" src="http://www.roderhts.com/wp-content/themes/roots/assets/js/scripts.min.js?ver=xxx">
-                                                                        </script>
-                                                                        <script type="text/javascript">
-
-/* <![CDATA[ */
-var icl_vars = {"current_language":"en","icl_home":"http:\/\/www.roderhts.com\/"};
-/* ]]> */
-
-                                                                        </script>
-                                                                        <script type="text/javascript" src="http://www.roderhts.com/wp-content/plugins/sitepress-multilingual-cms/res/js/sitepress.js?ver=4.1.1">
-                                                                        </script>
-                                                                        <script type="text/javascript" src="http://www.roderhts.com/wp-content/plugins/gravity-forms-placeholder-support-add-on/gfplaceholderaddon.js?ver=1.0">
-                                                                        </script>
                                                                         </div>
 <!-- BEGIN JIVOSITE CODE {literal} -->
 <script type='text/javascript'>

@@ -4,13 +4,27 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 
 $this->title = 'ФормулаКД';
+
 $this->registerJsFile('/fotorama/fotorama.js',['depends' => [\yii\web\JqueryAsset::className()]]);
+
 $this->registerCssFile('/fotorama/fotorama.css');
 $slides = [
-  '/images/slide4.jpg',
-  '/images/slide6.jpg',
-  '/images/slide7.jpg',
-  '/images/slide8.jpg',
+  '/images/slide2-1.jpg',
+  '/images/slide2-2.jpg',
+  '/images/slide2-3.jpg',
+  '/images/slide2-4.jpg',
+  '/images/slide2-1.jpg',
+  '/images/slide2-2.jpg',
+  '/images/slide2-3.jpg',
+  '/images/slide2-4.jpg',
+  '/images/slide2-1.jpg',
+  '/images/slide2-2.jpg',
+  '/images/slide2-3.jpg',
+  '/images/slide2-4.jpg',
+  '/images/slide2-1.jpg',
+  '/images/slide2-2.jpg',
+  '/images/slide2-3.jpg',
+  '/images/slide2-4.jpg',
 ];
 ?>
 <!-- Fotorama -->
@@ -18,7 +32,8 @@ $slides = [
 
   <?
   foreach($model_child as $item){
-    $slide = $slides[array_rand($slides,1)];
+    $i++;
+    $slide = $slides[$i];
     ?>
     <div data-img="<?= $slide?>">
       <div class="slider_back"></div>
@@ -58,19 +73,19 @@ $slides = [
 
 <div class="row">
         <div class="col-sm-4 col-md-4 text-center">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+          <img class="img-circle" src="https://placeholdit.imgix.net/~text?txtsize=19&txt=200%C3%97200&w=200&h=200" alt="Generic placeholder image" width="140" height="140">
           <h2>Заголовок</h2>
           <p>Описание преимущества перед другими фирмами. Короткий текст, который будет в общих чертах описывать выгоды вашей фирмы для клиента</p>
 
         </div><!-- /.col-lg-4 -->
         <div class="col-sm-4 col-md-4 text-center">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+          <img class="img-circle" src="https://placeholdit.imgix.net/~text?txtsize=19&txt=200%C3%97200&w=200&h=200" alt="Generic placeholder image" width="140" height="140">
           <h2>Заголовок</h2>
           <p>Описание преимущества перед другими фирмами. Короткий текст, который будет в общих чертах описывать выгоды вашей фирмы для клиента</p>
 
         </div><!-- /.col-lg-4 -->
         <div class="col-sm-4 col-md-4 text-center">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+          <img class="img-circle" src="https://placeholdit.imgix.net/~text?txtsize=19&txt=200%C3%97200&w=200&h=200" alt="Generic placeholder image" width="140" height="140">
           <h2>Заголовок</h2>
           <p>Описание преимущества перед другими фирмами. Короткий текст, который будет в общих чертах описывать выгоды вашей фирмы для клиента</p>
 
@@ -79,19 +94,19 @@ $slides = [
 
   <div class="row">
           <div class="col-sm-4 col-md-4 text-center">
-            <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <img class="img-circle" src="https://placeholdit.imgix.net/~text?txtsize=19&txt=200%C3%97200&w=200&h=200" alt="Generic placeholder image" width="140" height="140">
             <h2>Заголовок</h2>
             <p>Описание преимущества перед другими фирмами. Короткий текст, который будет в общих чертах описывать выгоды вашей фирмы для клиента</p>
 
           </div><!-- /.col-lg-4 -->
           <div class="col-sm-4 col-md-4 text-center">
-            <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <img class="img-circle" src="https://placeholdit.imgix.net/~text?txtsize=19&txt=200%C3%97200&w=200&h=200" alt="Generic placeholder image" width="140" height="140">
             <h2>Заголовок</h2>
             <p>Описание преимущества перед другими фирмами. Короткий текст, который будет в общих чертах описывать выгоды вашей фирмы для клиента</p>
 
           </div><!-- /.col-lg-4 -->
           <div class="col-sm-4 col-md-4 text-center">
-            <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <img class="img-circle" src="https://placeholdit.imgix.net/~text?txtsize=19&txt=200%C3%97200&w=200&h=200" alt="Generic placeholder image" width="140" height="140">
             <h2>Заголовок</h2>
             <p>Описание преимущества перед другими фирмами. Короткий текст, который будет в общих чертах описывать выгоды вашей фирмы для клиента</p>
 

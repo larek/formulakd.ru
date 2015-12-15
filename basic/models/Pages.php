@@ -19,7 +19,7 @@ use Yii;
  */
 class Pages extends \yii\db\ActiveRecord
 {
-    
+
     public function behaviors()
     {
     	return [
@@ -31,7 +31,7 @@ class Pages extends \yii\db\ActiveRecord
     		]
     	];
     }
-    
+
     /**
      * @inheritdoc
      */
@@ -49,6 +49,7 @@ class Pages extends \yii\db\ActiveRecord
             [['parent_id', 'title'], 'required'],
             [['parent_id'], 'integer'],
             [['content', 'seo_description'], 'string'],
+            [['dateCreated'], 'safe'],
             [['title', 'seo_title', 'seo_keywords','guid','type'], 'string', 'max' => 250]
         ];
     }
@@ -68,6 +69,7 @@ class Pages extends \yii\db\ActiveRecord
             'seo_description' => 'Seo Description',
             'seo_keywords' => 'Seo Keywords',
             'type' => 'Type',
+            'dateCreated' => 'Дата'
         ];
     }
 }

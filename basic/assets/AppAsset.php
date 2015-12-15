@@ -30,24 +30,25 @@ class AppAsset extends AssetBundle
         'fancybox/source/jquery.fancybox.css'
     ];
     public $js = [
+        //'css/jquery-2.1.4.min.js',
         'js/gfplaceholderaddon.js',
-        'js/jquery-1.11.0.min.js',
-        'js/jquery.colorbox-min.js',
-        'js/jquery.cycle2.min.js',
-        'js/jquery.flexslider-min.js',
+        //'js/jquery-1.11.0.min.js',
+        //'js/jquery.colorbox-min.js',
+        //'js/jquery.cycle2.min.js',
+        //'js/jquery.flexslider-min.js',
         //'js/jquery.min.js',
         'fancybox/source/jquery.fancybox.js',
-        'js/jquery.placeholder-1.0.1.js',
-        'js/jwplayer.js',
-        'js/modernizr-2.7.0.min.js',
-        'js/respond.min.js',
-        'js/responsiveslides.min.js',
-        'js/royal.min.js',
-        'js/scripts.min.js',
-        'js/sitepress.js',
-        'js/video.js',
+        //'js/jquery.placeholder-1.0.1.js',
+        //'js/jwplayer.js',
+        //'js/modernizr-2.7.0.min.js',
+        //'js/respond.min.js',
+        //'js/responsiveslides.min.js',
+        //'js/royal.min.js',
+        //'js/scripts.min.js',
+        //'js/sitepress.js',
+        //'js/video.js',
         'js/site.js',
-        
+
     ];
     public $depends = [
         'yii\web\YiiAsset',

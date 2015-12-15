@@ -52,6 +52,7 @@ $config = [
             'showScriptName' => false,
             'rules' => [
                 'admin' => 'admin/default',
+                'news' => 'site/news',
                 '/simple-page' => 'site/simple-page',
                 '/<guid>' => 'site/view',
                 '/' => 'site/index',

@@ -19,7 +19,7 @@ class PagesSearch extends Pages
     {
         return [
             [['id', 'parent_id'], 'integer'],
-            [['title', 'content', 'guid', 'seo_title', 'seo_description', 'seo_keywords','type'], 'safe'],
+            [['title', 'content', 'guid', 'seo_title', 'seo_description', 'seo_keywords', 'type', 'dateCreated'], 'safe'],
         ];
     }
 
@@ -58,15 +58,16 @@ class PagesSearch extends Pages
         $query->andFilterWhere([
             'id' => $this->id,
             'parent_id' => $this->parent_id,
+            'dateCreated' => $this->dateCreated,
         ]);
 
         $query->andFilterWhere(['like', 'title', $this->title])
             ->andFilterWhere(['like', 'content', $this->content])
             ->andFilterWhere(['like', 'guid', $this->guid])
-            ->andFilterWhere(['like', 'type', $this->type])
             ->andFilterWhere(['like', 'seo_title', $this->seo_title])
             ->andFilterWhere(['like', 'seo_description', $this->seo_description])
-            ->andFilterWhere(['like', 'seo_keywords', $this->seo_keywords]);
+            ->andFilterWhere(['like', 'seo_keywords', $this->seo_keywords])
+            ->andFilterWhere(['like', 'type', $this->type]);
 
         return $dataProvider;
     }
