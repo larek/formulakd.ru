@@ -4280,8 +4280,8 @@ color:#777
 }
 
 .navbar-default .navbar-nav >li >a:hover,.navbar-default .navbar-nav >li >a:focus {
-color:#333;
-background-color:transparent
+color:white;
+background-color:#24A0DE
 }
 
 .navbar-default .navbar-nav >.active >a,.navbar-default .navbar-nav >.active >a:hover,.navbar-default .navbar-nav >.active >a:focus {
@@ -7734,7 +7734,7 @@ color:#E6E9CD
 }
 
 .navbar-default .navbar-nav >li >a {
-color:#E6E9CD
+color:white
 }
 
 .navbar-default .navbar-nav >.active >a,.navbar-default .navbar-nav >.active >a:hover,.navbar-default .navbar-nav >.active >a:focus {
@@ -7743,14 +7743,14 @@ color:#E6E9CD
 }
 
 .navbar-brand {
-background:url(/logo/img/logo_blue_lr.png) no-repeat;
-display:block;
-height:84px;
-margin-top:10px;
-text-indent:-999999px;
-width:93px;
-padding:0;
-background-size:83px;
+  background: url(/images/logo_fkd.png) no-repeat;
+  display: block;
+  height: 100px;
+  margin-top: 10px;
+  text-indent: -999999px;
+  width: 93px;
+  padding: 0;
+  background-size: 83px;
 }
 
 #menu-footer {

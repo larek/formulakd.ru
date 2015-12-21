@@ -95,7 +95,7 @@ AppAsset::register($this);
 
 
 
-                                                                        <a href="#callback" role="button" class="btn-feedback fancybox">Свяжитесь с нами</a>
+                                                                        <a href="#callback" role="button" class="btn btn-primary btn-feedback fancybox">Свяжитесь с нами</a>
 
                                                                         <div class='header_phone'>
                                                                         <span>8 (831) 281-58-98</span><br><span>8 (831) 281-58-78</span>
@@ -154,7 +154,7 @@ AppAsset::register($this);
                                                                                   </div>
 
                                                                                   <div class="col-md-12" style='margin-top:15px;'>
-                                                                                  <div class='alert alert-info alert-callback' style='display:none;'>Сообщение отправлено</div>
+                                                                                  <div class='alert alert-info alert-callback' style='display:none;'>Заявка отправлена. <br>Благодарим Вас за интерес, проявленный к нашей компании. <br>Мы обязательно ответим Вам в самое ближайшее время</div>
                                                                                   </div>
 
                                                                                 </div>
