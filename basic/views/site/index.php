@@ -51,7 +51,7 @@ $slides = [
         <div class='frontPageText'>
           Конструкторское бюро "Формула КД" - это компания, которая образовалась в результате коллаборации опытных инженеров
         </div>
-        <a href='#'>Подробнее</a>
+        <a href='#' class='frontPageDivLink'>Подробнее</a>
     </div>
     <div class='col-md-4 frontPageDiv'>
         <?= Html::a("ПАРТНЕРЫ","",['class' => 'btn-frontPage'])?>
@@ -59,7 +59,7 @@ $slides = [
         <div class='frontPageText'>
           Конструкторское бюро "Формула КД" - это компания, которая образовалась в результате коллаборации опытных инженеров
         </div>
-        <a href='#'>Подробнее</a>
+        <a href='#' class='frontPageDivLink'>Подробнее</a>
     </div>
     <div class='col-md-4 frontPageDiv'>
         <?= Html::a("СОТРУДНИЧЕСТВО","",['class' => 'btn-frontPage'])?>
@@ -67,7 +67,7 @@ $slides = [
         <div class='frontPageText'>
           Конструкторское бюро "Формула КД" - это компания, которая образовалась в результате коллаборации опытных инженеров
         </div>
-        <a href='#'>Подробнее</a>
+        <a href='#' class='frontPageDivLink'>Подробнее</a>
     </div>
   </div>
 </div>

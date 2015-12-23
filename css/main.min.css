@@ -7743,14 +7743,14 @@ color:#E6E9CD
 }
 
 .navbar-brand {
-  background: url(/images/logo_fkd.png) no-repeat;
-  display: block;
-  height: 100px;
-  margin-top: 10px;
-  text-indent: -999999px;
-  width: 93px;
-  padding: 0;
-  background-size: 83px;
+    background: url(/images/logo_fkd.png) no-repeat;
+    display: block;
+    height: 123px;
+    margin-top: 10px;
+    text-indent: -999999px;
+    width: 110px;
+    padding: 0;
+    background-size: 103px;
 }
 
 #menu-footer {

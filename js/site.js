@@ -23,8 +23,9 @@ $(document).ready(function(){
          var email = $(".userEmail").val();
          var subject = $(".userSubject").val();
          var message = $(".userMessage").val();
+         var callbackType = $(".callbackType").val();
 
-	        $.get("/site/callback",{name : name, company : company, phone : phone, email : email, subject : subject, message : message}).done(function(data){
+	        $.get("/site/callback",{name : name, company : company, phone : phone, email : email, subject : subject, message : message, callbackType: callbackType}).done(function(data){
 
 	           if (data == "1")
 	                $(".userFormField").val("");

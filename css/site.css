@@ -101,7 +101,7 @@ a.desc:after {
 }
 
 .btn-feedback {
-    width: 191px;
+    width: 220px;
     margin: 15px 0px 0px 0px;
 }
 
@@ -155,7 +155,7 @@ a.desc:after {
     color: #fff!important;
 }
 
-span.header_title {
+a.header_title {
     font-size: 24px;
     font-weight: bold;
     color: #1D7292;
@@ -163,12 +163,12 @@ span.header_title {
 
 .header_title_wrap{
     display: inline-block;
-    padding: 10px 0px 0px 28px;
+    padding: 22px 0px 0px 28px;
 }
 
 .header_phone{
   text-align: center;
-width: 189px;
+width: 220px;
 float: right;
 color: #1D7292;
 margin-top: 3px;
@@ -181,6 +181,20 @@ font-size: 15px;
     font-size: 20px;
     display: inline-block;
 
+}
+
+.btn-frontPage:hover {
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+
+}
+
+.frontPageDivLink, .frontPageDivLink:hover{
+  color: white;
+    text-decoration: underline;
+    margin: 5px 0px;
+    display: inline-block;
 }
 
 span.separate {
@@ -204,7 +218,7 @@ span.separate {
 
 .frontPageDivWrap{
   width: 100%;
-    height: 165px;
+    height: 175px;
     background: #3272B9;
     padding: 10px 0px;
 }
@@ -317,12 +331,13 @@ span.separate {
 }
 .srvWrap {
 
-    background: url(/images/uslugi/back2.jpg);
+
 }
 
 .srvItem{
-  position:absolute;
-  padding-top: 50px
+  height: 250px;
+  position: absolute;
+  text-align: center;
 }
 
 .srvWrapInner {
@@ -344,19 +359,18 @@ span.separate {
 
 
 .srvItem.srvItem1 {margin: 0px 0px 0px 0px;}
-.srvItem.srvItem2 {margin: -10px 0px 0px 236px;}
-.srvItem.srvItem3 {margin: 11px 0px 0px 510px;}
-.srvItem.srvItem4 {margin: -26px 0px 0px 755px;}
-.srvItem.srvItem5 {margin: 168px 0px 0px 683px;}
-.srvItem.srvItem6 {margin: 195px 0px 0px 345px;}
-.srvItem.srvItem7 {margin: 188px 0px 0px 0px;}
+.srvItem.srvItem2 {margin: 0px 0px 0px 253px;}
+.srvItem.srvItem3 {margin: 0px 0px 0px 503px;}
+.srvItem.srvItem4 {margin: 0px 0px 0px 755px;}
+.srvItem.srvItem5 {margin: 260px 0px 0px 129px;}
+.srvItem.srvItem6 {margin: 260px 0px 0px 383px;}
+.srvItem.srvItem7 {margin: 260px 0px 0px 623px;}
+
 
 .srvTitle {
-    position: absolute;
-    margin: 61px 0px 0px 34px;
-    font-weight: bold;
-    font-size: 14px;
-    letter-spacing: -0.03em;
+    margin: 11px 0px 0px 0px;
+    font-size: 17px;
+    display: inline-block;
 }
 
 .srvTitle1 {margin: 61px 0px 0px 34px;}
@@ -366,3 +380,11 @@ span.separate {
 .srvTitle5 {margin: 75px 0px 0px 151px;}
 .srvTitle6 {margin: 59px 0px 0px 132px;}
 .srvTitle7 {margin: 66px 0px 0px 134px;}
+
+.srcMainTitle {
+    margin: 26px 0px;
+    display: block;
+    font-size: 21.92px;
+    text-align: center;
+    color: #428BCA;
+}

@@ -72,10 +72,10 @@ AppAsset::register($this);
 
                                                                 <a id="logoen" class="navbar-brand" href="/">Формула КД</a>
                                                                 <div class="header_title_wrap">
-                                                                        <span class='header_title'>
+                                                                        <a href='/razrabotka-kd' class='header_title'>
                                                                                 Разработка конструкторской<br> и технологической документации
 
-                                                                        </span>
+                                                                        </a>
                                                                           <br>
                                                                         <span style="
                                                                                 float: left;
@@ -99,12 +99,24 @@ AppAsset::register($this);
 
                                                                         <div class='header_phone'>
                                                                         <span>8 (831) 281-58-98</span><br><span>8 (831) 281-58-78</span>
+                                                                          <br>
+                                                                        <span>г.Нижний Новгород,<br> пер.Мотальный, д. 10, пом. 8</span>
                                                                       </div>
 
                                                                         <div id='callback' style="display:none">
                                                                                 <h2 class='text-center'>Обратная связь</h2>
 
                                                                                 <div class='form-horizontal'>
+                                                                                  <div class="form-group">
+                                                                                    <label for="inputPassword3" class="col-sm-4 control-label"></label>
+                                                                                    <div class="col-sm-6">
+                                                                                      <select class="form-control callbackType" name="">
+                                                                                        <option>Обратный звонок</option>
+                                                                                        <option>Написать письмо</option>
+                                                                                      </select>
+                                                                                    </div>
+                                                                                  </div>
+
                                                                                   <div class="form-group">
                                                                                     <label for="inputEmail3" class="col-sm-4 control-label">Как к Вам обращаться?*</label>
                                                                                     <div class="col-sm-6">
@@ -118,6 +130,8 @@ AppAsset::register($this);
                                                                                       <input type="text" class="form-control userCompany userFormField">
                                                                                     </div>
                                                                                   </div>
+
+
 
                                                                                   <div class="form-group">
                                                                                     <label for="inputPassword3" class="col-sm-4 control-label">Контактный телефон:</label>
