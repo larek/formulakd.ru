@@ -98,9 +98,9 @@ AppAsset::register($this);
                                                                         <a href="#callback" role="button" class="btn btn-primary btn-feedback fancybox">Свяжитесь с нами</a>
 
                                                                         <div class='header_phone'>
-                                                                        <span>8 (831) 281-58-98</span><br><span>8 (831) 281-58-78</span>
+                                                                        <span>8 (831) 281-58-98, 281-58-78</span>
                                                                           <br>
-                                                                        <span>г.Нижний Новгород,<br> пер.Мотальный, д. 10, пом. 8</span>
+                                                                        <span>г. Нижний Новгород,<br> пер. Мотальный, д. 10</span>
                                                                       </div>
 
                                                                         <div id='callback' style="display:none">
@@ -195,7 +195,7 @@ AppAsset::register($this);
                                                                           echo "<li class='menu-home'>".Html::a($item->title,['site/view','guid' => $item->guid])."</li>";
                                                                   }
 
-                                                                  echo "<li class='menu-home'>".Html::a('Новости',['site/news'])."</li>";
+                                                                  echo "<li class='menu-home'>".Html::a('Новости',['/news/index'])."</li>";
                                                                   ?>
 
 

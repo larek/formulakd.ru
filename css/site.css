@@ -97,18 +97,19 @@ a.desc:after {
 }
 
 .nav_wrap {
-    background: #3272B9;
+    background: #275087;
 }
 
 .btn-feedback {
-    width: 220px;
+    width: 205px;
     margin: 15px 0px 0px 0px;
+    background: #275087 !important;
 }
 
 .btn-feedback:hover{
   text-decoration: none;
   color: #CF2F31;
-  background: #FBFBFB;
+  background: #3272B9 !important;
 }
 
 .btn-white {
@@ -161,19 +162,22 @@ a.header_title {
     color: #1D7292;
 }
 
+a.header_title:hover {
+  text-decoration:none;
+}
+
 .header_title_wrap{
     display: inline-block;
     padding: 22px 0px 0px 28px;
 }
 
-.header_phone{
-  text-align: center;
-width: 220px;
-float: right;
-color: #1D7292;
-margin-top: 3px;
-font-weight: bold;
-font-size: 15px;
+.header_phone {
+    text-align: left;
+    width: 200px;
+    float: right;
+    margin-top: 3px;
+    font-size: 15px;
+    color: black;
 }
 
 .btn-frontPage {
@@ -327,7 +331,7 @@ span.separate {
 }
 
 .mainPageProfit>div>h2 {
-    color: rgb(29, 114, 146);
+    color: #275087;
 }
 .srvWrap {
 
