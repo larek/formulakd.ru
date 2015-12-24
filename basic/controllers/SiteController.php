@@ -9,6 +9,7 @@ use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
 use app\models\Pages;
+use app\models\Slider;
 
 use harrytang\fineuploader\FineuploaderHandler;
 
@@ -57,7 +58,7 @@ class SiteController extends Controller
     public function actionIndex()
     {
         $guid = Yii::$app->request->get('guid');
-        $model_child = Pages::find()->where(['parent_id' => 1])->all();
+        $model_child = Slider::find()->orderBy(['id'=>SORT_ASC])->all();
 
         return $this->render('index',[
             'model_child' => $model_child,
@@ -158,7 +159,7 @@ class SiteController extends Controller
 
             echo Yii::$app->mail->compose('layouts/callback',['name' => $_GET['name'], 'company' => $_GET['company'], 'phone' => $_GET['phone'], 'email' => $_GET['email'], 'subject' => $_GET['subject'], 'message' => $_GET['message'], 'callbackType' => $_GET['callbackType']])
             ->setFrom(['saitom@yandex.ru' => 'formulakd.ru'])
-            ->setTo(['t9101029991@gmail.com'])
+            ->setTo(['t9101029991@gmail.com', 'info@formulakd.ru'])
             ->setSubject('Обратный звонок с сайта')
             //->setHtmlBody('Заказ - <a href="http://'.$_SERVER['SERVER_NAME'].$url.'">Ссылка на заказ</a>')
             ->send();

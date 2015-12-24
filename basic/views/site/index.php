@@ -8,30 +8,23 @@ $this->title = 'ФормулаКД';
 $this->registerJsFile('/fotorama/fotorama.js',['depends' => [\yii\web\JqueryAsset::className()]]);
 
 $this->registerCssFile('/fotorama/fotorama.css');
-$slides = [
-  '/images/slider2/1.jpg',
-  '/images/slider2/2.jpg',
-  '/images/slider2/3.jpg',
-  '/images/slider2/4.jpg',
-  '/images/slider2/6.jpg',
-  '/images/slider2/6.jpg'
-];
+
 ?>
 <!-- Fotorama -->
 <div class="fotorama"  data-width="100%" data-fit="cover" data-ratio="3/1" data-max-width="100%" data-nav='false'>
 
   <?
   foreach($model_child as $item){
-    $i++;
-    $slide = $slides[$i];
-    ?>
-    <div data-img="<?= $slide?>">
 
-      <div class='slider_text'>
+    ?>
+    <div data-img="<?= $item->image?>">
+
+      <div class='slider_text' style='display:none;'>
         <div class='container'>
           <div class='slider_back'>
           <h2><?= $item->title?></h2>
           <?= $item->content?>
+          <br><br>
           <?= Html::a('Узнать больше',['site/view', 'guid' => $item->guid],['class' => 'btn-white'])?>
           </div>
         </div>
@@ -51,23 +44,23 @@ $slides = [
         <div class='frontPageText'>
           Конструкторское бюро "Формула КД" - это компания, которая образовалась в результате коллаборации опытных инженеров
         </div>
-        <a href='#' class='frontPageDivLink'>Подробнее</a>
+        <a href='/about' class='frontPageDivLink'>Подробнее</a>
     </div>
     <div class='col-md-4 frontPageDiv'>
-        <?= Html::a("ПАРТНЕРЫ","",['class' => 'btn-frontPage'])?>
+        <?= Html::a("ПАРТНЕРЫ",['site/view','guid'=>'partnery'],['class' => 'btn-frontPage'])?>
         <span class='separate'></span>
         <div class='frontPageText'>
           Конструкторское бюро "Формула КД" - это компания, которая образовалась в результате коллаборации опытных инженеров
         </div>
-        <a href='#' class='frontPageDivLink'>Подробнее</a>
+        <a href='partnery' class='frontPageDivLink'>Подробнее</a>
     </div>
     <div class='col-md-4 frontPageDiv'>
-        <?= Html::a("СОТРУДНИЧЕСТВО","",['class' => 'btn-frontPage'])?>
+        <?= Html::a("СОТРУДНИЧЕСТВО",['site/view','guid'=>'sotrudnicestvo'],['class' => 'btn-frontPage'])?>
         <span class='separate'></span>
         <div class='frontPageText'>
           Конструкторское бюро "Формула КД" - это компания, которая образовалась в результате коллаборации опытных инженеров
         </div>
-        <a href='#' class='frontPageDivLink'>Подробнее</a>
+        <a href='sotrudnicestvo' class='frontPageDivLink'>Подробнее</a>
     </div>
   </div>
 </div>

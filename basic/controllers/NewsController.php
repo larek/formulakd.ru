@@ -23,7 +23,7 @@ class NewsController extends \yii\web\Controller
 
     public function actionView($id){
       $model = News::find()->where(['guid' => $id])->one();
-      $title = $model->seo_title = "" ? $model->title : $model->seo_title;
+      $title = $model->seo_title == "" ? $model->title : $model->seo_title;
 
       return $this->render('view',[
         'model' => $model,
