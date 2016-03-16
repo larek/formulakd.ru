@@ -1,13 +1,14 @@
 <?php
 use app\components\SideMenu;
+use app\components\Callback;
 use yii\helpers\Html;
 /* @var $this yii\web\View */
 
 $this->title = 'ФормулаКД';
 
 $this->registerJsFile('/fotorama/fotorama.js',['depends' => [\yii\web\JqueryAsset::className()]]);
-
 $this->registerCssFile('/fotorama/fotorama.css');
+
 
 ?>
 <!-- Fotorama -->
@@ -68,6 +69,10 @@ $this->registerCssFile('/fotorama/fotorama.css');
 </div>
 <br><br>
 <div class='container'>
+
+
+  <?= Callback::widget();?>
+
 
 <div class='col-md-12 col-xs-12 text-center frontPageTitle'>
 <h2>ПРЕИМУЩЕСТВА РАБОТЫ С НАМИ</h2>

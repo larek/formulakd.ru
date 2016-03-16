@@ -106,9 +106,21 @@ a.desc:after {
     background: #275087 !important;
 }
 
+
 .btn-feedback:hover{
   text-decoration: none;
   color: #CF2F31;
+  background: #3272B9 !important;
+}
+
+.btn-custom-blue{
+    background: #275087 !important;
+    color: #fff;
+}
+
+.btn-custom-blue:hover{
+  text-decoration: none;
+  color: #fff !important;
   background: #3272B9 !important;
 }
 
@@ -392,4 +404,28 @@ span.separate {
     font-size: 21.92px;
     text-align: center;
     color: #428BCA;
+}
+
+.callback-wrapper {
+    width: 100%;
+    border: 5px solid #F2FD5C;
+    padding: 18px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.callback-title {
+    text-align: center;
+    font-size: 27px;
+    color: #3272B9;
+}
+
+.callback-subtitle {
+    text-align: center;
+    font-size: 24px;
+}
+
+.form-wrap {
+    width: 80%;
+    margin: 10px auto;
 }

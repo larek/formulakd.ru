@@ -44,6 +44,36 @@ $(document).ready(function(){
 	    }
 	});
 
+	$(".btn-widget-callback").click(function(){
+		name = $(".callback-widget-name").val();
+		phone = $(".callback-widget-phone").val();
+		email = "";
+        subject = "";
+        message = "";
+        callbackType = "";
+        company = "";
+
+		if(name=="" || phone==""){
+			alert('Заполните пожалуйста все поля');
+		}else{
+
+			$(".btn-widget-callback").html("Подождите");
+	     
+
+
+	        $.get("/site/callback",{name : name, company : company, phone : phone, email : email, subject : subject, message : message, callbackType: callbackType}).done(function(data){
+
+	           if (data == "1")
+	                $(".callback-widget-name").val("");
+	            	$(".callback-widget-phone").val("");
+
+	                $(".btn-widget-callback").html("Получить консультацию");
+	                $(".alert-widget-callback").css("display","block");
+	        });
+
+		}
+	});
+
 
 
 
