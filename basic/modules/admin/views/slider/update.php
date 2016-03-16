@@ -5,8 +5,8 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model app\modules\admin\models\Slider */
 
-$this->title = 'Update Slider: ' . ' ' . $model->title;
-$this->params['breadcrumbs'][] = ['label' => 'Sliders', 'url' => ['index']];
+$this->title = 'Редактировать слайд: ' . ' ' . $model->title;
+$this->params['breadcrumbs'][] = ['label' => 'Слайды', 'url' => ['index']];
 $this->params['breadcrumbs'][] = ['label' => $model->title, 'url' => ['view', 'id' => $model->id]];
 $this->params['breadcrumbs'][] = 'Update';
 ?>

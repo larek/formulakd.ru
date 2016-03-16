@@ -7,7 +7,7 @@ use yii\grid\GridView;
 /* @var $searchModel app\modules\admin\models\SliderSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Sliders';
+$this->title = 'Слайды';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="slider-index">
@@ -16,19 +16,27 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a('Create Slider', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Создать слайд', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
         'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
+            //['class' => 'yii\grid\SerialColumn'],
 
-            'id',
+            //'id',
+
+            [
+              'label' => 'Слайд',
+              'format' => 'raw',
+              'value' => function($data){
+                return Html::img("/uploads_slider/300x100/".$data->image);
+              }
+            ],
             'title',
-            'content:ntext',
-            'guid',
+            //'content:ntext',
+            //'guid',
             'dateCreated',
             // 'image',
 

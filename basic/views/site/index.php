@@ -17,15 +17,17 @@ $this->registerCssFile('/fotorama/fotorama.css');
   foreach($model_child as $item){
 
     ?>
-    <div data-img="<?= $item->image?>">
+    <div data-img="/uploads_slider/1500x500/<?= $item->image?>">
 
-      <div class='slider_text' style='display:none;'>
+      <div class='slider_text' style='display:<?= $item->content=="" ? "none" : "block";?>'>
         <div class='container'>
           <div class='slider_back'>
-          <h2><?= $item->title?></h2>
+          <h3 style='text-transform:uppercase;'><?= $item->title?></h3>
           <?= $item->content?>
-          <br><br>
-          <?= Html::a('Узнать больше',['site/view', 'guid' => $item->guid],['class' => 'btn-white'])?>
+          <br>
+          <div class="row">
+          <?= Html::a('Узнать больше',$item->guid,['class' => 'btn-white'])?>
+          </div>
           </div>
         </div>
       </div>
@@ -42,7 +44,7 @@ $this->registerCssFile('/fotorama/fotorama.css');
         <?= Html::a("О КОМПАНИИ",['site/view','guid'=>'about'],['class' => 'btn-frontPage'])?>
         <span class='separate'></span>
         <div class='frontPageText'>
-          Конструкторское бюро "Формула КД" - это компания, которая образовалась в результате коллаборации опытных инженеров
+          «Формула КД» - это компания, которая образовалась в результате коллаборации опытных инженеров-конструкторов, расчетчиков и инженеров-технологов с целью предоставления профессиональных услуг по разработке, сопровождению или реализации инженерно-технических проектов.
         </div>
         <a href='/about' class='frontPageDivLink'>Подробнее</a>
     </div>
@@ -50,7 +52,7 @@ $this->registerCssFile('/fotorama/fotorama.css');
         <?= Html::a("ПАРТНЕРЫ",['site/view','guid'=>'partnery'],['class' => 'btn-frontPage'])?>
         <span class='separate'></span>
         <div class='frontPageText'>
-          Конструкторское бюро "Формула КД" - это компания, которая образовалась в результате коллаборации опытных инженеров
+          Мы имеем партнерские соглашения с ведущими государственными университетами, лабораториями и промышленными производствами, что позволяет комплексно использовать последние научно-технические разработки, современное оборудование, профессионализм и интеллектуальные ресурсы.
         </div>
         <a href='partnery' class='frontPageDivLink'>Подробнее</a>
     </div>
@@ -58,7 +60,7 @@ $this->registerCssFile('/fotorama/fotorama.css');
         <?= Html::a("СОТРУДНИЧЕСТВО",['site/view','guid'=>'sotrudnicestvo'],['class' => 'btn-frontPage'])?>
         <span class='separate'></span>
         <div class='frontPageText'>
-          Конструкторское бюро "Формула КД" - это компания, которая образовалась в результате коллаборации опытных инженеров
+          Мы всегда открыты ко взаимовыгодному сотрудничеству с промышленными производствами с целью внедрения и предложения на рынок продукта с под­робной сопроводительной документацией и описанием технологических про­цессов, необходимых для производства серийных образцов. 
         </div>
         <a href='sotrudnicestvo' class='frontPageDivLink'>Подробнее</a>
     </div>

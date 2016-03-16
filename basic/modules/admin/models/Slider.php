@@ -44,11 +44,11 @@ class Slider extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'title' => 'Title',
-            'content' => 'Content',
-            'guid' => 'Guid',
-            'dateCreated' => 'Date Created',
-            'image' => 'Image',
+            'title' => 'Заголовок',
+            'content' => 'Текст',
+            'guid' => 'Ссылка',
+            'dateCreated' => 'Дата создания',
+            'image' => 'Слайд',
         ];
     }
 }

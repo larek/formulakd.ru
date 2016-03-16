@@ -24,7 +24,7 @@ $(document).ready(function()
 
 	        console.log(data);
 	        $(".file").html("<img src=\"/uploads_slider/300x100/"+$.parseJSON(xhr.responseText)+"\">");
-          $(".image").val("/uploads_slider/1500x500/"+$.parseJSON(xhr.responseText));
+          $(".image").val($.parseJSON(xhr.responseText));
 
         }
 	});
@@ -33,7 +33,10 @@ $(document).ready(function()
 
 <div class="slider-form">
 <div id="fileuploader">Upload</div>
-<div class='file'></div>
+<div class='file'>
+	<?= $model->image ? Html::img("/uploads_slider/300x100/".$model->image) : ""?>
+</div>
+
     <?php $form = ActiveForm::begin(); ?>
 
     <?= $form->field($model, 'title')->textInput(['maxlength' => true]) ?>
@@ -54,10 +57,12 @@ $(document).ready(function()
 
     <?= $form->field($model, 'dateCreated')->textInput(['value' => date("Y-m-d")]) ?>
 
-    <?= $form->field($model, 'image')->textInput(['maxlength' => true,'class' => 'image form-control']) ?>
+		<div style="display:none">
+			<?= $form->field($model, 'image')->textInput(['maxlength' => true,'class' => 'image form-control']) ?>
 
+		</div>
     <div class="form-group">
-        <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
+        <?= Html::submitButton($model->isNewRecord ? 'Cоздать' : 'Сохранить', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>

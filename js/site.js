@@ -1,4 +1,12 @@
 $(document).ready(function(){
+
+  // var HeightSliderTextBlock = $(window).width()/3 - 100;
+  // console.log(HeightSliderTextBlock);
+  // $(".slider_back").each(function(){
+  //   $(this).height(HeightSliderTextBlock);
+  // });
+
+
     $(".fancybox").fancybox({
 		maxWidth	: 800,
 		maxHeight	: 600,

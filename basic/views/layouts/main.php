@@ -98,6 +98,7 @@ AppAsset::register($this);
                                                                         <a href="#callback" role="button" class="btn btn-primary btn-feedback fancybox">Свяжитесь с нами</a>
 
                                                                         <div class='header_phone'>
+                                                                          <br>
                                                                         <span>8 (831) 281-58-98, 281-58-78</span>
                                                                           <br>
                                                                         <span>г. Нижний Новгород,<br> пер. Мотальный, д. 10</span>
@@ -264,7 +265,7 @@ AppAsset::register($this);
                         <div class="ask-mobile show-mobile request-brochure">
                                 <a href="/contact/brochure-request/" class="">Request a Brochure</a>
                         </div>
-                        <footer class="content-info footeren" role="contentinfo" style='display:none;'>
+                        <footer class="content-info footeren" role="contentinfo" style='display:block;'>
                                 <div class="container">
                                         <div class="padding">
 
@@ -294,12 +295,64 @@ AppAsset::register($this);
 
 
                                                                         </div>
-<!-- BEGIN JIVOSITE CODE {literal} -->
-<script type='text/javascript'>
-(function(){ var widget_id = 'rAeO77zsbv';
-var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);})();</script>
-<!-- {/literal} END JIVOSITE CODE -->
+                                                                        <script>
+                                                                          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                                                                          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                                                                          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                                                                          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+                                                                          ga('create', 'UA-75143825-1', 'auto');
+                                                                          ga('require', 'displayfeatures');
+                                                                          ga('send', 'pageview');
+
+                                                                        /* Accurate bounce rate by time */
+                                                                        if (!document.referrer ||
+                                                                             document.referrer.split('/')[2].indexOf(location.hostname) != 0)
+                                                                         setTimeout(function(){
+                                                                         ga('send', 'event', 'Новый посетитель', location.pathname);
+                                                                         }, 15000);
+
+                                                                        </script>
+
+                                                                        <!-- BEGIN JIVOSITE CODE -->
+                                                                        <script type='text/javascript'>
+                                                                        (function(){ var widget_id = 'rAeO77zsbv';
+                                                                        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);})();</script>
+                                                                        <!--  END JIVOSITE CODE -->                                                                        
+
+<link rel="stylesheet" href="//cdn.callbackhunter.com/widget2/tracker.css">
+<script type="text/javascript"
+src="//cdn.callbackhunter.com/widget2/tracker.js" charset="UTF-8"></script >
+<script type="text/javascript">var hunter_code="929e99ad051da7948320d1b27f0b8a39";</script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter33543458 = new Ya.Metrika({
+                    id:33543458,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/33543458" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
 <?php $this->endBody() ?>
 </body>
 </html>

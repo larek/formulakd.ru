@@ -23,5 +23,7 @@ $this->title = $title;
 </div>
 
 <br><br><br>
-
+<div class='container'>
 <?= $model->content?>
+</div>
+<br><br><br>

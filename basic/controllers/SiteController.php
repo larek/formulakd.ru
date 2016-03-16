@@ -58,7 +58,7 @@ class SiteController extends Controller
     public function actionIndex()
     {
         $guid = Yii::$app->request->get('guid');
-        $model_child = Slider::find()->orderBy(['id'=>SORT_ASC])->all();
+        $model_child = Slider::find()->orderBy(['dateCreated'=>SORT_DESC])->all();
 
         return $this->render('index',[
             'model_child' => $model_child,
@@ -67,7 +67,8 @@ class SiteController extends Controller
     }
 
     public function actionSimplePage(){
-        return $this->render('simple-page');
+        return $this->redirect(['site/index']);
+        //return $this->render('simple-page');
     }
 
     public function actionLogin()

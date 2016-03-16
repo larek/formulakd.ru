@@ -42,7 +42,7 @@ class SliderSearch extends Slider
     public function search($params)
     {
         $query = Slider::find();
-
+        $query->orderBy(['dateCreated' => SORT_DESC]);
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
         ]);
