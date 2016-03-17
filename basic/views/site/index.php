@@ -12,7 +12,7 @@ $this->registerCssFile('/fotorama/fotorama.css');
 
 ?>
 <!-- Fotorama -->
-<div class="fotorama"  data-width="100%" data-fit="cover" data-ratio="3/1" data-max-width="100%" data-nav='false'>
+<div class="fotorama"  data-width="100%" data-fit="cover" data-ratio="3/1" data-max-width="100%" data-nav='false' data-autoplay="3000">
 
   <?
   foreach($model_child as $item){
