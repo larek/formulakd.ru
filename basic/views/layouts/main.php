@@ -271,7 +271,7 @@ AppAsset::register($this);
 
                                                 <div class="row top-margin">
                                                         <div class="col-sm-6 col-md-6 col-lg-6">
-                                                                © ООО «Формула КД». Все права защиищены. <?= date("Y"); ?></div>
+                                                                © ООО «Формула КД». Все права защищены. <?= date("Y"); ?></div>
                                                                         <div class="col-sm-6 col-md-6 col-lg-6 pull-right">
                                                                                 <section class="widget-1 widget-first widget-last widget-odd pull-right widget nav_menu-2 widget_nav_menu">
                                                                                         <ul id="menu-footer" class="menu">
