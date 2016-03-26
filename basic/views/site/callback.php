@@ -13,9 +13,11 @@ $this->title = $title;
 
 <h1><?= $model->title;?></h1>
 
-<?= Callback::widget();?>
 
 <?= $model->content?>
+
+<?= Callback::widget();?>
+
 
 </main>
 </div>
