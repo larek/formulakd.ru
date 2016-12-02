@@ -16,16 +16,24 @@ use dosamigos\tinymce\TinyMce;
     <?= $form->field($model, 'title')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'short_content')->widget(TinyMce::className(), [
-    'options' => ['rows' => 12],
-    'language' => 'ru',
-    'clientOptions' => [
-        'plugins' => [
-            "advlist autolink lists link charmap print preview anchor",
-            "searchreplace visualblocks code fullscreen",
-            "insertdatetime media table contextmenu paste"
-        ],
-        'toolbar' => "undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image"
-    ]
+'options' => ['rows' => 12],
+'language' => 'ru',
+'clientOptions' => [
+    'plugins' => [
+        "advlist autolink lists link charmap print preview anchor",
+        "searchreplace visualblocks code fullscreen",
+        "insertdatetime media table contextmenu paste image responsivefilemanager filemanager"
+    ],
+    'toolbar' => "undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | responsivefilemanager link image",
+    'external_filemanager_path' => '/responsive_filemanager/filemanager/',
+    'filemanager_title' => 'Responsive Filemanager',
+        'external_plugins' => [
+            // Кнопка загрузки файла в диалоге вставки изображения.
+            'filemanager' => '/responsive_filemanager/filemanager/plugin.min.js',
+            // Кнопка загрузки файла в тулбаре.
+            'responsivefilemanager' => '/responsive_filemanager/tinymce/plugins/responsivefilemanager/plugin.min.js',
+         ],
+]
 ]);?>
 
     <?= $form->field($model, 'content')->widget(TinyMce::className(), [
@@ -35,9 +43,17 @@ use dosamigos\tinymce\TinyMce;
     'plugins' => [
         "advlist autolink lists link charmap print preview anchor",
         "searchreplace visualblocks code fullscreen",
-        "insertdatetime media table contextmenu paste image"
+        "insertdatetime media table contextmenu paste image responsivefilemanager filemanager"
     ],
-    'toolbar' => "undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image"
+    'toolbar' => "undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | responsivefilemanager link image",
+    'external_filemanager_path' => '/responsive_filemanager/filemanager/',
+    'filemanager_title' => 'Responsive Filemanager',
+        'external_plugins' => [
+            // Кнопка загрузки файла в диалоге вставки изображения.
+            'filemanager' => '/responsive_filemanager/filemanager/plugin.min.js',
+            // Кнопка загрузки файла в тулбаре.
+            'responsivefilemanager' => '/responsive_filemanager/tinymce/plugins/responsivefilemanager/plugin.min.js',
+         ],
 ]
 ]);?>
 
