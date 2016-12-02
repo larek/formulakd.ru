@@ -24,7 +24,8 @@ use yii\helpers\Html;
 
     <!-- Footer -->
     <div class="panel-footer">
-        <small><?= $model->dateCreated?></small>
+        <? $dateCreated = explode("-", $model->dateCreated);?>
+        <small><?= $dateCreated[2]."-".$dateCreated[1]."-".$dateCreated[0];?></small>
     </div>
     <!-- /Footer -->
 
