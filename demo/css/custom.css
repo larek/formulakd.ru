@@ -22,6 +22,11 @@ body {
     padding: 40px 20px;
 }
 
+.dark-blue-text {
+    color: #1f518d;
+}
+
+
 .dark-panel{
     background: #000000;
     color: white;
@@ -128,15 +133,34 @@ body {
 
 @media (min-width: 992px) {
 
+    .navbar{
+        padding: 0px;
+    }
+    .nav-link{
+        border-left:1px solid #1d1d1e;
+    }
+
+    .nav-item{
+        border: none !important;
+        padding: 7px 0px;
+        width:200px;
+    }
     .navbar-nav {
         display: table;
         position: relative;
         width: 100%;
     }
+
+    .dark-blue-item{
+        background: #1f518d;
+    }
+    .dark-blue-item a{
+        color: white!important;
+    }
     
-		.navbar-nav:last-child {
-		    border-right: 1px solid #1d1d1e;
-		}
+	.navbar-nav:last-child {
+	    border-right: 1px solid #1d1d1e;
+	}
 
     li.nav-item {
         display: table-cell;
