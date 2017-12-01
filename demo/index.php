@@ -314,49 +314,4 @@
             </div>
         </div>
     </div>
-    <div class="map-wrapper">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-7"></div>
-                <div class="col-md-4">
-                    <div class="contact-block">
-                        <div class="row">
-                            <div class="col-md-12 text-center">
-                                <span class="contact-title">Наши контакты</span>
-                            </div>
-                        </div>
-                        <div class="row mt-3">
-                            <div class="col-md-2"><img src="./images/contact-icon-1.svg" class='img-fluid' alt=""></div>
-                            <div class="col-md-10">
-                                <b>Адрес КБ</b>
-                                <br> г. Нижний Новгород
-                                <br> пер. Мотальный, д. 10, пом. 8-9
-                            </div>
-                        </div>
-                        <div class="row mt-3">
-                            <div class="col-md-2"><img src="./images/contact-icon-2.svg" class='img-fluid' alt=""></div>
-                            <div class="col-md-10">
-                                <b>Адрес производства</b>
-                                <br> г. Нижний Новгород,
-                                <br> Московское шоссе, д.105
-                            </div>
-                        </div>
-                        <div class="row mt-3">
-                            <div class="col-md-2"><img src="./images/contact-icon-3.svg" class='img-fluid' alt=""></div>
-                            <div class="col-md-10">
-                                info@formulakd.ru
-                            </div>
-                        </div>
-                        <div class="row mt-3">
-                            <div class="col-md-2"><img src="./images/contact-icon-4.svg" class='img-fluid' alt=""></div>
-                            <div class="col-md-10">
-                                8 (831) 281-58-78
-                                <br> 8 (831) 281-58-98
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 <? include "footer.php"; ?>
