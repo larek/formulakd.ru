@@ -1,5 +1,12 @@
 body {
     padding-bottom: 20px;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.container{
+    max-width:1000px;
 }
 
 .blue-panel {
@@ -75,6 +82,7 @@ body {
 
 .menu-wrap {
     border-top: 1px solid #1D1D1E;
+    border-bottom: 1px solid #1D1D1E;
 }
 
 .all-width{
@@ -131,7 +139,73 @@ body {
     justify-content: center;
 }
 
+.blue-back{
+    width: 95%;
+    height:100%;
+    position: absolute;
+    background: #009bd9;
+    z-index: -1;
+}
+
+.single-description{
+    padding:20px;
+}
+
+.col-md-12.title-wrap > h1 {
+    font-size: 1.6em;
+    padding: 15px 0px;
+    border-bottom: 2px solid #1d1d1e;
+    color: #044a8f;
+}
+
+.dm-value {
+    font-size: 2em;
+    padding: 10px 0px;
+    color: #044a8e;
+    font-weight: bold;
+}
+
+.dm-caption {
+    font-size: 1.2em;
+    color: #575756;
+}
+
+.prop-caption {
+    color: #b8c5c6;
+    font-size: 1.2em;
+}
+
+.prop-value {
+    color: white;
+    padding: 5px 0px;
+    font-size: 2em;
+}
+
+.prop-container{
+    margin-bottom:20px;
+}
+
+.single-description-list li {
+    margin: 15px 0px;
+}
+
+.single-description-list {
+    padding: 0px 0px 0px 15px;
+}
+
+.btn-prev-bost {
+    border: 1px solid #188ad6;
+    color: #188ad6;
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 10px 0px;
+    font-weight: bold;
+}
+
 @media (min-width: 992px) {
+    .single-desctiption-row{
+        position: absolute;
+    }
 
     .navbar{
         padding: 0px;
