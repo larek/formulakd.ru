@@ -16,7 +16,7 @@
     <div class="container mt-3">
         <div class="row">
             <div class="col-md-3 col-6 text-left">
-                <img src="./images/logo.svg" alt="" class='img-fluid'>
+                <img src="./images/logo-fkd.svg" alt="" class='img-fluid'>
             </div>
             <div class="col-6 d-sm-none small">
                 8 (831) 281-58-98
