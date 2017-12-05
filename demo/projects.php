@@ -53,7 +53,9 @@
     </div>
     <div class="row">
       <div class="col-md-12 text-center mt-4">
+        <div class="btn-prev-bost">
         Показать еще
+        </div>
       </div>
     </div>
   </div>
