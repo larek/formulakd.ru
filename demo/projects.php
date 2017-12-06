@@ -28,27 +28,27 @@
     <div class="row">
       <div class="col-md-8 mt-4">
         <img src="http://placehold.it/730x292" class='img-fluid' alt="">
+        <div class='projects-description'>Установка для смешивания двухкомпонентного композиционного клея</div>
       </div>
       <div class="col-md-4 mt-4">
         <img src="http://placehold.it/350x292" class='img-fluid' alt="">
+        <div class='projects-description'>Стенд для статических испытаний замка шасси ЯК-152</div>
       </div>
       <div class="col-md-4 mt-4">
         <img src="http://placehold.it/350x292" class='img-fluid' alt="">
+        <div class='projects-description'>Кислородная капсула</div>
       </div>
       <div class="col-md-8 mt-4">
         <img src="http://placehold.it/730x292" class='img-fluid' alt="">
+        <div class='projects-description'>Камера испытательная на воздействие песка и пыли</div>
       </div>
       <div class="col-md-8 mt-4">
         <img src="http://placehold.it/730x292" class='img-fluid' alt="">
+        <div class='projects-description'>Аэродинамический стенд</div>
       </div>
       <div class="col-md-4 mt-4">
         <img src="http://placehold.it/350x292" class='img-fluid' alt="">
-      </div>
-      <div class="col-md-4 mt-4">
-        <img src="http://placehold.it/350x292" class='img-fluid' alt="">
-      </div>
-      <div class="col-md-8 mt-4">
-        <img src="http://placehold.it/730x292" class='img-fluid' alt="">
+        <div class='projects-description'>Здесь что-то еще</div>
       </div>
     </div>
     <div class="row">

@@ -202,6 +202,17 @@ body {
     font-weight: bold;
 }
 
+.projects-description {
+    margin-top: -55px;
+    padding: 10px;
+    background: #000000b5;
+    position: relative;
+    color: white;
+    height: 55px;
+    display: flex;
+    align-items: center;
+}
+
 @media (min-width: 992px) {
     .single-desctiption-row{
         position: absolute;
