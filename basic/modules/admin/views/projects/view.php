@@ -39,11 +39,31 @@ $this->params['breadcrumbs'][] = $this->title;
             'list1',
             'list2',
             'list3',
-            'photo1',
-            'photo2',
-            'photo3',
-            'photo4',
-            'photo5',
+            [
+                'attribute' => 'photo1',
+                'format' => 'raw',
+                'value' => $model->photo1 == "" ? "" : Html::img("/uploads/300x200/". $model->photo1)
+            ],
+            [
+                'attribute' => 'photo2',
+                'format' => 'raw',
+                'value' => $model->photo1 == "" ? "" : Html::img("/uploads/300x200/". $model->photo1)
+            ],
+            [
+                'attribute' => 'photo3',
+                'format' => 'raw',
+                'value' => $model->photo1 == "" ? "" : Html::img("/uploads/300x200/". $model->photo1)
+            ],
+            [
+                'attribute' => 'photo4',
+                'format' => 'raw',
+                'value' => $model->photo1 == "" ? "" : Html::img("/uploads/300x200/". $model->photo1)
+            ],
+            [
+                'attribute' => 'photo5',
+                'format' => 'raw',
+                'value' => $model->photo1 == "" ? "" : Html::img("/uploads/300x200/". $model->photo1)
+            ],
             'youtube',
         ],
     ]) ?>
