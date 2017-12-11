@@ -41,7 +41,7 @@ class Projects extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['id', 'title'], 'required'],
+            [['title'], 'required'],
             [['id'], 'integer'],
             [['description'], 'string'],
             [['title', 'demensions', 'paramtitle1', 'paramvalue1', 'paramtitle2', 'paramvalue2', 'list1', 'list2', 'list3', 'photo1', 'photo2', 'photo3', 'photo4', 'photo5', 'youtube'], 'string', 'max' => 250],
@@ -59,17 +59,17 @@ class Projects extends \yii\db\ActiveRecord
             'description' => 'Описание',
             'demensions' => 'Габариты',
             'paramtitle1' => 'Характеристика заголовок 1',
-            'paramvalue1' => 'Характеристика',
-            'paramtitle2' => 'Paramtitle2',
-            'paramvalue2' => 'Paramvalue2',
-            'list1' => 'List1',
-            'list2' => 'List2',
-            'list3' => 'List3',
-            'photo1' => 'Photo1',
-            'photo2' => 'Photo2',
-            'photo3' => 'Photo3',
-            'photo4' => 'Photo4',
-            'photo5' => 'Photo5',
+            'paramvalue1' => 'Характеристика значение 1',
+            'paramtitle2' => 'Характеристика заголовок 2',
+            'paramvalue2' => 'Характеристика значение 2',
+            'list1' => 'Список 1',
+            'list2' => 'Список 2',
+            'list3' => 'Список 3',
+            'photo1' => 'Фотография главная',
+            'photo2' => 'Фотография обложки большая',
+            'photo3' => 'Фотография обложки квадратная',
+            'photo4' => 'Фото товара 1',
+            'photo5' => 'Фото товара 2',
             'youtube' => 'Youtube',
         ];
     }
