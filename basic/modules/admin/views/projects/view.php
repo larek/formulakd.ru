@@ -47,22 +47,27 @@ $this->params['breadcrumbs'][] = $this->title;
             [
                 'attribute' => 'photo2',
                 'format' => 'raw',
-                'value' => $model->photo1 == "" ? "" : Html::img("/uploads/300x200/". $model->photo1)
+                'value' => $model->photo2 == "" ? "" : Html::img("/uploads/300x200/". $model->photo2)
             ],
             [
                 'attribute' => 'photo3',
                 'format' => 'raw',
-                'value' => $model->photo1 == "" ? "" : Html::img("/uploads/300x200/". $model->photo1)
+                'value' => $model->photo3 == "" ? "" : Html::img("/uploads/300x200/". $model->photo3)
             ],
             [
                 'attribute' => 'photo4',
                 'format' => 'raw',
-                'value' => $model->photo1 == "" ? "" : Html::img("/uploads/300x200/". $model->photo1)
+                'value' => $model->photo4 == "" ? "" : Html::img("/uploads/300x200/". $model->photo4)
             ],
             [
                 'attribute' => 'photo5',
                 'format' => 'raw',
-                'value' => $model->photo1 == "" ? "" : Html::img("/uploads/300x200/". $model->photo1)
+                'value' => $model->photo5 == "" ? "" : Html::img("/uploads/300x200/". $model->photo5)
+            ],
+            [
+                'attribute' => 'photo6',
+                'format' => 'raw',
+                'value' => $model->photo6 == "" ? "" : Html::img("/uploads/300x200/". $model->photo6)
             ],
             'youtube',
         ],

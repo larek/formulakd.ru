@@ -23,6 +23,7 @@ use Yii;
  * @property string $photo3
  * @property string $photo4
  * @property string $photo5
+ * @property string $photo6
  * @property string $youtube
  */
 class Projects extends \yii\db\ActiveRecord
@@ -44,7 +45,7 @@ class Projects extends \yii\db\ActiveRecord
             [['title'], 'required'],
             [['id'], 'integer'],
             [['description'], 'string'],
-            [['title', 'demensions', 'paramtitle1', 'paramvalue1', 'paramtitle2', 'paramvalue2', 'list1', 'list2', 'list3', 'photo1', 'photo2', 'photo3', 'photo4', 'photo5', 'youtube'], 'string', 'max' => 250],
+            [['title', 'demensions', 'paramtitle1', 'paramvalue1', 'paramtitle2', 'paramvalue2', 'list1', 'list2', 'list3', 'photo1', 'photo2', 'photo3', 'photo4', 'photo5', 'photo6', 'youtube'], 'string', 'max' => 250],
         ];
     }
 
@@ -66,10 +67,11 @@ class Projects extends \yii\db\ActiveRecord
             'list2' => 'Список 2',
             'list3' => 'Список 3',
             'photo1' => 'Фотография главная',
-            'photo2' => 'Фотография обложки большая',
-            'photo3' => 'Фотография обложки квадратная',
+            'photo2' => 'Фотография обложки большая (730x292px)',
+            'photo3' => 'Фотография обложки маленькая (350x292px)',
             'photo4' => 'Фото товара 1',
             'photo5' => 'Фото товара 2',
+            'photo6' => 'Фото youtube',
             'youtube' => 'Youtube',
         ];
     }

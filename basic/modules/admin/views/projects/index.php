@@ -22,13 +22,24 @@ $this->params['breadcrumbs'][] = $this->title;
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
         'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
 
-            'id',
-            'title',
-            'description:ntext',
+            [
+                'attribute' => 'photo1',
+                'format' => 'raw',
+                'value' => function($data){
+                    return $data->photo1 !== "" ? Html::img("/uploads/300x200/".$data->photo1, ['style' => 'width:100px']) : Html::img("http://placehold.it/300x200",['style' => 'width: 100px']);
+                }
+            ],
+            [
+                'attribute' => "title",
+                'format' => 'raw',
+                'value' => function($data){
+                    return Html::a($data->title, ['update', 'id' => $data->id]);
+                }
+            ],
+            // 'description:ntext',
             'demensions',
-            'paramtitle1',
+            // 'paramtitle1',
             // 'paramvalue1',
             // 'paramtitle2',
             // 'paramvalue2',
