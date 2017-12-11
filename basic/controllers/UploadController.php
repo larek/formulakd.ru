@@ -4,7 +4,6 @@ namespace app\controllers;
 use \yii\web\Controller;
 use \yii\imagine\Image;
 
-
 class UploadController extends Controller{
 
     public function beforeAction($action)
@@ -19,7 +18,7 @@ class UploadController extends Controller{
     }
 
 	public function actionResize(){
-	header("Access-Control-Allow-Origin:*"); 
+	 header("Access-Control-Allow-Origin:*"); 
        echo $this->uploadFiles($_FILES);
     }
 
@@ -27,10 +26,10 @@ class UploadController extends Controller{
     protected function uploadFiles($FILES){
       if($FILES['image']['name']!=""){
               $errors='';
-              $file_name = $_FILES['image']['name'];
-              $file_size = $_FILES['image']['size'];
-              $file_tmp = $_FILES['image']['tmp_name'];
-              $file_ext = pathinfo($_FILES['image']['name'])['extension'];
+              $file_name = $FILES['image']['name'];
+              $file_size = $FILES['image']['size'];
+              $file_tmp = $FILES['image']['tmp_name'];
+              $file_ext = pathinfo($FILES['image']['name'])['extension'];
               $file_new_name = md5($file_name)."_".time().".".$file_ext; 
 
               $expensions= array("jpeg","jpg","png","JPEG","JPG","PNG");
