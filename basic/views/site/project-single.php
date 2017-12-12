@@ -55,9 +55,9 @@ $this->title = $model->title
       </div>
     </div>
     <div class="row">
-      <div class="col-md-4 col-sm-4 mt-4"><a data-fancybox="group" href="https://youtu.be/CgWGygv_eGU"><img src="./images/single-image-1.jpg" class='img-fluid' alt=""></a></div>
-      <div class="col-md-4 col-sm-4 mt-4"><a data-fancybox='group' href="./images/single-image-2.jpg"><img src="./images/single-image-2.jpg" class='img-fluid' alt=""></a></div>
-      <div class="col-md-4 col-sm-4 mt-4"><a data-fancybox='group' href="./images/single-image-3.jpg"><img src="./images/single-image-3.jpg" class='img-fluid' alt=""></a></div>
+      <div class="col-md-4 col-sm-4 mt-4"><a data-fancybox="group" href="/uploads/<?= $model->photo6?>"><img src="/uploads/300x200/<?= $model->photo6?>" class='img-fluid' alt=""></a></div>
+      <div class="col-md-4 col-sm-4 mt-4"><a data-fancybox='group' href="/uploads/<?= $model->photo4?>"><img src="/uploads/300x200/<?= $model->photo4?>" class='img-fluid' alt=""></a></div>
+      <div class="col-md-4 col-sm-4 mt-4"><a data-fancybox='group' href="/uploads/<?= $model->photo5?>"><img src="/uploads/300x200/<?= $model->photo5?>" class='img-fluid' alt=""></a></div>
     </div>
     <div class="row mt-4">
       <div class="col-md-6 col-6 text-center">
