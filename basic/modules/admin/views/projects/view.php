@@ -39,6 +39,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'list1',
             'list2',
             'list3',
+            'big',
             [
                 'attribute' => 'photo1',
                 'format' => 'raw',

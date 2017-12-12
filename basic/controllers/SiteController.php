@@ -10,6 +10,7 @@ use app\models\LoginForm;
 use app\models\ContactForm;
 use app\models\Pages;
 use app\models\Slider;
+use app\modules\admin\models\Projects;
 
 use harrytang\fineuploader\FineuploaderHandler;
 
@@ -49,6 +50,16 @@ class SiteController extends Controller
                 'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
             ],
         ];
+    }
+
+    public function actionProjects(){
+        
+        $model = Projects::find()->all();
+
+        $this->layout = 'main-2017';
+        return $this->render('projects', [
+            'model' => $model
+        ]);
     }
 
     public function actionNews(){

@@ -213,6 +213,10 @@ body {
     align-items: center;
 }
 
+.project-item{
+    cursor:pointer;
+}
+
 @media (min-width: 992px) {
     .single-desctiption-row{
         position: absolute;

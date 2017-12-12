@@ -33,6 +33,8 @@ $this->registerJsFile('/js/single-project.js');
             <?= $form->field($model, 'list2')->textInput(['maxlength' => true]) ?>
 
             <?= $form->field($model, 'list3')->textInput(['maxlength' => true]) ?>
+            
+            <?= $form->field($model, 'big')->checkbox() ?>
 
         </div>
         <div class="col-md-6">
