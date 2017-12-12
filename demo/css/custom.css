@@ -217,6 +217,14 @@ body {
     cursor:pointer;
 }
 
+.project-description {
+    min-height: 120px;
+}
+
+.project-image{
+    min-height:550px;
+}
+
 @media (min-width: 992px) {
     .single-desctiption-row{
         position: absolute;

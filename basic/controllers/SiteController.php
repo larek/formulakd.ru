@@ -62,6 +62,14 @@ class SiteController extends Controller
         ]);
     }
 
+    public function actionProjectSingle($id){
+        $model = Projects::findOne($id);
+        $this->layout = 'main-2017';
+        return $this->render('project-single',[
+            'model' => $model
+        ]);
+    }
+
     public function actionNews(){
       return $this->render('news');
     }
