@@ -2,7 +2,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
-$this->registerJsFile('/js/single-project.js');
+$this->registerJsFile('/js/single-project.js?v=1.0.1');
 /* @var $this yii\web\View */
 /* @var $model app\modules\admin\models\Projects */
 /* @var $form yii\widgets\ActiveForm */

@@ -11,6 +11,8 @@ use app\models\ContactForm;
 use app\models\Pages;
 use app\models\Slider;
 use app\modules\admin\models\Projects;
+use \yii\imagine\Image;
+
 
 use harrytang\fineuploader\FineuploaderHandler;
 
@@ -50,6 +52,25 @@ class SiteController extends Controller
                 'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
             ],
         ];
+    }
+
+    public function actionResizeAllImages(){
+        $mode = \Imagine\Image\ManipulatorInterface::THUMBNAIL_INSET;
+        $model = Projects::find()->all();
+        foreach($model as $item){
+            if($item->photo2 !== ""){
+            $img = $_SERVER['DOCUMENT_ROOT']."/uploads/".$item->photo2;
+            Image::thumbnail($img, 730, 292, $mode)->save('uploads/730x292/'. $item->photo2, ['quality' => 90]);
+            Image::thumbnail($img, 350, 292, $mode)->save('uploads/350x292/'. $item->photo2, ['quality' => 90]);
+            echo $item->photo2."<br>"; //730x292px
+            }
+            if($item->photo3 !== ""){
+            $img = $_SERVER['DOCUMENT_ROOT']."/uploads/".$item->photo3;
+            Image::thumbnail($img, 730, 292, $mode)->save('uploads/730x292/'. $item->photo3, ['quality' => 90]);
+            Image::thumbnail($img, 350, 292, $mode)->save('uploads/350x292/'. $item->photo3, ['quality' => 90]);
+            echo $item->photo3."<br>"; //350x292px
+            }
+        }
     }
 
     public function action2017(){

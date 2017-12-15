@@ -31,10 +31,10 @@ $this->title = "Выполненные проекты";
       foreach($model as $item):
         if($item->big == 1){
           $itemClass = 'col-md-8';
-          $itemCover = $item->photo2 == "" ? "http://placehold.it/730x292" : "/uploads/".$item->photo2;
+          $itemCover = $item->photo2 == "" ? "http://placehold.it/730x292" : "/uploads/730x292/".$item->photo2;
         }else{
           $itemClass = 'col-md-4';
-          $itemCover = $item->photo3 == "" ? "http://placehold.it/350x292" : "/uploads/".$item->photo3;
+          $itemCover = $item->photo3 == "" ? "http://placehold.it/350x292" : "/uploads/350x292/".$item->photo3;
         }
       ?>
         <div class="<?= $itemClass;?> mt-4 project-item" onclick='window.location="/projects/<?= $item->id?>"'>

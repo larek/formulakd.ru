@@ -19,7 +19,10 @@ window.onload = function(){
             let img = new Image();
             img.src = "/uploads/300x200/" + r.src;
             img.onload = response => {
-                if(bindContainer.firstChild) bindContainer.firstChild.remove();
+                // if(bindContainer.firstChild) bindContainer.firstChild.remove();
+                for(let i = 0; i < bindContainer.children.length; i++){
+                    bindContainer.children[i].remove();
+                }
                 bindContainer.append(img);
                 bindInput.value = r.src;
             }
