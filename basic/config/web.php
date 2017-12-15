@@ -56,6 +56,7 @@ $config = [
                 'news/<id>' => 'news/view',
                 'projects' => 'site/projects',
                 'projects/<id>' => 'site/project-single',
+                '2017' => 'site/2017',
                 '/simple-page' => 'site/simple-page',
                 '/<guid>' => 'site/view',
                 '/' => 'site/index',

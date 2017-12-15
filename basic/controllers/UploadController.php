@@ -47,7 +47,9 @@ class UploadController extends Controller{
                  $mode = \Imagine\Image\ManipulatorInterface::THUMBNAIL_INSET; //THUMBNAIL_INSET or THUMBNAIL_OUTBOUND
                   $img = $_SERVER['DOCUMENT_ROOT']."/uploads/".$file_new_name;
 
-                  Image::thumbnail($img, 300, 200, $mode)->save('uploads/300x200/'. $file_new_name, ['quality' => 100]);
+                  Image::thumbnail($img, 300, 200, $mode)->save('uploads/300x200/'. $file_new_name, ['quality' => 90]);
+                  Image::thumbnail($img, 730, 292, $mode)->save('uploads/730x292/'. $file_new_name, ['quality' => 90]);
+                  Image::thumbnail($img, 350, 292, $mode)->save('uploads/350x292/'. $file_new_name, ['quality' => 90]);
                   echo json_encode(['success' => true, 'src' => $file_new_name]);
               }else{
                  echo json_encode(['error' => true, 'errorText' => $errors]);
