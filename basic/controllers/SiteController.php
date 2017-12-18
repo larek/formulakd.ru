@@ -78,6 +78,11 @@ class SiteController extends Controller
         return $this->render('main-2017');
     }
 
+    public function actionCallbackPage(){
+        $this->layout = 'main-2017';
+        return $this->render('callback-page');
+    }
+    
     public function actionProjects(){
         
         $model = Projects::find()->all();

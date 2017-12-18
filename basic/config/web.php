@@ -57,6 +57,7 @@ $config = [
                 'projects' => 'site/projects',
                 'projects/<id>' => 'site/project-single',
                 '2017' => 'site/2017',
+                'callback-page' => 'site/callback-page',
                 '/simple-page' => 'site/simple-page',
                 '/<guid>' => 'site/view',
                 '/' => 'site/index',
