@@ -73,6 +73,11 @@ class SiteController extends Controller
         }
     }
 
+    public function actionServices(){
+        $this->layout = 'main-2017';
+        return $this->render('services');
+    }
+
     public function action2017(){
         $this->layout = 'main-2017';
         return $this->render('main-2017');
