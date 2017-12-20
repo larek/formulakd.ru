@@ -33,6 +33,16 @@ body {
     color: #1f518d;
 }
 
+.about-container img {
+    height: 10em;
+    margin-bottom: 1em;
+}
+
+.about-container {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
 
 .dark-panel{
     background: #000000;

@@ -7,18 +7,27 @@ $this->title = 'О компании';
       <h1>О компании</h1>
     </div>
   </div>
-  <div class="row">
+  <div class="row mt-4">
     <div class="col-md-4">
-      <img src="/images/about-2-back.jpg" class='img-fluid' alt="">
+      <div class="about-container">
+        <img src="/images/about-1.svg" class='img-fluid' alt="">
+        <p>Широкий опыт работы по проектированию и изготовлению нестандартного и испытательного оборудования</p>
+      </div>
     </div>
     <div class="col-md-4">
-      <img src="/images/about-2-back.jpg" class='img-fluid' alt="">
+      <div class="about-container">
+        <img src="/images/about-2.svg" class='img-fluid' alt="">
+        <p>Команда талантливых и квалифицированных инженеров с опытом работы в разных сферах инженерной деятельности</p>
+      </div>
     </div>
     <div class="col-md-4">
-      <img src="/images/about-2-back.jpg" class='img-fluid' alt="">
+      <div class="about-container">
+        <img src="/images/about-3.svg" class='img-fluid' alt="">
+        <p>Собственная производственная площадка, оснащенная современным оборудованием</p>
+      </div>
     </div>
   </div>
-   <div class="row">
+   <div class="row mt-4">
      <div class="col-md-12">
       <p>Конструкторское бюро «Формула КД» - это компания, которая образовалась в результате коллаборации опытных инженеров-конструкторов, расчетчиков и инженеров-технологов с целью предоставления профессиональных интеллектуальных услуг по разработке, сопровождению или реализации сложных инженерно-технических проектов.</p>
       <p>В нашем штате инженеры с опытом работы в разных сферах (гидравлика, электрика, термообработка, статика, кинематика), а также с опытом организации проектных и исследовательских работ и соавторства в патентах.</p>
