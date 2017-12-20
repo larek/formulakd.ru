@@ -47,6 +47,18 @@ body {
     font-size: 35px;
 }
 
+.gray-back {
+    background: #e6e6e6;
+}
+
+.blue-about-back{
+    background: #cedff0;
+    padding:20px;
+}
+
+.ceo-description {
+    padding: 15px 0px;
+}
 
 .small {
     width: 30%;

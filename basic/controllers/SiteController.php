@@ -106,6 +106,11 @@ class SiteController extends Controller
         ]);
     }
 
+    public function actionAbout2(){
+        $this->layout = 'main-2017';
+        return $this->render('about-2');
+    }
+
     public function actionNews(){
       return $this->render('news');
     }
