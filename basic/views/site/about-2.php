@@ -1,6 +1,19 @@
 <?
 $this->title = 'О компании';
 ?>
+<div class="black-panel">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 about-banner-container">
+        <h4 class='animated bounceInLeft'>Доверьтесь нам</h4>
+        <h2 class='animated bounceInLeft'>МЫ - ИНЖЕНЕРЫ</h2>
+      </div>
+      <div class="col-md-6 text-right">
+        <img src="/images/gear.jpg"  class='animated bounceInRight img-fluid' alt="">
+      </div>
+    </div>
+  </div>
+</div>
 <div class="container mt-4">
   <div class="row">
     <div class="col-md-12 title-wrap">

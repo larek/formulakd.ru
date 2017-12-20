@@ -44,10 +44,22 @@ body {
     font-weight: bold;
 }
 
+.about-banner-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    color: white;
+}
+
 .dark-panel{
     background: #000000;
     color: white;
     padding: 40px 20px;
+}
+
+.black-panel {
+    background: #010101;
 }
 
 .gray-panel {
