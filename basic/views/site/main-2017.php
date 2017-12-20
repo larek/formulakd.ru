@@ -7,7 +7,33 @@ use yii\helpers\Html;
 $this->title = 'ФормулаКД';
 
 ?>
- <img src="/demo/images/formulakd-banner-progressive.jpg" class='img-fluid all-width' alt="">
+<div class="black-panel">
+  <div class="container">
+    <div class="row">
+        <div class="col-md-4 text-right">
+            <img src="/images/gear-left.jpg"  class='animated bounceInLeft img-fluid' alt="">
+        </div>
+        <div class="col-md-4 about-banner-container">
+            <div class="row mt-5">
+                <div class="col-md-12 text-center animated bounceInDown">
+                    <h6>РАЗРАБОТКА И ИЗГОТОВЛЕНИЕ </h6>
+                    <h4>НЕСТАНДАРТНОГО<br> И ИСПЫТАТЕЛЬНОГО</h4>
+                    <h6>ОБОРУДОВАНИЯ</h6>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-12 text-center animated bounceInUp">
+                    <h4>Доверьтесь нам</h4>
+                    <h2>МЫ - ИНЖЕНЕРЫ!</h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 text-right">
+            <img src="/images/gear-right.jpg"  class='animated bounceInRight img-fluid' alt="">
+        </div>
+    </div>
+  </div>
+</div>
     <div class="blue-panel">
         <div class="container">
             <div class="row">
