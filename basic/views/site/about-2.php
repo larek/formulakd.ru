@@ -1,47 +1,62 @@
 <?
 $this->title = 'О компании';
 ?>
-<div class="black-panel">
-  <div class="container">
+<div class="container mt-3">
+  <div class="row">
+    <div class="col-md-12 title-wrap">
+      <h1>О компании</h1>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="black-panel">
     <div class="row">
-      <div class="col-md-6 about-banner-container">
-        <h4 class='animated bounceInLeft'>Доверьтесь нам</h4>
-        <h2 class='animated bounceInLeft'>МЫ - ИНЖЕНЕРЫ</h2>
+      <div class="col-md-4"></div>
+      <div class="col-md-4 text-center text-white mt-4">
+        <h4 class=''>Доверьтесь нам</h4>
+        <h2 class=''>МЫ - ИНЖЕНЕРЫ</h2>
       </div>
-      <div class="col-md-6 text-right">
-        <img src="/images/gear.jpg"  class='animated bounceInRight img-fluid' alt="">
+      <div class="col-md-4 text-left">
+        <img src="/images/gear-right.jpg"  class='img-fluid' alt="">
       </div>
     </div>
   </div>
 </div>
 <div class="container mt-4">
   <div class="row">
-    <div class="col-md-12 title-wrap">
-      <h1>О компании</h1>
+    <div class="col-md-4">
+      <div class="gray-back">
+        <div class="row">
+          <div class="col-md-3"><img src="/images/about-icon-2.svg" class='img-fluid' alt=""></div>
+          <div class="col-md-9"><p>Широкий опыт работы <br>по проектированию и изготовлению нестандартного и испытательного оборудования</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="gray-back">
+        <div class="row">
+          <div class="col-md-3"><img src="/images/about-icon-1.svg" class='img-fluid' alt=""></div>
+          <div class="col-md-9">
+            <p>Команда талантливых и квалифицированных инженеров с опытом работы в разных сферах инженерной деятельности</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="gray-back">
+        <div class="row">
+          <div class="col-md-3"><img src="/images/about-icon-3.svg" class='img-fluid' alt=""></div>
+          <div class="col-md-9">
+            <p>Собственная<br> производственная площадка, оснащенная современным оборудованием</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="row mt-4">
-    <div class="col-md-4">
-      <div class="about-container">
-        <img src="/images/about-1.svg" class='img-fluid' alt="">
-        <p>Широкий опыт работы по проектированию и изготовлению нестандартного и испытательного оборудования</p>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="about-container">
-        <img src="/images/about-2.svg" class='img-fluid' alt="">
-        <p>Команда талантливых и квалифицированных инженеров с опытом работы в разных сферах инженерной деятельности</p>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="about-container">
-        <img src="/images/about-3.svg" class='img-fluid' alt="">
-        <p>Собственная производственная площадка, оснащенная современным оборудованием</p>
-      </div>
-    </div>
-  </div>
+</div>
+<div class="container mt-4">
    <div class="row mt-4">
-     <div class="col-md-12 text-justify">
+     <div class="col-md-12 text-justify text-container">
 <p>Конструкторское бюро &laquo;Формула КД&raquo;&nbsp;&mdash; это компания, которая образовалась в&nbsp;результате коллаборации опытных инженеров-конструкторов, расчетчиков и&nbsp;инженеров-технологов с&nbsp;целью предоставления профессиональных интеллектуальных услуг по&nbsp;разработке, сопровождению или реализации сложных инженерно-технических проектов.</p>
 <p>В&nbsp;нашем штате инженеры с&nbsp;опытом работы в&nbsp;разных сферах (гидравлика, электрика, термообработка, статика, кинематика), а&nbsp;также с&nbsp;опытом организации проектных и&nbsp;исследовательских работ и&nbsp;соавторства в&nbsp;патентах.</p>
 <p>Высокая квалификация наших специалистов позволяет успешно реализовать как комплексные проекты организации нового производства или новой технологической линии, так и&nbsp;осуществлять разработку и&nbsp;проектирование отдельных элементов или изделий.</p>
@@ -64,7 +79,7 @@ $this->title = 'О компании';
         <p>Генеральный директор ООО «Формула КД»</p>
         </div>
       </div>
-      <div class="col-md-6 text-justify">
+      <div class="col-md-6 text-justify text-container">
         <p>&laquo;Возникновение нашей компании обусловлено, прежде всего&nbsp;&mdash; потребностью рынка. Чтобы держать сегодня устойчивый темп развития производственным предприятиям приходится сталкиваться с&nbsp;нелегкими задачами по&nbsp;модернизации уже выпускаемого продукта, проектированию новых изделий или с&nbsp;задачей автоматизации производственного процесса.</p>
 <p>Все эти вопросы достаточно сложно решить штатом собственных инженеров, которые целиком задействованы в&nbsp;выполнении ежедневных производственных задач. А&nbsp;расширение штата на&nbsp;выполнение ограниченных по&nbsp;времени (проектных) работ не&nbsp;является экономически целесообразным решением.</p>
 <p>Отсюда и&nbsp;начинается зарождение компании инжиниринговых услуг, что особенно актуально в&nbsp;период активного импортозамещения продукции и&nbsp;нового витка развития отечественной промышленности.</p>

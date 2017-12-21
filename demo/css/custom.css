@@ -1,8 +1,12 @@
 body {
     padding-bottom: 20px;
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: "Expo 2", sans-serif;
     font-size: 13px;
     line-height: 18px;
+}
+
+.text-container{
+    font-family: "Open Sans", sans-serif;
 }
 
 .container{

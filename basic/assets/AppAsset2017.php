@@ -19,6 +19,7 @@ class AppAsset2017 extends AssetBundle
     public $baseUrl = '@web';
     public $css = [
         "https://fonts.googleapis.com/css?family=Open+Sans:400,700",
+        "https://fonts.googleapis.com/css?family=Exo+2:400,700",
         "https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css",
         "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.css",
         "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css",
