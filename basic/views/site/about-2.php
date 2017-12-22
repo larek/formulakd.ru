@@ -25,29 +25,31 @@ $this->title = 'О компании';
 <div class="container mt-4">
   <div class="row">
     <div class="col-md-4">
-      <div class="gray-back">
+      <div class="gray-back-about">
         <div class="row">
-          <div class="col-md-3"><img src="/images/about-icon-2.svg" class='img-fluid' alt=""></div>
-          <div class="col-md-9"><p>Широкий опыт работы <br>по проектированию и изготовлению нестандартного и испытательного оборудования</p></div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="gray-back">
-        <div class="row">
-          <div class="col-md-3"><img src="/images/about-icon-1.svg" class='img-fluid' alt=""></div>
-          <div class="col-md-9">
-            <p>Команда талантливых и квалифицированных инженеров с опытом работы в разных сферах инженерной деятельности</p>
+          <div class="col-md-3 gray-back-about-img"><img src="/images/about-icon-2.svg" class='img-fluid' alt=""></div>
+          <div class="col-md-9 gray-back-about-description">
+            <span class='blue-text'>Широкий опыт работы <br>по проектированию и изготовлению</span> нестандартного и испытательного оборудования
           </div>
         </div>
       </div>
     </div>
     <div class="col-md-4">
-      <div class="gray-back">
+      <div class="gray-back-about">
         <div class="row">
-          <div class="col-md-3"><img src="/images/about-icon-3.svg" class='img-fluid' alt=""></div>
-          <div class="col-md-9">
-            <p>Собственная<br> производственная площадка, оснащенная современным оборудованием</p>
+          <div class="col-md-3 gray-back-about-img"><img src="/images/about-icon-1.svg" class='img-fluid' alt=""></div>
+          <div class="col-md-9 gray-back-about-description">
+            <span class="blue-text">Команда талантливых и квалифицированных инженеров</span> с опытом работы в разных сферах инженерной деятельности
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="gray-back-about">
+        <div class="row">
+          <div class="col-md-3 gray-back-about-img"><img src="/images/about-icon-3.svg" class='img-fluid' alt=""></div>
+          <div class="col-md-9 gray-back-about-description">
+            <span class="blue-text">Собственная <br> производственная площадка,</span> оснащенная современным оборудованием
           </div>
         </div>
       </div>

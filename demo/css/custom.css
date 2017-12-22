@@ -73,10 +73,34 @@ body {
     font-size: 35px;
 }
 
-.gray-back {
+.gray-back-about {
     background: #e6e6e6;
+    padding: 0px 20px;
 }
 
+.gray-back-about-img {
+    padding: 0px 0px;
+    display: flex;
+}
+
+.gray-back-about-description {
+    padding: 0px 8px;
+    font-size: 0.9em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.gray-back-about-description:after {
+    background: silver;
+    width: 100%;
+    border: 1px solid #4a7eb0;
+    content: '';
+}
+
+span.blue-text {
+    color: #4b7f9b;
+}
 .blue-about-back{
     background: #cedff0;
     padding:20px;
