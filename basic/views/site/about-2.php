@@ -12,6 +12,7 @@ $this->title = 'О компании';
 <div class="container">
   <div class="row">
     <div class="col-md-12">
+      <img src="/images/about-gear-banner-big.jpg" class='img-fluid d-none d-xl-block' alt="">
       <img src="/images/about-gear-banner-big.jpg" class='img-fluid d-none d-lg-block d-xl-none' alt="">
       <img src="/images/about-gear-banner-big.jpg" class='img-fluid d-none d-md-block d-lg-none' alt="">
       <img src="/images/about-gear-banner-small.jpg" class='img-fluid d-block d-sm-none' alt="">
@@ -22,7 +23,7 @@ $this->title = 'О компании';
 
 <div class="container mt-4">
   <div class="row">
-    <div class="col-md-4">
+    <div class="col-lg-4 col-md-6 about-icon-left-wrap mt-3">
       <div class="gray-back-about">
         <div class="row">
           <div class="col-md-3 gray-back-about-img"><img src="/images/about-icon-2.svg" class='img-fluid' alt=""></div>
@@ -32,7 +33,7 @@ $this->title = 'О компании';
         </div>
       </div>
     </div>
-    <div class="col-md-4">
+    <div class="col-lg-4 col-md-6 about-icon-center-wrap mt-3">
       <div class="gray-back-about">
         <div class="row">
           <div class="col-md-3 gray-back-about-img"><img src="/images/about-icon-1.svg" class='img-fluid' alt=""></div>
@@ -42,7 +43,7 @@ $this->title = 'О компании';
         </div>
       </div>
     </div>
-    <div class="col-md-4">
+    <div class="col-lg-4 col-md-6 about-icon-right-wrap mt-3">
       <div class="gray-back-about">
         <div class="row">
           <div class="col-md-3 gray-back-about-img"><img src="/images/about-icon-3.svg" class='img-fluid' alt=""></div>

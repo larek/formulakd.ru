@@ -26,9 +26,9 @@ AppAsset2017::register($this);
 <div class="container mt-3">
         <div class="row">
             <div class="col-md-3 col-6 text-left">
-                <img src="/demo/images/logo-fkd.svg" alt="" class='img-fluid'>
+                <img src="/images/logo-2017.svg" alt="" class='img-fluid'>
             </div>
-            <div class="col-6 d-sm-none small">
+            <div class="col-6 d-sm-none dark-blue-text small text-right">
                 8 (831) 281-58-98
             </div>
             <div class="col-md-9 col-6 text-right dark-blue-text d-none d-sm-block">
@@ -44,6 +44,11 @@ AppAsset2017::register($this);
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <a href='/callback-page' class='btn btn-secondary d-block d-sm-none'>Заказать звонок</a>
+                <a href='/callback-page' class='btn btn-secondary d-none d-sm-block d-md-none'>Заказать звонок</a>
+                <a href='/callback-page' class='btn btn-secondary d-none d-none d-md-block d-lg-none'>Заказать звонок</a>
+
+
                 <div class="collapse navbar-collapse" id="navbarsExample09">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active"><a class="nav-link" href="#">Главная <span class="sr-only">(current)</span></a></li>

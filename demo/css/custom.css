@@ -1,6 +1,6 @@
 body {
     padding-bottom: 20px;
-    font-family: "Expo 2", sans-serif;
+    font-family: "Exo 2", sans-serif;
     font-size: 13px;
     line-height: 18px;
 }
@@ -34,7 +34,7 @@ body {
 }
 
 .dark-blue-text {
-    color: #1f518d;
+    color: rgb(0, 51, 102);
 }
 
 .about-container img {
@@ -75,31 +75,30 @@ body {
 
 .gray-back-about {
     background: #e6e6e6;
-    padding: 0px 20px;
+    padding: 10px 20px;
 }
 
 .gray-back-about-img {
-    padding: 0px 0px;
-    display: flex;
+    padding: 0px 5px;
 }
 
 .gray-back-about-description {
     padding: 0px 8px;
-    font-size: 0.9em;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    color: rgb(0,0,0);
 }
 
 .gray-back-about-description:after {
-    background: silver;
+    display: block;
     width: 100%;
-    border: 1px solid #4a7eb0;
+    border: 1px solid rgb(0, 102, 153);
     content: '';
 }
 
+
 span.blue-text {
-    color: #4b7f9b;
+    color: rgb(0, 102, 153);
+    font-weight: bold;
+
 }
 .blue-about-back{
     background: #cedff0;
@@ -218,6 +217,7 @@ span.blue-text {
     padding: 15px 0px;
     border-bottom: 2px solid #1d1d1e;
     color: #044a8f;
+    font-weight: bold;
 }
 
 .dm-value {
@@ -287,7 +287,35 @@ span.blue-text {
     min-height:550px;
 }
 
+button.navbar-toggler {
+    color: rgb(0, 102, 153)!important;
+    border-color: rgb(0, 102, 153) !important;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: ;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(0, 102, 153)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar {
+    padding: 0.5rem 0rem !important;
+}
+
 @media (min-width: 992px) {
+
+    .about-icon-left-wrap{
+        padding-right: 12px;
+    }
+    .about-icon-center-wrap{
+        padding-left: 9px;
+        padding-right: 9px;
+    }
+    .about-icon-right-wrap{
+        padding-left: 12px;
+    }
     .single-desctiption-row{
         position: absolute;
     }
