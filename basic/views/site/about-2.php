@@ -8,20 +8,18 @@ $this->title = 'О компании';
     </div>
   </div>
 </div>
+
 <div class="container">
-  <div class="black-panel">
-    <div class="row">
-      <div class="col-md-4"></div>
-      <div class="col-md-4 text-center text-white mt-4">
-        <h4 class=''>Доверьтесь нам</h4>
-        <h2 class=''>МЫ - ИНЖЕНЕРЫ</h2>
-      </div>
-      <div class="col-md-4 text-left">
-        <img src="/images/gear-right.jpg"  class='img-fluid' alt="">
-      </div>
+  <div class="row">
+    <div class="col-md-12">
+      <img src="/images/about-gear-banner-big.jpg" class='img-fluid d-none d-lg-block d-xl-none' alt="">
+      <img src="/images/about-gear-banner-big.jpg" class='img-fluid d-none d-md-block d-lg-none' alt="">
+      <img src="/images/about-gear-banner-small.jpg" class='img-fluid d-block d-sm-none' alt="">
+      <img src="/images/about-gear-banner-small.jpg" class='img-fluid d-none d-sm-block d-md-none' alt="">
     </div>
   </div>
 </div>
+
 <div class="container mt-4">
   <div class="row">
     <div class="col-md-4">
