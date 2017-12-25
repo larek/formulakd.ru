@@ -71,6 +71,14 @@ $this->title = 'ФормулаКД';
                 </div>
             </div>
             <div class="row">
+                <? foreach($model as $item):?>
+                    <div class="col-md-3 mt-3">
+                        <img src="<?= $item->photo3 == "" ? "http://placehold.it/350x292" : "/uploads/350x292/".$item->photo3;?>" class='img-fluid' alt="">
+                        <div class="project-item-title">
+                            <?= $item->title?>
+                        </div>
+                    </div>
+                <? endforeach;?>
                 <div class="col-md-3 mt-3">
                     <img src="/demo/images/service-image-3.jpg" class='img-fluid' alt="">
                     <div class="project-item-title">

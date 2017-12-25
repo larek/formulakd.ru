@@ -80,7 +80,11 @@ class SiteController extends Controller
 
     public function action2017(){
         $this->layout = 'main-2017';
-        return $this->render('main-2017');
+        
+        $model = Projects::find()->all();
+        return $this->render('main-2017', [
+            'model' => $model
+        ]);
     }
 
     public function actionCallbackPage(){

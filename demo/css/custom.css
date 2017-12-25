@@ -186,11 +186,13 @@ span.blue-text {
 
 .project-item-title {
     height: 60px;
-    font-size: initial;
+    font-size: 13px;
     padding: 5px 13px;
     margin-top: -60px;
     background: #619ab5ba;
     position: relative;
+    overflow: hidden;
+    line-height: 16px;
 }
 
 .partner-logo-wrap{
