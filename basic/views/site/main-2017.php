@@ -67,68 +67,25 @@ $this->title = 'ФормулаКД';
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    Выполненные проекты:
+                    <div class="panel-title">Выполненные проекты:</div>
                 </div>
             </div>
             <div class="row">
-                <? foreach($model as $item):?>
-                    <div class="col-md-3 mt-3">
-                        <img src="<?= $item->photo3 == "" ? "http://placehold.it/350x292" : "/uploads/350x292/".$item->photo3;?>" class='img-fluid' alt="">
-                        <div class="project-item-title">
-                            <?= $item->title?>
-                        </div>
+                  <? 
+                  foreach($model as $item):
+                    if($item->big == 1){
+                      $itemClass = 'col-md-8';
+                      $itemCover = $item->photo2 == "" ? "http://placehold.it/730x292" : "/uploads/730x292/".$item->photo2;
+                    }else{
+                      $itemClass = 'col-md-4';
+                      $itemCover = $item->photo3 == "" ? "http://placehold.it/350x292" : "/uploads/350x292/".$item->photo3;
+                    }
+                  ?>
+                    <div class="<?= $itemClass;?> mt-4 project-item" onclick='window.location="/projects/<?= $item->id?>"'>
+                      <img src="<?= $itemCover?>" class='img-fluid' alt="">
+                      <div class='projects-description'><?= $item->title; ?></div>
                     </div>
-                <? endforeach;?>
-                <div class="col-md-3 mt-3">
-                    <img src="/demo/images/service-image-3.jpg" class='img-fluid' alt="">
-                    <div class="project-item-title">
-                        Аэродинамеческий испытательный стенд
-                    </div>
-                </div>
-                <div class="col-md-3 mt-3">
-                    <img src="/demo/images/service-image-3.jpg" class='img-fluid' alt="">
-                    <div class="project-item-title">
-                        Аэродинамеческий испытательный стенд
-                    </div>
-                </div>
-                <div class="col-md-3 mt-3">
-                    <img src="/demo/images/service-image-3.jpg" class='img-fluid' alt="">
-                    <div class="project-item-title">
-                        Аэродинамеческий испытательный стенд
-                    </div>
-                </div>
-                <div class="col-md-3 mt-3">
-                    <img src="/demo/images/service-image-3.jpg" class='img-fluid' alt="">
-                    <div class="project-item-title">
-                        Аэродинамеческий испытательный стенд
-                    </div>
-                </div>
-                <div class="col-md-3 mt-3">
-                    <img src="/demo/images/service-image-3.jpg" class='img-fluid' alt="">
-                    <div class="project-item-title">
-                        Аэродинамеческий испытательный стенд
-                    </div>
-                </div>
-                <div class="col-md-3 mt-3">
-                    <img src="/demo/images/service-image-3.jpg" class='img-fluid' alt="">
-                    <div class="project-item-title">
-                        Аэродинамеческий испытательный стенд
-                    </div>
-                </div>
-                <div class="col-md-3 mt-3">
-                    <img src="/demo/images/service-image-3.jpg" class='img-fluid' alt="">
-                    <div class="project-item-title">
-                        Аэродинамеческий испытательный стенд
-                    </div>
-                </div>
-                <div class="col-md-3 mt-3">
-                    <img src="/demo/images/service-image-3.jpg" class='img-fluid' alt="">
-                    <div class="project-item-title">
-                        Аэродинамеческий испытательный стенд
-                    </div>
-                </div>
-
-                
+                  <? endforeach;?>
             </div>
             <div class="row">
                 <div class="col-md-12 text-center ">
@@ -354,7 +311,7 @@ $this->title = 'ФормулаКД';
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    Как нас найти:
+                    <div class="panel-title">Как нас найти:</div>
                 </div>
             </div>
         </div>
