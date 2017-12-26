@@ -31,9 +31,9 @@ AppAsset2017::register($this);
             <div class="col-6 d-sm-none dark-blue-text small text-right">
                 8 (831) 281-58-98
             </div>
-            <div class="col-md-9 col-6 text-right dark-blue-text d-none d-sm-block">
+            <div class="col-md-9 col-6 header-contact text-right dark-blue-text d-none d-sm-block">
                 8 (831) 281-58-98, 281-58-78
-                <br> г Нижний Новгород
+                <br> г. Нижний Новгород,
                 <br> пер. Мотальный, д.10
             </div>
         </div>
@@ -51,7 +51,7 @@ AppAsset2017::register($this);
 
                 <div class="collapse navbar-collapse" id="navbarsExample09">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active"><a class="nav-link" href="#">Главная <span class="sr-only">(current)</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Главная <span class="sr-only">(current)</span></a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Услуги</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">О компании</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Проекты</a></li>
