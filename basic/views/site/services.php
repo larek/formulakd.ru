@@ -1,7 +1,7 @@
 <?
 $this->title = 'Услуги';
 ?>
-<div class="container mt-3">
+<div class="container">
   <div class="row">
     <div class="col-md-12 title-wrap">
       <h1>Услуги</h1>

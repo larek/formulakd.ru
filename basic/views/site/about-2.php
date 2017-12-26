@@ -1,7 +1,7 @@
 <?
 $this->title = 'О компании';
 ?>
-<div class="container mt-3">
+<div class="container">
   <div class="row">
     <div class="col-md-12 title-wrap">
       <h1>О компании</h1>
@@ -21,14 +21,17 @@ $this->title = 'О компании';
   </div>
 </div>
 
-<div class="container mt-4">
+<div class="container">
   <div class="row">
     <div class="col-lg-4 col-md-6 about-icon-left-wrap mt-3">
       <div class="gray-back-about">
         <div class="row">
-          <div class="col-md-3 gray-back-about-img"><img src="/images/about-icon-2.svg" class='img-fluid' alt=""></div>
-          <div class="col-md-9 gray-back-about-description">
-            <span class='blue-text'>Широкий опыт работы <br>по проектированию и изготовлению</span> нестандартного и испытательного оборудования
+          <div class="col-md-2 gray-back-about-img"><img src="/images/about-icon-2-2.svg" class='img-fluid' alt=""></div>
+          <div class="col-md-10 gray-back-about-description">
+            <span class='blue-text'>Широкий опыт работы</span>
+            <span class='blue-text'>по проектированию и изготовлению</span> 
+            <span class='black-text'>нестандартного и испытательного</span>
+            <span class='black-text'>оборудования</span>
           </div>
         </div>
       </div>
@@ -36,9 +39,12 @@ $this->title = 'О компании';
     <div class="col-lg-4 col-md-6 about-icon-center-wrap mt-3">
       <div class="gray-back-about">
         <div class="row">
-          <div class="col-md-3 gray-back-about-img"><img src="/images/about-icon-1.svg" class='img-fluid' alt=""></div>
-          <div class="col-md-9 gray-back-about-description">
-            <span class="blue-text">Команда талантливых и квалифицированных инженеров</span> с опытом работы в разных сферах инженерной деятельности
+          <div class="col-md-2 gray-back-about-img"><img src="/images/about-icon-1-3.svg" class='img-fluid' alt=""></div>
+          <div class="col-md-10 gray-back-about-description">
+            <span class="blue-text">Команда талантливых</span> 
+            <span class="blue-text">и квалифицированных инженеров</span> 
+            <span class="black-text">с опытом работы в разных сферах</span>
+            <span class="black-text">инженерной деятельности</span>
           </div>
         </div>
       </div>
@@ -46,9 +52,12 @@ $this->title = 'О компании';
     <div class="col-lg-4 col-md-6 about-icon-right-wrap mt-3">
       <div class="gray-back-about">
         <div class="row">
-          <div class="col-md-3 gray-back-about-img"><img src="/images/about-icon-3.svg" class='img-fluid' alt=""></div>
-          <div class="col-md-9 gray-back-about-description">
-            <span class="blue-text">Собственная <br> производственная площадка,</span> оснащенная современным оборудованием
+          <div class="col-md-2 gray-back-about-img"><img src="/images/about-icon-3-2.svg" class='img-fluid' alt=""></div>
+          <div class="col-md-10 gray-back-about-description">
+            <span class="blue-text">Собственная</span> 
+            <span class="blue-text">производственная площадка,</span> 
+            <span class="black-text">оснащенная современным</span>
+            <span class="black-text">оборудованием</span> 
           </div>
         </div>
       </div>

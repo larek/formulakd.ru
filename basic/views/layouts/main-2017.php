@@ -64,7 +64,7 @@ AppAsset2017::register($this);
     </div>
     <?= $content?>
 
- <div class="map-wrapper mt-4">
+ <div class="map-wrapper">
         <div class="container">
             <div class="row">
                 <div class="col-md-7"></div>
