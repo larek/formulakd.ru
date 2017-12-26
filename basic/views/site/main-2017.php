@@ -122,93 +122,69 @@ $this->title = 'ФормулаКД';
         </div>
     </div>
 
-    <div class="container mt-3">
+<div class="dark-panel">
+     <div class="container mt-3">
         <div class="row">
-            <div class="col-md-12 text-center blue-title">
-                И о том как это работает:
-            </div>
-        </div>
-    </div>
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="steps-title">
+                            И о том как это работает:
+                        </div>
+                    </div>
+                </div>
+                <div class="row steps-absolute">
+                    <div class="col-md-3 text-center step-container">
+                        <img src="/images/steps-lamp.svg"  class='img-fluid' alt="">
+                        <img src="/images/Right_pointing_double_angle_quotation_mark.svg" class='right-double-angle' alt="">
+                        <div class="step-description">
+                            Вы обращаетесь к нам с собственной идеей или наработкой. Связаться с нами можно по телефону 8 (831) 281-58-78 или сразу отправив запрос на электронную почту: info@formulakd.ru
+                        </div>
 
-    <div class="container see-blue-panel">
-        <div class="row">
-            <div class="col-md-1 text-center step-number-block">
-                1
-            </div>
-            <div class="col-md-11">
-                Вы обращаетесь к нам с собственной идеей или наработкой.
-                <br> Связаться с нами можно по телефону 8 (831) 281-58-78 или сразу отправив запрос на электронную почту: info@formulakd.ru
-            </div>
-        </div>
-    </div>
-
-    <div class="container mt-3">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <span class="fa fa-angle-double-down arrow"></span>
-            </div>
-        </div>
-    </div>
-
-     <div class="container dark-panel mt-3">
-        <div class="row">
-            <div class="col-md-2 text-center">
-                <img src="/demo/images/step-icon-2.svg" style='height: 100px' class='img-fluid' alt="">
-                <div class="step-description">
-                    Мы гарантируем абсолютную конфеденциальность информации, полученной от клиента в процессе работы. Заключаем соглашение о конфеденциальности
+                    </div>
+                    <div class="col-md-3 text-center step-container">
+                        <img src="/demo/images/step-icon-2.svg"  class='img-fluid' alt="">
+                        <img src="/images/Right_pointing_double_angle_quotation_mark.svg" class='right-double-angle' alt="">
+                        <div class="step-description">
+                            Мы гарантируем абсолютную конфеденциальность информации, полученной от клиента в процессе работы. Заключаем соглашение о конфеденциальности
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center step-container">
+                        <img src="/demo/images/step-icon-3.svg"  class='img-fluid' alt="">
+                        <img src="/images/Right_pointing_double_angle_quotation_mark.svg" class='right-double-angle' alt="">
+                        <div class="step-description">
+                            Исходя из требований Заказчика проводим анализ возможных вариантов решения. Проектируем изделие и разрабатываем 3-D модель будущего продукта
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center step-container">
+                        <img src="/demo/images/step-icon-4.svg"  class='img-fluid' alt="">
+                        <div class="step-description">
+                            Изготовление продукта. При этом регулируется ход производства и, если необходимо, устраняются выявленные недостатки проектирования или подбора материала
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-2 text-center">
-                <img src="/demo/images/step-icon-2.svg" style='height: 100px' class='img-fluid' alt="">
-                <div class="step-description">
-                    Мы гарантируем абсолютную конфеденциальность информации, полученной от клиента в процессе работы. Заключаем соглашение о конфеденциальности
+            <div class="col-md-3 text-center">
+                <img src="/images/lump-2.jpg" class='img-fluid' alt="">
+                <div class="lump-description">
+                     Вы получаете абсолютно рабочее изделие с проработанной технологией изготовления серийных партий и комплектом документации, полностью соответствующим изделиям
                 </div>
-            </div>
-            <div class="col-md-2 text-center">
-                <img src="/demo/images/step-icon-3.svg" style='height: 100px' class='img-fluid' alt="">
-                <div class="step-description">
-                    Исходя из требований Заказчика проводим анализ возможных вариантов решения. Проектируем изделие и разрабатываем 3-D модель будущего продукта
-                </div>
-            </div>
-            <div class="col-md-2 text-center">
-                <img src="/demo/images/step-icon-4.svg" style='height: 100px' class='img-fluid' alt="">
-                <div class="step-description">
-                    Изготовление продукта. При этом регулируется ход производства и, если необходимо, устраняются выявленные недостатки проектирования или подбора материала
-                </div>
-            </div>
-            <div class="col-md-4 text-center">
-                <img src="/demo/images/lump.jpg" class='img-fluid' alt="">
             </div>
             <div class="col-md-12">
                 <div class="row">
                     <div class="col-md-12 step-2-slogan">
                         <div class="step-2-slogan-border"></div>
+                        <div class="step-slogan-description">
                         ЦЕЛЬ: не просто выполнить работу по ТЗ, а получить рабочее воплощение задуманного изделия!
+                        </div>
                         <div class="step-2-slogan-border"></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
-    <div class="container mt-3">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <span class="fa fa-angle-double-down arrow"></span>
-            </div>
-        </div>
-    </div>
-
-     <div class="container see-blue-panel mt-3">
-        <div class="row">
-            <div class="col-md-1 text-center step-number-block">
-                3
-            </div>
-            <div class="col-md-11">
-                На выходе Вы получаете абсолютно рабочее изделие с проработанной технологией изготовления серийных партий и комплектом документации, полностью соответствующим изделиям
-            </div>
-        </div>
-    </div>
 
     <div class="container mt-5">
         <div class="row">
@@ -233,10 +209,7 @@ $this->title = 'ФормулаКД';
                 </div>
             </div>
             <div class="col-md-9">
-                <div class="row">
-                    <div class="col-md-12 text-center blue-block">Работаем на всей территори страны и предоставляем полный комплекс услуг</div>
-                    <div class="col-md-12"><img src="/demo/images/map.jpg" class='img-fluid' alt=""></div>
-                </div>
+                <img src="/images/main-map.png" class='img-fluid' alt="">
             </div>
         </div>
     </div>
