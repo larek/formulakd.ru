@@ -362,13 +362,24 @@ button.navbar-toggler {
     line-height: 40px;
 }
 
+/*Smaller than 768px*/
 @media (max-width: 768px){
+   
    .right-double-angle{
     display:none;
    } 
+
+   .big-image{display: none;}
+   .small-image{display: block;}
 }
 
+
+/*Larger than 768px*/
 @media (min-width: 768px) {
+
+    .big-image{display: block;}
+   .small-image{display: none;}
+
     .steps-title{
         margin-top: 20px;
     }
@@ -435,4 +446,3 @@ button.navbar-toggler {
         border-left: 1px solid #1d1d1e;
     }
 }
-

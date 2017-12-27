@@ -12,11 +12,8 @@ $this->title = 'О компании';
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <img src="/images/about-gear-banner-big.jpg" class='img-fluid d-none d-xl-block' alt="">
-      <img src="/images/about-gear-banner-big.jpg" class='img-fluid d-none d-lg-block d-xl-none' alt="">
-      <img src="/images/about-gear-banner-big.jpg" class='img-fluid d-none d-md-block d-lg-none' alt="">
-      <img src="/images/about-gear-banner-small.jpg" class='img-fluid d-block d-sm-none' alt="">
-      <img src="/images/about-gear-banner-small.jpg" class='img-fluid d-none d-sm-block d-md-none' alt="">
+      <img src="/images/about-gear-banner-big.jpg" class='big-image img-fluid' alt="">
+      <img src="/images/about-gear-banner-small.jpg" class="small-image img-fluid" alt="">
     </div>
   </div>
 </div>

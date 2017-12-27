@@ -7,11 +7,11 @@ use yii\helpers\Html;
 $this->title = 'ФормулаКД';
 
 ?>
-<img src="/images/Glavny_banner.jpg" class='img-full d-none d-xl-block' alt="">
-<img src="/images/Glavny_banner.jpg" class='img-full d-none d-lg-block d-xl-none' alt="">
-<img src="/images/Glavny_banner.jpg" class='img-full d-none d-md-block d-lg-none' alt="">
-<img src="/images/Glavny_banner_small.jpg" class='img-full d-block d-sm-none' alt="">
-<img src="/images/Glavny_banner_small.jpg" class='img-full d-none d-sm-block d-md-none' alt="">
+
+<img src="/images/Glavny_banner.jpg" class='big-image img-full' alt="">
+<img src="/images/Glavny_banner_small.jpg" class='small-image img-full' alt="">
+
+
     <div class="blue-panel">
         <div class="container">
             <div class="row">
