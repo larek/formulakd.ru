@@ -8,8 +8,8 @@ $this->title = 'ФормулаКД';
 
 ?>
 
-<img src="/images/Glavny_banner.jpg" class='big-image img-full' alt="">
-<img src="/images/Glavny_banner_small.jpg" class='small-image img-full' alt="">
+<img src="/images/Glavny_banner.jpg" class='d-none d-md-block img-full' alt="">
+<img src="/images/Glavny_banner_small.jpg" class='d-block d-md-none img-full' alt="">
 
 
     <div class="blue-panel">
