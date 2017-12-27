@@ -5,6 +5,10 @@ body {
     line-height: 18px;
 }
 
+.img-full{
+width: 100%;
+}
+
 .text-container{
     font-family: "Open Sans", sans-serif;
 }
