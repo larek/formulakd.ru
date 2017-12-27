@@ -79,22 +79,22 @@ $this->title = 'ФормулаКД';
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4 mt-4">
                 <div class="row">
-                    <div class="col-md-4"><img src="/demo/images/about-image-1.jpg" class='img-fluid' alt=""></div>
-                    <div class="col-md-8">ШИРОКИЙ ОПЫТ РАБОТЫ ПО ПРОЕКТИРОВАНИЮ И ИЗГОТОВЛЕНИЮ НЕСТАНДАРТНОГО И ИСПЫТАТЕЛЬНОГО ОБОРУДОВАНИЯ</div>
+                    <div class="col-md-4 col-4"><img src="/demo/images/about-image-1.jpg" class='img-fluid' alt=""></div>
+                    <div class="col-md-8 col-8">ШИРОКИЙ ОПЫТ РАБОТЫ ПО ПРОЕКТИРОВАНИЮ И ИЗГОТОВЛЕНИЮ НЕСТАНДАРТНОГО И ИСПЫТАТЕЛЬНОГО ОБОРУДОВАНИЯ</div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 mt-4">
                 <div class="row">
-                    <div class="col-md-4"><img src="/demo/images/about-image-2.jpg" class='img-fluid' alt=""></div>
-                    <div class="col-md-8">КОМАНДА ТАЛАНТЛИВЫХ И КВАЛИФИЦИРОВАННЫХ ИНЖЕНЕРОВ С ОПЫТОМ РАБОТЫ В РАЗНЫХ СФЕРАХ ИНЖЕНЕРНОЙ ДЕЯТЕЛЬНОСТИ</div>
+                    <div class="col-md-4 col-4"><img src="/demo/images/about-image-2.jpg" class='img-fluid' alt=""></div>
+                    <div class="col-md-8 col-8">КОМАНДА ТАЛАНТЛИВЫХ И КВАЛИФИЦИРОВАННЫХ ИНЖЕНЕРОВ С ОПЫТОМ РАБОТЫ В РАЗНЫХ СФЕРАХ ИНЖЕНЕРНОЙ ДЕЯТЕЛЬНОСТИ</div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 mt-4">
                 <div class="row">
-                    <div class="col-md-4"><img src="/demo/images/about-image-3.jpg" class='img-fluid' alt=""></div>
-                    <div class="col-md-8">СОБСТВЕННАЯ ПРОИЗВОДСВЕННАЯ ПЛОЩАДКА, ОСНАЩЕННАЯ СОВРЕМЕННЫМ ОБОРУДОВАНИЕМ</div>
+                    <div class="col-md-4 col-4"><img src="/demo/images/about-image-3.jpg" class='img-fluid' alt=""></div>
+                    <div class="col-md-8 col-8">СОБСТВЕННАЯ ПРОИЗВОДСВЕННАЯ ПЛОЩАДКА, ОСНАЩЕННАЯ СОВРЕМЕННЫМ ОБОРУДОВАНИЕМ</div>
                 </div>
             </div>
         </div>
