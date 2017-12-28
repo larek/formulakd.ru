@@ -44,9 +44,7 @@ AppAsset2017::register($this);
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a href='/callback-page' class='btn btn-secondary d-block d-sm-none'>Заказать звонок</a>
-                <a href='/callback-page' class='btn btn-secondary d-none d-sm-block d-md-none'>Заказать звонок</a>
-                <a href='/callback-page' class='btn btn-secondary d-none d-none d-md-block d-lg-none'>Заказать звонок</a>
+                <a href='/callback-page' class='btn btn-secondary d-block d-md-none'>Заказать звонок</a>
 
 
                 <div class="collapse navbar-collapse" id="navbarsExample09">
@@ -56,7 +54,7 @@ AppAsset2017::register($this);
                         <li class="nav-item"><a class="nav-link" href="#">О компании</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Проекты</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
-                        <li class="nav-item dark-blue-item"><a class="nav-link" href="#">Заказать звонок</a></li>
+                        <li class="nav-item dark-blue-item d-none d-md-block"><a class="nav-link" href="#">Заказать звонок</a></li>
                     </ul>
                 </div>
             </nav>
