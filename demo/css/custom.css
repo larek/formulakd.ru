@@ -157,9 +157,9 @@ span.black-text {
     position: absolute;
     z-index: 10;
     padding: 20px;
-    background: #ffffffe0;
-    border-top: 1px solid black;
+    background: #ffffff99;
     margin-top: 100px;
+    width: 100%;
 }
 
 .contact-title {
