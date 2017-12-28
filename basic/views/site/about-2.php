@@ -20,11 +20,11 @@ $this->title = 'О компании';
 
 <div class="container">
   <div class="row">
-    <div class="col-lg-4 col-md-6 about-icon-left-wrap mt-3">
+    <div class="col-lg-4 col-md-6 mt-3">
       <div class="gray-back-about">
         <div class="row">
-          <div class="col-md-2 gray-back-about-img"><img src="/images/about-icon-2-2.svg" class='img-fluid' alt=""></div>
-          <div class="col-md-10 gray-back-about-description">
+          <div class="col-2 gray-back-about-img"><img src="/images/about-icon-2-2.svg" class='img-fluid' alt=""></div>
+          <div class="col-10 gray-back-about-description">
             <span class='blue-text'>Широкий опыт работы</span>
             <span class='blue-text'>по проектированию и изготовлению</span> 
             <span class='black-text'>нестандартного и испытательного</span>
@@ -33,11 +33,11 @@ $this->title = 'О компании';
         </div>
       </div>
     </div>
-    <div class="col-lg-4 col-md-6 about-icon-center-wrap mt-3">
+    <div class="col-lg-4 col-md-6 mt-3">
       <div class="gray-back-about">
         <div class="row">
-          <div class="col-md-2 gray-back-about-img"><img src="/images/about-icon-1-3.svg" class='img-fluid' alt=""></div>
-          <div class="col-md-10 gray-back-about-description">
+          <div class="col-2 gray-back-about-img"><img src="/images/about-icon-1-3.svg" class='img-fluid' alt=""></div>
+          <div class="col-10 gray-back-about-description">
             <span class="blue-text">Команда талантливых</span> 
             <span class="blue-text">и квалифицированных инженеров</span> 
             <span class="black-text">с опытом работы в разных сферах</span>
@@ -46,11 +46,11 @@ $this->title = 'О компании';
         </div>
       </div>
     </div>
-    <div class="col-lg-4 col-md-6 about-icon-right-wrap mt-3">
+    <div class="col-lg-4 col-md-6 mt-3">
       <div class="gray-back-about">
         <div class="row">
-          <div class="col-md-2 gray-back-about-img"><img src="/images/about-icon-3-2.svg" class='img-fluid' alt=""></div>
-          <div class="col-md-10 gray-back-about-description">
+          <div class="col-2 gray-back-about-img"><img src="/images/about-icon-3-2.svg" class='img-fluid' alt=""></div>
+          <div class="col-10 gray-back-about-description">
             <span class="blue-text">Собственная</span> 
             <span class="blue-text">производственная площадка,</span> 
             <span class="black-text">оснащенная современным</span>
