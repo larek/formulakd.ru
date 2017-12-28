@@ -29,7 +29,7 @@ AppAsset2017::register($this);
                 <img src="/images/logo-2017.svg" alt="" class='img-fluid'>
             </div>
             <div class="col-6 d-sm-none dark-blue-text small text-right">
-                8 (831) 281-58-98
+                <a href="tel:+78312815898">8 (831) 281-58-98</a>
             </div>
             <div class="col-md-9 col-6 header-contact text-right dark-blue-text d-none d-sm-block">
                 8 (831) 281-58-98, 281-58-78
@@ -94,15 +94,15 @@ AppAsset2017::register($this);
                         <div class="row mt-3">
                             <div class="col-2"><img src="/demo/images/contact-icon-3.svg" class='img-fluid' alt=""></div>
                             <div class="col-10">
-                                <b>info@formulakd.ru</b>
+                                <b><a href="mailto:info@formulakd.ru">info@formulakd.ru</a></b>
                             </div>
                         </div>
                         <div class="row mt-3">
                             <div class="col-2"><img src="/demo/images/contact-icon-4.svg" class='img-fluid' alt=""></div>
                             <div class="col-10">
-                                <b>8 (831) 281-58-78</b>
+                                <b><a href="tel:+78312815878">8 (831) 281-58-78</a></b>
                                 <br>
-                                <b>8 (831) 281-58-98</b>
+                                <b><a href="tel:+78312815898">8 (831) 281-58-98</a></b>
                             </div>
                         </div>
                     </div>
