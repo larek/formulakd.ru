@@ -5,6 +5,10 @@ body {
     line-height: 18px;
 }
 
+.mobile-header-phone{
+    font-size: 1rem;
+}
+
 .img-full{
 width: 100%;
 }

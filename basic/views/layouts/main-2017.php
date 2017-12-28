@@ -28,7 +28,7 @@ AppAsset2017::register($this);
             <div class="col-md-3 col-6 text-left">
                 <img src="/images/logo-2017.svg" alt="" class='img-fluid'>
             </div>
-            <div class="col-6 d-sm-none dark-blue-text small text-right">
+            <div class="col-6 d-sm-none dark-blue-text small text-right mobile-header-phone">
                 <a href="tel:+78312815898">8 (831) 281-58-98</a>
             </div>
             <div class="col-md-9 col-6 header-contact text-right dark-blue-text d-none d-sm-block">
