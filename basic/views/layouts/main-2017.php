@@ -40,7 +40,7 @@ AppAsset2017::register($this);
     </div>
     <div class="menu-wrap mt-3">
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light">
+            <nav class="navbar navbar-expand-md navbar-light">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -107,7 +107,14 @@ AppAsset2017::register($this);
                 </div>
             </div>
         </div>
+
+        <div class="d-block d-md-none text-center">
+            <a class='btn btn-secondary' data-fancybox="iframe" data-src="https://yandex.ru/map-widget/v1/?um=constructor%3AoFyOK4TT-dveXO0gw1jugftdQYfwy6Z6&amp;source=constructor" data-type="iframe" data-width='1000px' href="javascript:;">Посмотреть на карте</a>
+        </div>
+
+        <div class="d-none d-md-block">
          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3AoFyOK4TT-dveXO0gw1jugftdQYfwy6Z6&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
     </div>
 
 <?php $this->endBody() ?>
