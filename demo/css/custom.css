@@ -7,6 +7,9 @@ body {
 
 .mobile-header-phone{
     font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .img-full{
@@ -25,8 +28,16 @@ a.nav-link {
     font-size: 1rem;
 }
 
+.nav-link {
+    color: rgba(0, 0, 0, 0.7)!important;
+}
+
 a.nav-link:first-letter {
     color: rgb(0, 102, 153);
+    font-weight: bold;
+}
+
+a.nav-link.active-item{
     font-weight: bold;
 }
 
@@ -178,8 +189,8 @@ span.black-text {
 }
 
 .menu-wrap {
-    border-top: 2px solid #1D1D1E;
-    border-bottom: 2px solid #1D1D1E;
+    border-top: 1px solid #1D1D1E;
+    border-bottom: 1px solid #1D1D1E;
 }
 
 .all-width{
@@ -410,9 +421,6 @@ button.navbar-toggler {
 
     .navbar{
         padding: 0px !important;
-    }
-    .nav-link{
-        border-left:1px solid #1d1d1e;
     }
 
     .nav-item{
