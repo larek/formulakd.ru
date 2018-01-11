@@ -1,4 +1,5 @@
 <?
+use yii\helpers\Html;
 $this->title = "Выполненные проекты";
 ?>
 <div class="container">
@@ -30,17 +31,23 @@ $this->title = "Выполненные проекты";
       <? 
       foreach($model as $item):
         if($item->big == 1){
-          $itemClass = 'col-md-8';
-          $itemCover = $item->photo2 == "" ? "http://placehold.it/730x292" : "/uploads/730x292/".$item->photo2;
+          $itemCoverBig = $item->photo2 == "" ? "http://placehold.it/730x292" : "/uploads/730x292/".$item->photo2;
+          $itemCoverSmall = $item->photo3 == "" ? "http://placehold.it/350x292" : "/uploads/350x292/".$item->photo3;
+          echo Html::beginTag('div', ['class' => 'col-md-8 mt-4 project-item d-none d-md-block', 'onclick' => 'window.location="/projects/'. $item->id .'"']);
+          echo Html::img($itemCoverBig, ['class' => 'img-fluid']);
+          echo Html::endTag('div');
+
+          echo Html::beginTag('div', ['class' => 'col-md-4 mt-4 project-item d-block d-md-none', 'onclick' => 'window.location="/projects/'. $item->id .'"']);
+          echo Html::img($itemCoverSmall, ['class' => 'img-fluid']);
+          echo Html::endTag('div');
         }else{
           $itemClass = 'col-md-4';
           $itemCover = $item->photo3 == "" ? "http://placehold.it/350x292" : "/uploads/350x292/".$item->photo3;
+          echo Html::beginTag('div', ['class' => 'col-md-4 mt-4 project-item', 'onclick' => 'window.location="/projects/'. $item->id .'"']);
+          echo Html::img($itemCover, ['class' => 'img-fluid']);
+          echo Html::endTag('div');
         }
       ?>
-        <div class="<?= $itemClass;?> mt-4 project-item" onclick='window.location="/projects/<?= $item->id?>"'>
-          <img src="<?= $itemCover?>" class='img-fluid' alt="">
-          <div class='projects-description'><?= $item->title; ?></div>
-        </div>
       <? endforeach;?>
     </div>
   </div>
