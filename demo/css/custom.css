@@ -5,8 +5,9 @@ body {
     line-height: 18px;
 }
 
-.black-link{
-    color:black;
+.blue-link{
+    color: #336599;
+    text-decoration: underline;
 }
 
 .mobile-header-phone{

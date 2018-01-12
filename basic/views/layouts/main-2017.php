@@ -92,15 +92,15 @@ AppAsset2017::register($this);
                         <div class="row mt-3">
                             <div class="col-2"><img src="/demo/images/contact-icon-3.svg" class='img-fluid' alt=""></div>
                             <div class="col-10">
-                                <b><a href="mailto:info@formulakd.ru" class='black-link'>info@formulakd.ru</a></b>
+                                <b><a href="mailto:info@formulakd.ru" class='blue-link'>info@formulakd.ru</a></b>
                             </div>
                         </div>
                         <div class="row mt-3">
                             <div class="col-2"><img src="/demo/images/contact-icon-4.svg" class='img-fluid' alt=""></div>
                             <div class="col-10">
-                                <b><a href="tel:+78312815878" class='black-link'>8 (831) 281-58-78</a></b>
+                                <b><a href="tel:+78312815878" class='blue-link'>8 (831) 281-58-78</a></b>
                                 <br>
-                                <b><a href="tel:+78312815898" class='black-link'>8 (831) 281-58-98</a></b>
+                                <b><a href="tel:+78312815898" class='blue-link'>8 (831) 281-58-98</a></b>
                             </div>
                         </div>
                     </div>
