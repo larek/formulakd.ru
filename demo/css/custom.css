@@ -5,6 +5,10 @@ body {
     line-height: 18px;
 }
 
+.black-link{
+    color:black;
+}
+
 .mobile-header-phone{
     font-size: 1rem;
     display: flex;
