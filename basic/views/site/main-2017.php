@@ -49,25 +49,17 @@ $this->title = 'ФормулаКД';
                 </div>
             </div>
             <div class="row">
-                  <? 
-                  foreach($model as $item):
-                    if($item->big == 1){
-                      $itemClass = 'col-md-8';
-                      $itemCover = $item->photo2 == "" ? "http://placehold.it/730x292" : "/uploads/730x292/".$item->photo2;
-                    }else{
-                      $itemClass = 'col-md-4';
-                      $itemCover = $item->photo3 == "" ? "http://placehold.it/350x292" : "/uploads/350x292/".$item->photo3;
-                    }
-                  ?>
-                    <div class="<?= $itemClass;?> mt-4 project-item" onclick='window.location="/projects/<?= $item->id?>"'>
-                      <img src="<?= $itemCover?>" class='img-fluid' alt="">
-                      <div class='projects-description'><?= $item->title; ?></div>
-                    </div>
-                  <? endforeach;?>
+            <? 
+              foreach($model as $item):
+            ?>
+            <div class="col-md-3">
+                <img src="<?= $item->photo3 == '' ? 'http://placehold.it/350x292' : '/uploads/350x292/'.$item->photo3?>" class='img-fluid' alt="">
+            </div>
+            <? endforeach;?>
             </div>
             <div class="row">
                 <div class="col-md-12 text-center ">
-                    <a href="#" class="btn btn-link white-link">Более полный список здесь</a>
+                    <a href="/projects" class="btn btn-link white-link">Более полный список здесь</a>
                 </div>
             </div>
         </div>

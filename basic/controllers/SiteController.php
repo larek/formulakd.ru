@@ -81,7 +81,7 @@ class SiteController extends Controller
     public function action2017(){
         $this->layout = 'main-2017';
         
-        $model = Projects::find()->all();
+        $model = Projects::find()->limit(8)->all();
         return $this->render('main-2017', [
             'model' => $model
         ]);
