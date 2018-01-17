@@ -41,7 +41,7 @@ $this->title = 'ФормулаКД';
             </div>
         </div>
     </div>
-    <div class="gray-panel mt-5">
+    <div class="gray-pattern mt-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
