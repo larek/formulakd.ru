@@ -48,7 +48,7 @@ $this->title = 'ФормулаКД';
                     <div class="panel-title">Выполненные проекты:</div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row mt-4">
             <? 
               foreach($model as $item):
             ?>
@@ -59,7 +59,7 @@ $this->title = 'ФормулаКД';
             </div>
             <? endforeach;?>
             </div>
-            <div class="row">
+            <div class="row mt-4">
                 <div class="col-md-12 text-center ">
                     <a href="/projects" class="btn btn-link white-link">Более полный список здесь</a>
                 </div>
