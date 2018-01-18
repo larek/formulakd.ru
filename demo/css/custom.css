@@ -107,7 +107,7 @@ a.nav-link.active-item{
 }
 
 .gray-panel {
-    background: #727372;
+    background: #6f6f6f;
     color: white;
     padding: 20px 20px;
 }
@@ -391,6 +391,9 @@ button.navbar-toggler {
     font-size: 2rem;
     padding: 10px 0px;
     line-height: 40px;
+}
+.project-list-item__img {
+    box-shadow: 2px 2px 2px black;
 }
 
 /*Smaller than 768px*/

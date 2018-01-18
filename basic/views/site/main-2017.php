@@ -41,7 +41,7 @@ $this->title = 'ФормулаКД';
             </div>
         </div>
     </div>
-    <div class="gray-pattern mt-5">
+    <div class="gray-panel mt-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
@@ -53,7 +53,9 @@ $this->title = 'ФормулаКД';
               foreach($model as $item):
             ?>
             <div class="col-md-3">
-                <img src="<?= $item->photo3 == '' ? 'http://placehold.it/350x292' : '/uploads/350x292/'.$item->photo3?>" class='img-fluid' alt="">
+                <a href="/projects/<?= $item->id?>">
+                <img src="<?= $item->photo7 == '' ? 'http://via.placeholder.com/350x292/ffffff/350x292' : '/uploads/350x292/'.$item->photo7?>" class='img-fluid project-list-item__img' alt="">
+                </a>
             </div>
             <? endforeach;?>
             </div>

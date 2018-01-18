@@ -104,6 +104,19 @@ $this->registerJsFile('/js/single-project.js?v=1.0.1');
             </div>
 
             <div class="panel panel-default">
+              <div class="panel-heading"><?= $model->getAttributeLabel('photo7')?></div>
+              <div class="panel-body">
+                <div id='picture7'>
+                    <?= !$model->isNewRecord && $model->photo7 !== "" ? Html::img('/uploads/300x200/'. $model->photo7) : ''?>
+                </div>
+                <input type="file" class='uploadBtn' for='picture7'>
+                <div class="hide">
+                    <?= $form->field($model, 'photo7')->textInput(['maxlength' => true, 'id' => 'input-picture7']) ?>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
               <div class="panel-heading"><?= $model->getAttributeLabel('photo6')?></div>
               <div class="panel-body">
                 <div id='picture6'>

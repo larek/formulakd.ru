@@ -24,6 +24,7 @@ use Yii;
  * @property string $photo4
  * @property string $photo5
  * @property string $photo6
+ * @property string $photo7
  * @property string $youtube
  * @property integer $big
  */
@@ -46,7 +47,7 @@ class Projects extends \yii\db\ActiveRecord
             [['title'], 'required'],
             [['id','big'], 'integer'],
             [['description'], 'string'],
-            [['title', 'demensions', 'paramtitle1', 'paramvalue1', 'paramtitle2', 'paramvalue2', 'list1', 'list2', 'list3', 'photo1', 'photo2', 'photo3', 'photo4', 'photo5', 'photo6', 'youtube'], 'string', 'max' => 250],
+            [['title', 'demensions', 'paramtitle1', 'paramvalue1', 'paramtitle2', 'paramvalue2', 'list1', 'list2', 'list3', 'photo1', 'photo2', 'photo3', 'photo4', 'photo5', 'photo6', 'photo7', 'youtube'], 'string', 'max' => 250],
         ];
     }
 
@@ -73,6 +74,7 @@ class Projects extends \yii\db\ActiveRecord
             'photo4' => 'Фото товара 1',
             'photo5' => 'Фото товара 2',
             'photo6' => 'Фото youtube',
+            'photo7' => 'Фото на главную',
             'youtube' => 'Youtube',
             'big' => 'Длинная обложка'
         ];

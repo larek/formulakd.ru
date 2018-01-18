@@ -66,6 +66,11 @@ $this->params['breadcrumbs'][] = $this->title;
                 'value' => $model->photo5 == "" ? "" : Html::img("/uploads/300x200/". $model->photo5)
             ],
             [
+                'attribute' => 'photo7',
+                'format' => 'raw',
+                'value' => $model->photo7 == "" ? "" : Html::img("/uploads/300x200/". $model->photo7)
+            ],
+            [
                 'attribute' => 'photo6',
                 'format' => 'raw',
                 'value' => $model->photo6 == "" ? "" : Html::img("/uploads/300x200/". $model->photo6)
