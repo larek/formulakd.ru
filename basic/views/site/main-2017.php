@@ -19,7 +19,7 @@ $this->title = 'ФормулаКД';
                     Наши возможности:
                 </div>
             </div>
-        </div>
+    </div>
     </div>
     <div class="container mt-4">
         <div class="row">
@@ -52,7 +52,7 @@ $this->title = 'ФормулаКД';
             <? 
               foreach($model as $item):
             ?>
-            <div class="col-md-3">
+            <div class="col-md-3 mt-2">
                 <a href="/projects/<?= $item->id?>">
                 <img src="<?= $item->photo7 == '' ? 'http://via.placeholder.com/350x292/ffffff/350x292' : '/uploads/350x292/'.$item->photo7?>" class='img-fluid project-list-item__img' alt="">
                 </a>
