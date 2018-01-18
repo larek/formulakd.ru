@@ -75,27 +75,54 @@ $this->title = 'ФормулаКД';
         <div class="row">
             <div class="col-md-4 mt-4">
                 <div class="row">
-                    <div class="col-md-4 col-4"><img src="/demo/images/about-image-1.jpg" class='img-fluid' alt=""></div>
-                    <div class="col-md-8 col-8">ШИРОКИЙ ОПЫТ РАБОТЫ ПО ПРОЕКТИРОВАНИЮ И ИЗГОТОВЛЕНИЮ НЕСТАНДАРТНОГО И ИСПЫТАТЕЛЬНОГО ОБОРУДОВАНИЯ</div>
+                    <div class="col-4 main-about_picture"><img src="/demo/images/about-image-1.jpg" class='img-fluid' alt=""></div>
+                    <div class="col-8">
+                        <div class="main-about__description">
+                            <div class="main-about_description_row">ШИРОКИЙ ОПЫТ РАБОТЫ</div>
+                            <div class="main-about_description_row">ПО ПРОЕКТИРОВАНИЮ</div>
+                            <div class="main-about_description_row">И ИЗГОТОВЛЕНИЮ</div>
+                            <div class="main-about_description_row">НЕСТАНДАРТНОГО</div>
+                            <div class="main-about_description_row">И ИСПЫТАТЕЛЬНОГО</div>
+                            <div class="main-about_description_row">ОБОРУДОВАНИЯ</div>
+                        </div>
+                </div>
                 </div>
             </div>
             <div class="col-md-4 mt-4">
                 <div class="row">
-                    <div class="col-md-4 col-4"><img src="/demo/images/about-image-2.jpg" class='img-fluid' alt=""></div>
-                    <div class="col-md-8 col-8">КОМАНДА ТАЛАНТЛИВЫХ И КВАЛИФИЦИРОВАННЫХ ИНЖЕНЕРОВ С ОПЫТОМ РАБОТЫ В РАЗНЫХ СФЕРАХ ИНЖЕНЕРНОЙ ДЕЯТЕЛЬНОСТИ</div>
+                    <div class="col-4 main-about_picture"><img src="/demo/images/about-image-2.jpg" class='img-fluid' alt=""></div>
+                    <div class="col-8">
+                        <div class="main-about__description">
+                            <div class="main-about_description_row">КОМАНДА ТАЛАНТЛИВЫХ</div>
+                            <div class="main-about_description_row">И КВАЛИФИЦИРОВАННЫХ</div>
+                            <div class="main-about_description_row">ИНЖЕНЕРОВ С ОПЫТОМ</div>
+                            <div class="main-about_description_row">С ОПЫТОМ РАБОТЫ </div>
+                            <div class="main-about_description_row">В РАЗНЫХ СФЕРАХ</div>
+                            <div class="main-about_description_row">ИНЖЕНЕРНОЙ ДЕЯТЕЛЬНОСТИ</div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-md-4 mt-4">
                 <div class="row">
-                    <div class="col-md-4 col-4"><img src="/demo/images/about-image-3.jpg" class='img-fluid' alt=""></div>
-                    <div class="col-md-8 col-8">СОБСТВЕННАЯ ПРОИЗВОДСВЕННАЯ ПЛОЩАДКА, ОСНАЩЕННАЯ СОВРЕМЕННЫМ ОБОРУДОВАНИЕМ</div>
+                    <div class="col-4 main-about_picture"><img src="/demo/images/about-image-3.jpg" class='img-fluid' alt=""></div>
+                    <div class="col-8">
+                        <div class="main-about__description">
+                            <div class="main-about_description_row">СОБСТВЕННАЯ</div>
+                            <div class="main-about_description_row">ПРОИЗВОДСТВЕННАЯ</div>
+                            <div class="main-about_description_row">ПЛОЩАДКА,</div>
+                            <div class="main-about_description_row">ОСНАЩЕННАЯ</div>
+                            <div class="main-about_description_row">СОВРЕМЕННЫМ</div>
+                            <div class="main-about_description_row">ОБОРУДОВАНИЕМ</div>
+                        </div>
+                </div>
                 </div>
             </div>
         </div>
     </div>
 
 <div class="dark-panel">
-     <div class="container mt-3">
+     <div class="container mt-5">
         <div class="row">
             <div class="col-md-9">
                 <div class="row">

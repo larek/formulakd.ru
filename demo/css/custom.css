@@ -4,6 +4,15 @@ body {
     font-size: 13px;
 }
 
+.main-about_description_row {
+    white-space: nowrap;
+}
+
+.main-about_picture{
+    display: flex;
+    align-items: center;
+}
+
 .blue-link{
     color: #336599;
     text-decoration: underline;
