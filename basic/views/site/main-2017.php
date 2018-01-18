@@ -23,21 +23,22 @@ $this->title = 'ФормулаКД';
     </div>
     <div class="container mt-4">
         <div class="row">
-            <div class="col-md-3 col-6 text-center">
+            <div class="col-md-3 col-6 text-center mt-4">
                 <img src="/demo/images/service-image-1.jpg" class='img-fluid rounded-circle' alt="">
-                <a href="#" class=''>Проектирование <br>и расчеты</a>
+                <a href="#" class='potencial_item_link'>Проектирование <br>и расчеты</a>
             </div>
-            <div class="col-md-3 col-6  text-center">
+            <div class="col-md-3 col-6  text-center mt-4">
                 <img src="/demo/images/service-image-2.jpg" class='img-fluid rounded-circle' alt="">
-                <a href="#" class=''>Разработка <br>документации</a>
+                <a href="#" class='potencial_item_link'>Разработка <br>документации</a>
             </div>
-            <div class="col-md-3 col-6  text-center">
+            <div class="col-md-3 col-6  text-center mt-4">
                 <img src="/demo/images/service-image-3.jpg" class='img-fluid rounded-circle' alt="">
-                <a href="#" class=''>Изготовление <br>оборудования</a>
+                <a href="#" class='potencial_item_link'>Изготовление <br>оборудования</a>
             </div>
-            <div class="col-md-3 col-6 text-center">
+            <div class="col-md-3 col-6 text-center mt-4">
                 <img src="/demo/images/service-image-4.jpg" class='img-fluid rounded-circle' alt="">
-                <a href="#" class=''>Разработка <br>систем управления</a>
+                
+                <a href="#" class='potencial_item_link'>Разработка <br>систем управления</a>
             </div>
         </div>
     </div>
