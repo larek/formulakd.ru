@@ -77,7 +77,7 @@ $this->title = 'ФормулаКД';
             <div class="col-md-4 mt-4">
                 <div class="row">
                     <div class="col-4 main-about_picture"><img src="/demo/images/about-image-1.jpg" class='img-fluid' alt=""></div>
-                    <div class="col-8">
+                    <div class="col-8 main-rows-wrapper">
                         <div class="main-about__description">
                             <div class="main-about_description_row">ШИРОКИЙ ОПЫТ РАБОТЫ</div>
                             <div class="main-about_description_row">ПО ПРОЕКТИРОВАНИЮ</div>
@@ -92,7 +92,7 @@ $this->title = 'ФормулаКД';
             <div class="col-md-4 mt-4">
                 <div class="row">
                     <div class="col-4 main-about_picture"><img src="/demo/images/about-image-2.jpg" class='img-fluid' alt=""></div>
-                    <div class="col-8">
+                    <div class="col-8 main-rows-wrapper">
                         <div class="main-about__description">
                             <div class="main-about_description_row">КОМАНДА ТАЛАНТЛИВЫХ</div>
                             <div class="main-about_description_row">И КВАЛИФИЦИРОВАННЫХ</div>
@@ -107,7 +107,7 @@ $this->title = 'ФормулаКД';
             <div class="col-md-4 mt-4">
                 <div class="row">
                     <div class="col-4 main-about_picture"><img src="/demo/images/about-image-3.jpg" class='img-fluid' alt=""></div>
-                    <div class="col-8">
+                    <div class="col-8 main-rows-wrapper">
                         <div class="main-about__description">
                             <div class="main-about_description_row">СОБСТВЕННАЯ</div>
                             <div class="main-about_description_row">ПРОИЗВОДСТВЕННАЯ</div>
@@ -225,33 +225,37 @@ $this->title = 'ФормулаКД';
         <div class="row">
             <div class="col-md-3">
                 <div class="row">
-                    <div class="col-md-12 text-center mt-3">
+                    <div class="col-6 col-md-12 text-center mt-3">
                         <img src="/images/mashinka.svg" class='img-fluid small' alt="">
                         <div class="workmap_row">Организация</div>
                         <div class="workmap_row">транспортных услуг</div>
-                        <div class="workmap_row">по доставке оборудования</div>
+                        <div class="workmap_row">по доставке</div>
+                        <div class="workmap_row">оборудования</div>
                     </div>
-                    <div class="col-md-12 text-center mt-3">
+                    <div class= "col-6  col-md-12 text-center mt-3">
                         <img src="/images/shesterenka.svg" class='img-fluid small' alt="">
-                        <div class="workmap_row">Послепродажное обслуживание</div>
+                        <div class="workmap_row">Послепродажное</div>
+                        <div class="workmap_row">обслуживание</div>
                         <div class="workmap_row">и гарантия качества</div>
                         <div class="workmap_row">оборудования</div>
                     </div>
-                    <div class="col-md-12 text-center mt-3">
+                    <div class="col-6  col-md-12 text-center mt-3">
                         <img src="/images/dokument.svg" class='img-fluid small' alt="">
-                        <div class="workmap_row"><Организация и проведение</div>
+                        <div class="workmap_row"><Организация</div>
+                        <div class="workmap_row">и проведение</div>
                         <div class="workmap_row">первичной аттестации</div>
                         <div class="workmap_row">оборудования</div>
                     </div>
-                    <div class="col-md-12 text-center mt-3">
+                    <div class="col-6 col-md-12 text-center mt-3">
                         <img src="/images/instrument.svg" class='img-fluid small' alt="">
                         <div class="workmap_row">Проведение монтажных</div>
-                        <div class="workmap_row">и пуско-наладочных работ,</div>
+                        <div class="workmap_row">и пуско-наладочных</div>
+                        <div class="workmap_row">работ,</div>
                         <div class="workmap_row">инструктаж персонала</div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-9">
+            <div class="col-md-9 mt-3 workmap-shestermi-wrapper">
                 <img src="/images/karta_shesterni_e.jpg" class='img-fluid' alt="">
             </div>
         </div>
@@ -267,7 +271,7 @@ $this->title = 'ФормулаКД';
     </div>
     <div class="container mt-5">
         <div class="row">
-            <div class="col-md-3 text-center">
+            <div class="col-6 col-md-3 text-center">
                 <div class="partner-logo-wrap">
                     <img src="/demo/images/customer-logo-1.jpg" style='width: 80%' class='img-fluid' alt="">
                 </div>
@@ -276,21 +280,21 @@ $this->title = 'ФормулаКД';
                     <br>«Авиаагрегат»</p>
                 </div>
             </div>
-            <div class="col-md-3 text-center">
+            <div class="col-6 col-md-3 text-center">
                 <div class="partner-logo-wrap">
                     <img src="/demo/images/customer-logo-2.jpg" class='img-fluid' alt="">
                 </div>
                 <p>АО «Концерн ВКО
                     <br>«Алмаз-Антей»</p>
             </div>
-            <div class="col-md-3 text-center">
+            <div class="col-6 col-md-3 text-center">
                 <div class="partner-logo-wrap">
                     <img src="/demo/images/customer-logo-3.jpg" style='width: 75%' class='img-fluid' alt="">
                 </div>
                 <p>АО
                     <br>«НИПТБ ОНЕГА»</p>
             </div>
-            <div class="col-md-3 text-center">
+            <div class="col-6 col-md-3 text-center">
                 <div class="partner-logo-wrap">
                     <img src="/demo/images/customer-logo-4.jpg" class='img-fluid' alt="">
                 </div>
@@ -300,21 +304,21 @@ $this->title = 'ФормулаКД';
         </div>
         <div class="row">
             <div style="width: 12.499999995%"></div>
-            <div class="col-md-3 text-center">
+            <div class="col-6 col-md-3 text-center">
                 <div class="partner-logo-wrap">
                     <img src="/demo/images/customer-logo-5.jpg" style='width: 80%' class='img-fluid' alt="">
                 </div>
                 <p>АО
                     <br>«СмартЭнергоТрейд»</p>
             </div>
-            <div class="col-md-3 text-center">
+            <div class="col-6 col-md-3 text-center">
                 <div class="partner-logo-wrap">
                     <img src="/demo/images/customer-logo-6.jpg" style='width: 80%' class='img-fluid' alt="">
                 </div>
                 <p>ООО
                     <br>«Луидор Тюнинг»</p>
             </div>
-            <div class="col-md-3 text-center">
+            <div class="col-6 col-md-3 text-center">
                 <div class="partner-logo-wrap">
                     <img src="/demo/images/customer-logo-7.jpg" style='width: 80%' class='img-fluid' alt="">
                 </div>

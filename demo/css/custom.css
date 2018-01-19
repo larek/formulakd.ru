@@ -8,7 +8,7 @@ body {
     white-space: nowrap;
 }
 
-.main-about_picture{
+.main-about_picture, .main-rows-wrapper, .workmap-shestermi-wrapper{
     display: flex;
     align-items: center;
 }
@@ -412,9 +412,18 @@ button.navbar-toggler {
     box-shadow: 2px 2px 2px black;
 }
 
+/*Smaller than 576px*/
+@media (max-width: 576px){
+    .contact-block {
+        margin-top: 0px!important;
+        position: relative;
+        background: none;
+    }
+}
+
 /*Smaller than 768px*/
 @media (max-width: 768px){
-   
+
    .right-double-angle{
     display:none;
    } 

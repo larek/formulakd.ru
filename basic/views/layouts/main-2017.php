@@ -63,13 +63,18 @@ AppAsset2017::register($this);
     <?= $content?>
 
  <div class="map-wrapper">
+
+        <div class="d-block d-md-none text-center mt-4">
+            <a class='btn btn-secondary' data-fancybox="iframe" data-src="https://yandex.ru/map-widget/v1/?um=constructor%3AoFyOK4TT-dveXO0gw1jugftdQYfwy6Z6&amp;source=constructor" data-type="iframe" data-width='1000px' href="javascript:;">Посмотреть на карте</a>
+        </div>
+        
         <div class="container">
             <div class="row">
                 <div class="col-md-7"></div>
                 <div class="col-md-4 p-0">
                     <div class="contact-block">
                         <div class="row">
-                            <div class="col-12 text-center">
+                            <div class="col-12 text-center d-none d-md-block">
                                 <span class="contact-title">Наши контакты</span>
                             </div>
                         </div>
@@ -106,10 +111,6 @@ AppAsset2017::register($this);
                     </div>
                 </div>
             </div>
-        </div>
-        
-        <div class="d-block d-md-none text-center mt-4">
-            <a class='btn btn-secondary' data-fancybox="iframe" data-src="https://yandex.ru/map-widget/v1/?um=constructor%3AoFyOK4TT-dveXO0gw1jugftdQYfwy6Z6&amp;source=constructor" data-type="iframe" data-width='1000px' href="javascript:;">Посмотреть на карте</a>
         </div>
 
         <div class="d-none d-md-block mt-4">
