@@ -4,7 +4,7 @@ body {
     font-size: 13px;
 }
 
-.main-about_description_row {
+.main-about_description_row, .step-description_row, .workmap_row {
     white-space: nowrap;
 }
 

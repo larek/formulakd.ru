@@ -133,33 +133,61 @@ $this->title = 'ФормулаКД';
                         </div>
                     </div>
                 </div>
-                <div class="row steps-absolute">
+                <div class="row">
                     <div class="col-md-3 text-center step-container">
-                        <img src="/images/steps-lamp.svg"  class='img-fluid' alt="">
+                        <img src="/images/lampochka.svg"  class='img-fluid' alt="">
                         <img src="/images/Right_pointing_double_angle_quotation_mark.svg" class='right-double-angle' alt="">
                         <div class="step-description">
-                            Вы обращаетесь к нам с собственной идеей или наработкой. Связаться с нами можно по телефону 8 (831) 281-58-78 или сразу отправив запрос на электронную почту: info@formulakd.ru
+                            <div class="step-description_row">Вы обращаетесь к нам</div>
+                            <div class="step-description_row">с собственной идеей</div>
+                            <div class="step-description_row">или нароботкой</div>
+                            <div class="step-description_row">Связаться с нами можно</div>
+                            <div class="step-description_row">по телефону 281-58-78</div>
+                            <div class="step-description_row">или сразу отправив запрос</div>
+                            <div class="step-description_row">на электронную почту</div>
+                            <div class="step-description_row">info@formulakd.ru</div>
                         </div>
 
                     </div>
                     <div class="col-md-3 text-center step-container">
-                        <img src="/demo/images/step-icon-2.svg"  class='img-fluid' alt="">
+                        <img src="/images/top_sikret.svg"  class='img-fluid' alt="">
                         <img src="/images/Right_pointing_double_angle_quotation_mark.svg" class='right-double-angle' alt="">
                         <div class="step-description">
-                            Мы гарантируем абсолютную конфеденциальность информации, полученной от клиента в процессе работы. Заключаем соглашение о конфеденциальности
+                            <div class="step-description_row">Мы гарантируем</div>
+                            <div class="step-description_row">абсолютную</div>
+                            <div class="step-description_row">конфеденциальность</div>
+                            <div class="step-description_row">информации,</div>
+                            <div class="step-description_row">полученной от клиента</div>
+                            <div class="step-description_row">в процессе работы.</div>
+                            <div class="step-description_row">Заключаем соглашение</div>
+                            <div class="step-description_row">о конфеденциальности</div>
                         </div>
                     </div>
                     <div class="col-md-3 text-center step-container">
-                        <img src="/demo/images/step-icon-3.svg"  class='img-fluid' alt="">
+                        <img src="/images/kompyuter.svg"  class='img-fluid' alt="">
                         <img src="/images/Right_pointing_double_angle_quotation_mark.svg" class='right-double-angle' alt="">
                         <div class="step-description">
-                            Исходя из требований Заказчика проводим анализ возможных вариантов решения. Проектируем изделие и разрабатываем 3-D модель будущего продукта
+                            <div class="step-description_row">Исходя из требований</div>
+                            <div class="step-description_row">Заказчика проводим</div>
+                            <div class="step-description_row">анализ возможных</div>
+                            <div class="step-description_row">вариантов решения.</div>
+                            <div class="step-description_row">Проектируем изделие</div>
+                            <div class="step-description_row">и разрабатываем</div>
+                            <div class="step-description_row">3-D модель</div>
+                            <div class="step-description_row">будущего продукта</div>
                         </div>
                     </div>
                     <div class="col-md-3 text-center step-container">
-                        <img src="/demo/images/step-icon-4.svg"  class='img-fluid' alt="">
+                        <img src="/images/kulak.svg"  class='img-fluid' alt="">
                         <div class="step-description">
-                            Изготовление продукта. При этом регулируется ход производства и, если необходимо, устраняются выявленные недостатки проектирования или подбора материала
+                            <div class="step-description_row">Изготовление продукта.</div>
+                            <div class="step-description_row">При этом регулируется</div>
+                            <div class="step-description_row">ход производства</div>
+                            <div class="step-description_row">и, если необходимо,</div>
+                            <div class="step-description_row">устраняются выявленные</div>
+                            <div class="step-description_row">недостатки</div>
+                            <div class="step-description_row">проектирования</div>
+                            <div class="step-description_row">или подбора материала</div>
                         </div>
                     </div>
                 </div>
@@ -167,7 +195,14 @@ $this->title = 'ФормулаКД';
             <div class="col-md-3 text-center">
                 <img src="/images/lump-2.jpg" class='img-fluid' alt="">
                 <div class="lump-description">
-                     Вы получаете абсолютно рабочее изделие с проработанной технологией изготовления серийных партий и комплектом документации, полностью соответствующим изделиям
+                     <div class="step-description_row">Вы получаете абсолютно</div>
+                     <div class="step-description_row">рабочее изделие</div>
+                     <div class="step-description_row">с проработанной</div>
+                     <div class="step-description_row">технологией изготовления</div>
+                     <div class="step-description_row">серийных партий</div>
+                     <div class="step-description_row">и комплектом документации,</div>
+                     <div class="step-description_row">полностью соответствующим</div>
+                     <div class="step-description_row">изделиям</div>
                 </div>
             </div>
             <div class="col-md-12">
@@ -190,30 +225,38 @@ $this->title = 'ФормулаКД';
         <div class="row">
             <div class="col-md-3">
                 <div class="row">
-                    <div class="col-md-12 text-center">
-                        <img src="/demo/images/map-icon-1.jpg" class='img-fluid small' alt="">
-                        <p>Организация транспортных услуг по доставке оборудования</p>
+                    <div class="col-md-12 text-center mt-3">
+                        <img src="/images/mashinka.svg" class='img-fluid small' alt="">
+                        <div class="workmap_row">Организация</div>
+                        <div class="workmap_row">транспортных услуг</div>
+                        <div class="workmap_row">по доставке оборудования</div>
                     </div>
-                    <div class="col-md-12 text-center">
-                        <img src="/demo/images/map-icon-2.svg" class='img-fluid small' alt="">
-                        <p>Послепродажное обслуживание и гарантия качества оборудования</p>
+                    <div class="col-md-12 text-center mt-3">
+                        <img src="/images/shesterenka.svg" class='img-fluid small' alt="">
+                        <div class="workmap_row">Послепродажное обслуживание</div>
+                        <div class="workmap_row">и гарантия качества</div>
+                        <div class="workmap_row">оборудования</div>
                     </div>
-                    <div class="col-md-12 text-center">
-                        <img src="/demo/images/map-icon-3.svg" class='img-fluid small' alt="">
-                        <p>Организация и проведение первичной аттестации оборудования</p>
+                    <div class="col-md-12 text-center mt-3">
+                        <img src="/images/dokument.svg" class='img-fluid small' alt="">
+                        <div class="workmap_row"><Организация и проведение</div>
+                        <div class="workmap_row">первичной аттестации</div>
+                        <div class="workmap_row">оборудования</div>
                     </div>
-                    <div class="col-md-12 text-center">
-                        <img src="/demo/images/map-icon-4.svg" class='img-fluid small' alt="">
-                        <p>Проведение монтажных и пуско-наладочных работ, инструктаж персонал</p>
+                    <div class="col-md-12 text-center mt-3">
+                        <img src="/images/instrument.svg" class='img-fluid small' alt="">
+                        <div class="workmap_row">Проведение монтажных</div>
+                        <div class="workmap_row">и пуско-наладочных работ,</div>
+                        <div class="workmap_row">инструктаж персонала</div>
                     </div>
                 </div>
             </div>
             <div class="col-md-9">
-                <img src="/images/main-map.png" class='img-fluid' alt="">
+                <img src="/images/karta_shesterni_e.jpg" class='img-fluid' alt="">
             </div>
         </div>
     </div>
-    <div class="dark-blue-panel">
+    <div class="dark-blue-panel mt-4">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
