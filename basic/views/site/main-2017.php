@@ -221,7 +221,7 @@ $this->title = 'ФормулаКД';
 </div>
 
 
-    <div class="container mt-5">
+    <div class="container">
         <div class="row">
             <div class="col-md-3">
                 <div class="row">
@@ -269,61 +269,64 @@ $this->title = 'ФормулаКД';
             </div>
         </div>
     </div>
-    <div class="container mt-5">
+    <div class="container">
         <div class="row">
-            <div class="col-6 col-md-3 text-center">
+            <div class="col-6 col-md-3 text-center mt-4">
                 <div class="partner-logo-wrap">
-                    <img src="/demo/images/customer-logo-1.jpg" style='width: 80%' class='img-fluid' alt="">
+                    <img src="/images/customer-logo-1-2.jpg" class='img-fluid' alt="">
                 </div>
                 <div class="partner-description-wrap">
                      <p>АО
                     <br>«Авиаагрегат»</p>
                 </div>
             </div>
-            <div class="col-6 col-md-3 text-center">
+            <div class="col-6 col-md-3 text-center mt-4">
                 <div class="partner-logo-wrap">
-                    <img src="/demo/images/customer-logo-2.jpg" class='img-fluid' alt="">
+                    <img src="/images/customer-logo-2-2.jpg" class='img-fluid' alt="">
                 </div>
                 <p>АО «Концерн ВКО
                     <br>«Алмаз-Антей»</p>
             </div>
-            <div class="col-6 col-md-3 text-center">
+            <div class="col-6 col-md-3 text-center mt-4">
                 <div class="partner-logo-wrap">
-                    <img src="/demo/images/customer-logo-3.jpg" style='width: 75%' class='img-fluid' alt="">
+                    <img src="/images/customer-logo-3-2.jpg" class='img-fluid' alt="">
                 </div>
                 <p>АО
                     <br>«НИПТБ ОНЕГА»</p>
             </div>
-            <div class="col-6 col-md-3 text-center">
+            <div class="col-6 col-md-3 text-center mt-4">
                 <div class="partner-logo-wrap">
-                    <img src="/demo/images/customer-logo-4.jpg" class='img-fluid' alt="">
+                    <img src="/images/customer-logo-4-2.jpg" class='img-fluid' alt="">
                 </div>
                 <p>АО «Саратовский
                     <br>агрегатный завод»</p>
             </div>
-        </div>
-        <div class="row">
-            <div style="width: 12.499999995%"></div>
-            <div class="col-6 col-md-3 text-center">
+            <div class="col-6 col-md-3 text-center mt-4">
                 <div class="partner-logo-wrap">
-                    <img src="/demo/images/customer-logo-5.jpg" style='width: 80%' class='img-fluid' alt="">
+                    <img src="/images/customer-logo-5-2.jpg" class='img-fluid' alt="">
                 </div>
                 <p>АО
                     <br>«СмартЭнергоТрейд»</p>
             </div>
-            <div class="col-6 col-md-3 text-center">
+            <div class="col-6 col-md-3 text-center mt-4">
                 <div class="partner-logo-wrap">
-                    <img src="/demo/images/customer-logo-6.jpg" style='width: 80%' class='img-fluid' alt="">
+                    <img src="/images/customer-logo-6-2.jpg" class='img-fluid' alt="">
                 </div>
                 <p>ООО
                     <br>«Луидор Тюнинг»</p>
             </div>
-            <div class="col-6 col-md-3 text-center">
+            <div class="col-6 col-md-3 text-center mt-4">
                 <div class="partner-logo-wrap">
-                    <img src="/demo/images/customer-logo-7.jpg" style='width: 80%' class='img-fluid' alt="">
+                    <img src="/images/customer-logo-7-2.jpg" class='img-fluid' alt="">
                 </div>
                 <p>АО «НПЦ газотурбостроения
                     <br> «Салют»</p>
+            </div>
+            <div class="col-6 col-md-3 text-center mt-4">
+                <div class="partner-logo-wrap">
+                    <img src="/images/customer-logo-8-2.jpg" class='img-fluid' alt="">
+                </div>
+                <p>ПАО<br>«ОДК-УМПО»</p>
             </div>
         </div>
     </div>
