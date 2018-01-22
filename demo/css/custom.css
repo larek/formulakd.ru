@@ -4,6 +4,10 @@ body {
     font-size: 13px;
 }
 
+.step-block_lump_image{
+    position: absolute;
+}
+
 .main-about_description_row, .step-description_row, .workmap_row {
     white-space: nowrap;
 }
@@ -392,13 +396,23 @@ button.navbar-toggler {
     height:70px;
 }
 
+.step-block_lump{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size:12px;
+}
+
 .lump-description {
-        position: absolute;
-        margin: -153px 0px 0px 0px;
-        width: 90%;
-        background: #1f9bd875;
-        padding: 5px;
-    }
+    background: #1f9bd875;
+    padding: 5px 0px;
+}
+
+.step-block_lump_background{
+    position: relative;
+    padding: 15px 0px;
+    z-index: 2;
+}
 .steps-title {
     text-align: center;
     font-size: 35px;
@@ -430,6 +444,10 @@ button.navbar-toggler {
 /*Larger than 768px*/
 @media (min-width: 768px) {
 
+    .step-block_lump{
+        background: url(/images/lump-2.jpg);
+        background-size: 100%;
+    }
     .steps-title{
         margin-top: 20px;
     }

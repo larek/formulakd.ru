@@ -192,17 +192,18 @@ $this->title = 'ФормулаКД';
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 text-center">
-                <img src="/images/lump-2.jpg" class='img-fluid' alt="">
-                <div class="lump-description">
-                     <div class="step-description_row">Вы получаете абсолютно</div>
-                     <div class="step-description_row">рабочее изделие</div>
-                     <div class="step-description_row">с проработанной</div>
-                     <div class="step-description_row">технологией изготовления</div>
-                     <div class="step-description_row">серийных партий</div>
-                     <div class="step-description_row">и комплектом документации,</div>
-                     <div class="step-description_row">полностью соответствующим</div>
-                     <div class="step-description_row">изделиям</div>
+            <div class="col-md-3 text-center step-block_lump" id='step-block_lump'>
+                <div class="step-block_lump_background">
+                    <div class="lump-description">
+                         <div class="step-description_row">Вы получаете абсолютно</div>
+                         <div class="step-description_row">рабочее изделие</div>
+                         <div class="step-description_row">с проработанной</div>
+                         <div class="step-description_row">технологией изготовления</div>
+                         <div class="step-description_row">серийных партий</div>
+                         <div class="step-description_row">и комплектом документации,</div>
+                         <div class="step-description_row">полностью соответствующим</div>
+                         <div class="step-description_row">изделиям</div>
+                    </div>
                 </div>
             </div>
             <div class="col-md-12">
