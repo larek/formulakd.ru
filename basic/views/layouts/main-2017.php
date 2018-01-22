@@ -49,12 +49,12 @@ AppAsset2017::register($this);
 
                 <div class="collapse navbar-collapse" id="navbarsExample09">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item"><a class="nav-link" href="#">Главная <span class="sr-only">(current)</span></a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Услуги</a></li>
-                        <li class="nav-item"><a class="nav-link <?= Yii::$app->controller->route == "site/about2" ? 'active-item' : ''; ?>" href="#">О компании</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Проекты</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
-                        <li class="nav-item dark-blue-item d-none d-md-block"><a class="nav-link" href="#">Заказать звонок</a></li>
+                        <li class="nav-item"><a class="nav-link <?= Yii::$app->controller->route == "site/2017" ? 'active-item' : ''; ?>" href="/2017">Главная <span class="sr-only">(current)</span></a></li>
+                        <li class="nav-item"><a class="nav-link <?= Yii::$app->controller->route == "site/services" ? 'active-item' : ''; ?>" href="/services">Услуги</a></li>
+                        <li class="nav-item"><a class="nav-link <?= Yii::$app->controller->route == "site/about2" ? 'active-item' : ''; ?>" href="/about-2">О компании</a></li>
+                        <li class="nav-item"><a class="nav-link <?= Yii::$app->controller->route == "site/projects" ? 'active-item' : ''; ?>" href="/projects">Проекты</a></li>
+                        <li class="nav-item"><a class="nav-link <?= Yii::$app->controller->route == "site/contacts" ? 'active-item' : ''; ?>" href="/contacts">Контакты</a></li>
+                        <li class="nav-item dark-blue-item d-none d-md-block"><a class="nav-link <?= Yii::$app->controller->route == "site/callback-page" ? 'active-item' : ''; ?>" href="/callback-page">Заказать звонок</a></li>
                     </ul>
                 </div>
             </nav>
