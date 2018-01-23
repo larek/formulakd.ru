@@ -4,6 +4,36 @@ body {
     font-size: 13px;
 }
 
+.service-block-description {
+    text-align: justify;
+    word-break: break-all;
+}
+
+
+.callback-wrapper {
+    width: 100%;
+    border: 5px solid #F2FD5C;
+    padding: 18px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.callback-title {
+    text-align: center;
+    font-size: 27px;
+    color: #3272B9;
+}
+
+.callback-subtitle {
+    text-align: center;
+    font-size: 24px;
+}
+
+.form-wrap {
+    width: 80%;
+    margin: 10px auto;
+}
+
 .step-block_lump_image{
     position: absolute;
 }
