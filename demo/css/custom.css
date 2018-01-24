@@ -4,11 +4,23 @@ body {
     font-size: 13px;
 }
 
+.footer {
+    width: 100%;
+    position: absolute;
+    border: 0;
+    left: 0;
+    height: 50px;
+    background: #e6e6e6;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
 .service-block-description {
     text-align: justify;
     word-break: break-all;
     padding-top: 10px;
 }
+
 
 
 .callback-wrapper {
