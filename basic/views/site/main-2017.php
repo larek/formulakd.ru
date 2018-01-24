@@ -96,7 +96,7 @@ $this->title = 'ФормулаКД';
                         <div class="main-about__description">
                             <div class="main-about_description_row">КОМАНДА ТАЛАНТЛИВЫХ</div>
                             <div class="main-about_description_row">И КВАЛИФИЦИРОВАННЫХ</div>
-                            <div class="main-about_description_row">ИНЖЕНЕРОВ С ОПЫТОМ</div>
+                            <div class="main-about_description_row">ИНЖЕНЕРОВ</div>
                             <div class="main-about_description_row">С ОПЫТОМ РАБОТЫ </div>
                             <div class="main-about_description_row">В РАЗНЫХ СФЕРАХ</div>
                             <div class="main-about_description_row">ИНЖЕНЕРНОЙ ДЕЯТЕЛЬНОСТИ</div>
@@ -140,7 +140,7 @@ $this->title = 'ФормулаКД';
                         <div class="step-description">
                             <div class="step-description_row">Вы обращаетесь к нам</div>
                             <div class="step-description_row">с собственной идеей</div>
-                            <div class="step-description_row">или нароботкой</div>
+                            <div class="step-description_row">или нароботкой.</div>
                             <div class="step-description_row">Связаться с нами можно</div>
                             <div class="step-description_row">по телефону 281-58-78</div>
                             <div class="step-description_row">или сразу отправив запрос</div>
@@ -173,7 +173,7 @@ $this->title = 'ФормулаКД';
                             <div class="step-description_row">вариантов решения.</div>
                             <div class="step-description_row">Проектируем изделие</div>
                             <div class="step-description_row">и разрабатываем</div>
-                            <div class="step-description_row">3-D модель</div>
+                            <div class="step-description_row">3D модель</div>
                             <div class="step-description_row">будущего продукта</div>
                         </div>
                     </div>
@@ -242,7 +242,7 @@ $this->title = 'ФормулаКД';
                     </div>
                     <div class="col-6  col-md-12 text-center mt-3">
                         <img src="/images/dokument.svg" class='img-fluid small' alt="">
-                        <div class="workmap_row"><Организация</div>
+                        <div class="workmap_row">Организация</div>
                         <div class="workmap_row">и проведение</div>
                         <div class="workmap_row">первичной аттестации</div>
                         <div class="workmap_row">оборудования</div>
@@ -359,7 +359,7 @@ $this->title = 'ФормулаКД';
                         <div class="row mt-3">
                             <div class="col-2"><img src="/demo/images/contact-icon-1.svg" class='img-fluid' alt=""></div>
                             <div class="col-10">
-                                <b>Адрес КБ</b>
+                                <b>Адрес КБ:</b>
                                 <br> г. Нижний Новгород
                                 <br> пер. Мотальный, д. 10, пом. 8-9
                             </div>
@@ -367,9 +367,9 @@ $this->title = 'ФормулаКД';
                         <div class="row mt-3">
                             <div class="col-2"><img src="/demo/images/contact-icon-2.svg" class='img-fluid' alt=""></div>
                             <div class="col-10">
-                                <b>Адрес производства</b>
+                                <b>Адрес производства:</b>
                                 <br> г. Нижний Новгород,
-                                <br> Московское шоссе, д.105
+                                <br> Московское шоссе, д. 105
                             </div>
                         </div>
                         <div class="row mt-3">

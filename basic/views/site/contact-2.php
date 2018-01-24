@@ -20,7 +20,7 @@ $this->title = 'Контакты';
                         <div class="row mt-3">
                             <div class="col-2"><img src="/demo/images/contact-icon-1.svg" class='img-fluid' alt=""></div>
                             <div class="col-10">
-                                <b>Адрес КБ</b>
+                                <b>Адрес КБ:</b>
                                 <br> г. Нижний Новгород
                                 <br> пер. Мотальный, д. 10, пом. 8-9
                             </div>
@@ -28,9 +28,9 @@ $this->title = 'Контакты';
                         <div class="row mt-3">
                             <div class="col-2"><img src="/demo/images/contact-icon-2.svg" class='img-fluid' alt=""></div>
                             <div class="col-10">
-                                <b>Адрес производства</b>
+                                <b>Адрес производства:</b>
                                 <br> г. Нижний Новгород,
-                                <br> Московское шоссе, д.105
+                                <br> Московское шоссе, д. 105
                             </div>
                         </div>
                         <div class="row mt-3">
