@@ -53,7 +53,7 @@ AppAsset2017::register($this);
                         <li class="nav-item"><a class="nav-link <?= Yii::$app->controller->route == "site/services" ? 'active-item' : ''; ?>" href="/services">Услуги</a></li>
                         <li class="nav-item"><a class="nav-link <?= Yii::$app->controller->route == "site/about2" ? 'active-item' : ''; ?>" href="/about-2">О компании</a></li>
                         <li class="nav-item"><a class="nav-link <?= Yii::$app->controller->route == "site/projects" ? 'active-item' : ''; ?>" href="/projects">Проекты</a></li>
-                        <li class="nav-item"><a class="nav-link <?= Yii::$app->controller->route == "site/contacts" ? 'active-item' : ''; ?>" href="/contacts">Контакты</a></li>
+                        <li class="nav-item"><a class="nav-link <?= Yii::$app->controller->route == "site/contact2" ? 'active-item' : ''; ?>" href="/contact-2">Контакты</a></li>
                         <li class="nav-item dark-blue-item d-none d-md-block"><a class="nav-link <?= Yii::$app->controller->route == "site/callback-page" ? 'active-item' : ''; ?>" href="/callback-page">Заказать звонок</a></li>
                     </ul>
                 </div>

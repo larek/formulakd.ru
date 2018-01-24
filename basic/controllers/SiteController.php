@@ -115,6 +115,11 @@ class SiteController extends Controller
         return $this->render('about-2');
     }
 
+    public function actionContact2(){
+        $this->layout = 'main-2017';
+        return $this->render('contact-2');
+    }
+
     public function actionNews(){
       return $this->render('news');
     }

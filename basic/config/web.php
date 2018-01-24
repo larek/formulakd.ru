@@ -60,6 +60,7 @@ $config = [
                 'callback-page' => 'site/callback-page',
                 'services' => 'site/services',
                 'about-2' => 'site/about2',
+                'contact-2' => 'site/contact2',
                 '/simple-page' => 'site/simple-page',
                 '/<guid>' => 'site/view',
                 '/' => 'site/index',
