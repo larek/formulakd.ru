@@ -10,28 +10,28 @@ $this->title = 'Услуги';
 </div>
 <div class="container mt-4">
     <div class="row">
-        <div class="col-md-3 col-6 mt-4">
+        <div class="col-12 col-md-3 mt-4">
             <img src="/demo/images/service-image-1.jpg" class='img-fluid' alt="">
             <a href="#" class='potencial_item_link'>Проектирование <br>и расчеты</a>
             <div class="service-block-description">
               Проектирование – это поиск научно-обоснованных, технически осуществимых и&nbsp;экономически эффективных инженерных решений для изготовления изделия. На&nbsp;этом этапе анализируется большой поток вводных данных, исходя из&nbsp;которых разрабатываются варианты конструкций, возможные технологии изготовления и&nbsp;допустимость использования изделия. При этом проводятся необходимые расчеты и&nbsp;сравниваются все возможные комбинации.
             </div>
         </div>
-        <div class="col-md-3 col-6 mt-4">
+        <div class="col-12 col-md-3 mt-4">
             <img src="/demo/images/service-image-2.jpg" class='img-fluid' alt="">
             <a href="#" class='potencial_item_link'>Разработка <br>документации</a>
             <div class="service-block-description">
             Мы ответственно подходим к вопросу изготовления конструкторской документации и&nbsp;выполняем ее по&nbsp;общепринятым у&nbsp;специалистов нормам в&nbsp;соответствии с&nbsp;существующими российскими стандартами на&nbsp;изготовление подобных документов, тем самым предоставив полную информацию об&nbsp;изделии. На&nbsp;данный момент, в&nbsp;нашей стране принят единый национальный стандарт изготовления конструкторской документации – ЕСКД.
           </div>
         </div>
-        <div class="col-md-3 col-6 mt-4">
+        <div class="col-12 col-md-3 mt-4">
             <img src="/demo/images/service-image-3.jpg" class='img-fluid' alt="">
             <a href="#" class='potencial_item_link'>Изготовление <br>оборудования</a>
             <div class="service-block-description">
               Уверенно предлагать полный комплекс работ нам позволяют налаженные связи с&nbsp;поставщиками и&nbsp;наличие собственной производственной площади, которая оснащена всем необходимым оборудованием для резки и&nbsp;обработки металла. В&nbsp;дополнение к&nbsp;этому большой опыт и&nbsp;высокая квалификация производственного персонала нашего конструкторского бюро гарантируют высокое качество работ по&nbsp;сборке и&nbsp;монтажу оборудования.
             </div>
         </div>
-        <div class="col-md-3 col-6 mt-4">
+        <div class="col-12 col-md-3 mt-4">
             <img src="/demo/images/service-image-4.jpg" class='img-fluid' alt="">
             <a href="#" class='potencial_item_link'>Разработка <br>систем управления</a>
             <div class="service-block-description">
