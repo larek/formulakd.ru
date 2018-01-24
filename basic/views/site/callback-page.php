@@ -10,79 +10,79 @@ $this->title = 'Заказать звонок';
 </div>
 <div class="container mt-3">
   <div class="row">
-    <div class="col-md-12">
-<div class="form-horizontal">
-  <div class="form-group">
-    <label for="inputPassword3" class="col-sm-4 control-label"></label>
-    <div class="col-sm-6">
-      <select class="form-control callbackType" name="">
-        <option>Обратный звонок</option>
-        <option>Написать письмо</option>
-      </select>
-    </div>
-  </div>
+    <div class="">
+      <div class="form-horizontal">
+        <div class="form-group">
+          <label for="inputPassword3" class="col-sm-4 control-label"></label>
+          <div class="col-sm-6">
+            <select class="form-control callbackType" name="">
+              <option>Обратный звонок</option>
+              <option>Написать письмо</option>
+            </select>
+          </div>
+        </div>
 
-  <div class="form-group">
-    <label for="inputEmail3" class="col-sm-4 control-label">Как к Вам обращаться?*</label>
-    <div class="col-sm-6">
-      <input type="email" class="form-control userName userFormField require">
-    </div>
-  </div>
+        <div class="form-group">
+          <label for="inputEmail3" class="col-sm-4 control-label">Как к Вам обращаться?*</label>
+          <div class="col-sm-6">
+            <input type="email" class="form-control userName userFormField require">
+          </div>
+        </div>
 
-  <div class="form-group">
-    <label for="inputPassword3" class="col-sm-4 control-label">Организация:</label>
-    <div class="col-sm-6">
-      <input type="text" class="form-control userCompany userFormField">
-    </div>
-  </div>
+        <div class="form-group">
+          <label for="inputPassword3" class="col-sm-4 control-label">Организация:</label>
+          <div class="col-sm-6">
+            <input type="text" class="form-control userCompany userFormField">
+          </div>
+        </div>
 
 
 
-  <div class="form-group">
-    <label for="inputPassword3" class="col-sm-4 control-label">Контактный телефон:</label>
-    <div class="col-sm-6">
-      <input type="text" class="form-control userPhone userFormField">
-    </div>
-  </div>
+        <div class="form-group">
+          <label for="inputPassword3" class="col-sm-4 control-label">Контактный телефон:</label>
+          <div class="col-sm-6">
+            <input type="text" class="form-control userPhone userFormField">
+          </div>
+        </div>
 
-  <div class="form-group">
-    <label for="inputPassword3" class="col-sm-4 control-label">E-mail:*</label>
-    <div class="col-sm-6">
-      <input type="text" class="form-control userEmail userFormField require">
-    </div>
-  </div>
+        <div class="form-group">
+          <label for="inputPassword3" class="col-sm-4 control-label">E-mail:*</label>
+          <div class="col-sm-6">
+            <input type="text" class="form-control userEmail userFormField require">
+          </div>
+        </div>
 
-  <div class="form-group">
-    <label for="inputPassword3" class="col-sm-4 control-label">Тема сообщения:</label>
-    <div class="col-sm-6">
-      <input type="text" class="form-control userSubject userFormField">
-    </div>
-  </div>
+        <div class="form-group">
+          <label for="inputPassword3" class="col-sm-4 control-label">Тема сообщения:</label>
+          <div class="col-sm-6">
+            <input type="text" class="form-control userSubject userFormField">
+          </div>
+        </div>
 
-  <div class="form-group">
-    <label for="inputPassword3" class="col-sm-4 control-label">Текст сообщения:</label>
-    <div class="col-sm-6">
-      <textarea class="form-control userMessage userFormField"></textarea>
-    </div>
-  </div>
+        <div class="form-group">
+          <label for="inputPassword3" class="col-sm-4 control-label">Текст сообщения:</label>
+          <div class="col-sm-6">
+            <textarea class="form-control userMessage userFormField"></textarea>
+          </div>
+        </div>
 
-  <div class="form-group">
-    <div class="col-md-12">
-      <p>Нажимая кнопку Отправить, Вы даете  <a href="#" data-toggle="modal" data-target="#exampleModal">согласие</a> на обработку своих персональных данных</p>
-    </div>
-  </div>
+        <div class="form-group">
+          <div class="col-md-12">
+            <p>Нажимая кнопку Отправить, Вы даете  <a href="#" data-toggle="modal" data-target="#exampleModal">согласие</a> на обработку своих персональных данных</p>
+          </div>
+        </div>
 
-  <div class="form-group">
-    <div class="col-sm-offset-4 col-sm-10">
-      <button class="btn btn-primary btn-callback">Отправить</button>
-    </div>
-  </div>
+        <div class="form-group">
+          <div class="col-sm-offset-4 col-sm-10">
+            <button class="btn btn-primary btn-callback">Отправить</button>
+          </div>
+        </div>
 
-  <div class="col-md-12" style="margin-top:15px;">
-  <div class="alert alert-info alert-callback" style="display:none;">Заявка отправлена. <br>Благодарим Вас за интерес, проявленный к нашей компании. <br>Мы обязательно ответим Вам в самое ближайшее время</div>
-  </div>
+        <div class="col-md-12" style="margin-top:15px;">
+        <div class="alert alert-info alert-callback" style="display:none;">Заявка отправлена. <br>Благодарим Вас за интерес, проявленный к нашей компании. <br>Мы обязательно ответим Вам в самое ближайшее время</div>
+        </div>
 
-</div>
+      </div>
     </div>
   </div>
 </div>
