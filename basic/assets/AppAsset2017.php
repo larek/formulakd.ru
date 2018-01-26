@@ -30,6 +30,7 @@ class AppAsset2017 extends AssetBundle
         "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js",
         "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js",
         "https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js",
+        '/js/site.js'
     ];
     public $depends = [
         'yii\web\YiiAsset',
