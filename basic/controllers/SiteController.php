@@ -104,9 +104,14 @@ class SiteController extends Controller
 
     public function actionProjectSingle($id){
         $model = Projects::findOne($id);
+        $next = Projects::find()->where(['>', 'id', $id])->orderBy(['id' => SORT_ASC])->limit(1)->one();
+        $prev = Projects::find()->where(['<','id', $id])->orderBy(['id' => SORT_DESC])->limit(1)->one();
+
         $this->layout = 'main-2017';
         return $this->render('project-single',[
-            'model' => $model
+            'model' => $model,
+            'next' => $next,
+            'prev' => $prev
         ]);
     }
 
