@@ -24,21 +24,20 @@ $this->title = 'ФормулаКД';
     <div class="container mt-4">
         <div class="row">
             <div class="col-md-3 col-6 text-center mt-4">
-                <img src="/demo/images/service-image-1.jpg" class='img-fluid rounded-circle' alt="">
-                <a href="#" class='potencial_item_link'>Проектирование <br>и расчеты</a>
+                <a href="/services"><img src="/demo/images/service-image-1.jpg" class='img-fluid rounded-circle' alt=""></a>
+                <a href="/services" class='potencial_item_link'>Проектирование <br>и расчеты</a>
             </div>
             <div class="col-md-3 col-6  text-center mt-4">
-                <img src="/demo/images/service-image-2.jpg" class='img-fluid rounded-circle' alt="">
-                <a href="#" class='potencial_item_link'>Разработка <br>документации</a>
+                <a href="/services"><img src="/demo/images/service-image-2.jpg" class='img-fluid rounded-circle' alt=""></a>
+                <a href="/services" class='potencial_item_link'>Разработка <br>документации</a>
             </div>
             <div class="col-md-3 col-6  text-center mt-4">
-                <img src="/demo/images/service-image-3.jpg" class='img-fluid rounded-circle' alt="">
-                <a href="#" class='potencial_item_link'>Изготовление <br>оборудования</a>
+                <a href="/services"><img src="/demo/images/service-image-3.jpg" class='img-fluid rounded-circle' alt=""></a>
+                <a href="/services" class='potencial_item_link'>Изготовление <br>оборудования</a>
             </div>
             <div class="col-md-3 col-6 text-center mt-4">
-                <img src="/demo/images/service-image-4.jpg" class='img-fluid rounded-circle' alt="">
-                
-                <a href="#" class='potencial_item_link'>Разработка <br>систем управления</a>
+                <a href="/services"><img src="/demo/images/service-image-4.jpg" class='img-fluid rounded-circle' alt=""></a>
+                <a href="/services" class='potencial_item_link'>Разработка <br>систем управления</a>
             </div>
         </div>
     </div>
