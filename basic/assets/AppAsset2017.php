@@ -24,7 +24,7 @@ class AppAsset2017 extends AssetBundle
         "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.css",
         "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css",
         'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css',
-        "/demo/css/custom.css?v=1.5.5"
+        "/demo/css/custom.css?v=1.5.6"
     ];
     public $js = [
         "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js",

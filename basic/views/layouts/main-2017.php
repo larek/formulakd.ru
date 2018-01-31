@@ -27,7 +27,7 @@ AppAsset2017::register($this);
 <div class="container mt-3">
         <div class="row">
             <div class="col-md-3 col-6 text-left">
-                <img src="/images/logo-2017.svg" alt="" class='img-fluid'>
+                <a href="/"><img src="/images/logo-2017.svg" alt="" class='img-fluid'></a>
             </div>
             <div class="col-6 d-sm-none dark-blue-text small text-right mobile-header-phone">
                 <a href="tel:+78312815898">8 (831) 281-58-98</a>
@@ -50,12 +50,12 @@ AppAsset2017::register($this);
 
                 <div class="collapse navbar-collapse" id="navbarsExample09">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item"><a class="nav-link <?= Yii::$app->controller->route == "site/2017" ? 'active-item' : ''; ?>" href="/2017">Главная <span class="sr-only">(current)</span></a></li>
-                        <li class="nav-item"><a class="nav-link <?= Yii::$app->controller->route == "site/services" ? 'active-item' : ''; ?>" href="/services">Услуги</a></li>
-                        <li class="nav-item"><a class="nav-link <?= Yii::$app->controller->route == "site/about2" ? 'active-item' : ''; ?>" href="/about-2">О компании</a></li>
-                        <li class="nav-item"><a class="nav-link <?= Yii::$app->controller->route == "site/projects" ? 'active-item' : ''; ?>" href="/projects">Проекты</a></li>
-                        <li class="nav-item"><a class="nav-link <?= Yii::$app->controller->route == "site/contact2" ? 'active-item' : ''; ?>" href="/contact-2">Контакты</a></li>
-                        <li class="nav-item dark-blue-item d-none d-md-block"><a class="nav-link <?= Yii::$app->controller->route == "site/callback-page" ? 'active-item' : ''; ?>" href="/callback-page">Заказать звонок</a></li>
+                        <li class="nav-item <?= Yii::$app->controller->route == "site/2017" ? 'active-item' : ''; ?>"><a class="nav-link <?= Yii::$app->controller->route == "site/2017" ? 'active-item' : ''; ?>" href="/">Главная <span class="sr-only">(current)</span></a></li>
+                        <li class="nav-item <?= Yii::$app->controller->route == "site/services" ? 'active-item' : ''; ?>"><a class="nav-link" href="/services">Услуги</a></li>
+                        <li class="nav-item <?= Yii::$app->controller->route == "site/about2" ? 'active-item' : ''; ?>"><a class="nav-link" href="/about">О компании</a></li>
+                        <li class="nav-item <?= Yii::$app->controller->route == "site/projects" ? 'active-item' : ''; ?>"><a class="nav-link" href="/projects">Проекты</a></li>
+                        <li class="nav-item <?= Yii::$app->controller->route == "site/contact2" ? 'active-item' : ''; ?>"><a class="nav-link" href="/contacts">Контакты</a></li>
+                        <li class="nav-item dark-blue-item d-none d-md-block"><a class="nav-link" href="/callback-page">Заказать звонок</a></li>
                     </ul>
                 </div>
             </nav>

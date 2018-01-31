@@ -91,6 +91,7 @@ width: 100%;
 
 a.nav-link {
     font-size: 1rem;
+    font-weight: bold;
 }
 
 .nav-link {
@@ -102,8 +103,8 @@ a.nav-link:first-letter {
     font-weight: bold;
 }
 
-a.nav-link.active-item{
-    font-weight: bold;
+li.nav-item.active-item {
+    background: #e6e6e6;
 }
 
 .dark-blue-item > a:first-letter{

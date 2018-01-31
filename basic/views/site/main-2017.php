@@ -53,7 +53,7 @@ $this->title = 'ФормулаКД';
             <? 
               foreach($model as $item):
             ?>
-            <div class="col-md-3 mt-2">
+            <div class="col-md-3 mt-4">
                 <a href="/projects/<?= $item->id?>">
                 <img src="<?= $item->photo7 == '' ? 'http://via.placeholder.com/350x292/ffffff/350x292' : '/uploads/350x292/'.$item->photo7?>" class='img-fluid project-list-item__img' alt="">
                 </a>
@@ -140,7 +140,7 @@ $this->title = 'ФормулаКД';
                         <div class="step-description">
                             <div class="step-description_row">Вы обращаетесь к нам</div>
                             <div class="step-description_row">с собственной идеей</div>
-                            <div class="step-description_row">или нароботкой.</div>
+                            <div class="step-description_row">или наработкой.</div>
                             <div class="step-description_row">Связаться с нами можно</div>
                             <div class="step-description_row">по телефону 281-58-78</div>
                             <div class="step-description_row">или сразу отправив запрос</div>
@@ -173,7 +173,7 @@ $this->title = 'ФормулаКД';
                             <div class="step-description_row">вариантов решения.</div>
                             <div class="step-description_row">Проектируем изделие</div>
                             <div class="step-description_row">и разрабатываем</div>
-                            <div class="step-description_row">3D модель</div>
+                            <div class="step-description_row">3D-модель</div>
                             <div class="step-description_row">будущего продукта</div>
                         </div>
                     </div>
