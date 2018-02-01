@@ -200,6 +200,7 @@ class SiteController extends Controller
     }
 
     public function actionView(){
+        $this->layout = 'main-2017';
         $guid = Yii::$app->request->get('guid');
         $model = Pages::find()->andWhere(['guid' => $guid])->one();
 
