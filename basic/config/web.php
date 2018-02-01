@@ -58,6 +58,7 @@ $config = [
                 'projects/<id>' => 'site/project-single',
                 '2017' => 'site/2017',
                 'callback-page' => 'site/callback-page',
+                'razrabotka-kd' => 'site/services',
                 'services' => 'site/services',
                 'about' => 'site/about2',
                 'contacts' => 'site/contact2',
