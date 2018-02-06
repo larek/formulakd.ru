@@ -77,7 +77,7 @@ $this->title = 'Услуги';
                 </div>
                 <div class="col-6  col-md-12 text-center mt-3">
                     <img src="/images/dokument.svg" class='img-fluid small' alt="">
-                    <div class="workmap_row"><Организация</div>
+                    <div class="workmap_row">Организация</div>
                     <div class="workmap_row">и проведение</div>
                     <div class="workmap_row">первичной аттестации</div>
                     <div class="workmap_row">оборудования</div>
