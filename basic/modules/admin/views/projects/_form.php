@@ -15,6 +15,8 @@ $this->registerJsFile('/js/single-project.js?v=1.0.1');
     <div class="row">
         <div class="col-md-6">
             <?= $form->field($model, 'title')->textInput(['maxlength' => true]) ?>
+            
+            <?= $form->field($model, 'seoTitle')->textInput(['maxlength' => true]) ?>
 
             <?= $form->field($model, 'description')->textarea(['rows' => 6]) ?>
 

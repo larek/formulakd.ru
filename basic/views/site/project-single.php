@@ -1,5 +1,5 @@
 <?
-$this->title = $model->title
+$this->title = $model->seoTitle == '' ? $model->title : $model->seoTitle;
 ?>
 <div class="container">
   <div class="row">
