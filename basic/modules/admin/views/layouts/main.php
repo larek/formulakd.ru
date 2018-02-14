@@ -38,10 +38,8 @@ AdminAsset::register($this);
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
             ['label' => 'Главная', 'url' => ['default/index']],
-            ['label' => 'Страницы', 'url' => ['pages/index']],
             ['label' => 'Проекты', 'url' => ['projects/index']],
-            ['label' => 'Новости', 'url' => ['news/index']],
-            ['label' => 'Слайды', 'url' => ['slider/index']],
+            ['label' => 'Seo', 'url' => ['seo/index']],
             Yii::$app->user->isGuest ?
                 ['label' => 'Login', 'url' => ['/site/login']] :
                 [
