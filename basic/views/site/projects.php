@@ -1,6 +1,6 @@
 <?
 use yii\helpers\Html;
-$this->title = "Выполненные проекты";
+$this->title = isset($modelSeo->title) && $modelSeo->title!=='' ? $modelSeo->title : "Выполненные проекты";
 ?>
 <div class="container">
   <div class="row">

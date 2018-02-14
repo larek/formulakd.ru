@@ -1,5 +1,5 @@
 <?
-$this->title = 'Контакты';
+$this->title = isset($model->title) && $model->title!='' ? $model->title : 'Контакты';
 ?>
  <div class="map-wrapper">
 

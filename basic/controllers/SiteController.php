@@ -12,6 +12,7 @@ use app\models\Pages;
 use app\models\Slider;
 use app\modules\admin\models\Projects;
 use \yii\imagine\Image;
+use app\modules\admin\models\Seo;
 
 
 use harrytang\fineuploader\FineuploaderHandler;
@@ -74,31 +75,39 @@ class SiteController extends Controller
     }
 
     public function actionServices(){
+        $model = Seo::find()->where(['slug' => 'services'])->one();
         $this->layout = 'main-2017';
-        return $this->render('services');
+        return $this->render('services',[
+          'model' => $model,
+        ]);
     }
 
     public function action2017(){
         $this->layout = 'main-2017';
-        
+        $modelSeo = Seo::find()->where(['slug' => 'main'])->one();        
         $model = Projects::find()->limit(8)->all();
         return $this->render('main-2017', [
-            'model' => $model
+          'model' => $model,
+          'modelSeo' => $modelSeo,
         ]);
     }
 
     public function actionCallbackPage(){
+        $model = Seo::find()->where(['slug' => 'callback'])->one();
         $this->layout = 'main-2017';
-        return $this->render('callback-page');
+        return $this->render('callback-page',[
+          'model' => $model,
+        ]);
     }
     
     public function actionProjects(){
         
         $model = Projects::find()->all();
-
+        $modelSeo = Seo::find()->where(['slug' => 'projects'])->one();
         $this->layout = 'main-2017';
         return $this->render('projects', [
-            'model' => $model
+          'model' => $model,
+          'modelSeo' => $modelSeo,
         ]);
     }
 
@@ -116,13 +125,19 @@ class SiteController extends Controller
     }
 
     public function actionAbout2(){
+        $model = Seo::find()->where(['slug' => 'about'])->one();
         $this->layout = 'main-2017';
-        return $this->render('about-2');
+        return $this->render('about-2',[
+          'model' => $model
+        ]);
     }
 
     public function actionContact2(){
+        $model = Seo::find()->where(['slug' => 'contacts'])->one();
         $this->layout = 'main-2017';
-        return $this->render('contact-2');
+        return $this->render('contact-2',[
+          'model' => $model,
+        ]);
     }
 
     public function actionNews(){

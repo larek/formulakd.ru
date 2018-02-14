@@ -1,5 +1,5 @@
 <?
-$this->title = 'Заказать звонок';
+$this->title = isset($model->title) && $model->title!='' ? $model->title : 'Заказать звонок';
 ?>
 <div class="container mt-3">
   <div class="row">

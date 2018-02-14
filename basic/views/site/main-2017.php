@@ -4,7 +4,7 @@ use app\components\Callback;
 use yii\helpers\Html;
 /* @var $this yii\web\View */
 
-$this->title = 'ФормулаКД';
+$this->title = isset($modelSeo->title) && $modelSeo->title!='' ? $modelSeo->title : 'ФормулаКД';
 
 ?>
 
