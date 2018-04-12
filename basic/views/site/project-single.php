@@ -20,7 +20,7 @@ $this->title = $model->seoTitle == '' ? $model->title : $model->seoTitle;
     <div class="col-md-8 mt-4">
       <div class="blue-back"></div>
       <div class="row">
-        <div class="col-md-7">
+        <div class="col-md-6">
           <div class="single-description">
             <div class="prop-container">
               <div class="prop-caption">
